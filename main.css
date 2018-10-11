@@ -1,0 +1,58 @@
+html{
+    background-image: url(/Images/GameWallpaperSceneryNoClouds.png);
+    background-size: 100%;
+    background-repeat: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* .char{
+    display: flex;
+    justify-content: space-between;
+
+} */
+
+
+
+#sprite{
+    width: 20%;
+    margin-top: 26%;
+}
+#djk{
+margin-left: 51%;
+}
+
+.button{
+    border:10px inset #c3b980;
+    border-radius: 15px;
+    font-size: 30px;
+    text-align: center;
+    font-family:arial, helvetica, sans-serif; 
+    padding: 10px 10px 10px 10px; 
+    text-decoration:none; 
+    display:inline-block;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+     background-color: #c2ac65; 
+     background-image: linear-gradient(to bottom, #d5cea6, #c2ac65);
+     height: 35px;
+     width: 35px;
+    }
+    .buttonBox{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.276);
+        border-radius: 20px;
+        width: 40%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 10%;
+        position: absolute;
+    }
+/*     
+    .button:hover{
+     border:1px solid #b4a861;
+     background-color: #c5bb83;  
+     background-image: linear-gradient(to bottom, #c5bb83, #a29752);
+    } */
+    
