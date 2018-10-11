@@ -1,9 +1,11 @@
 html{
     background-image: url(/Images/GameWallpaperSceneryNoClouds.png);
     background-size: 100%;
-    background-repeat: cover;
+    background-repeat: no-repeat;
+    position: fixed;
     width: 100vw;
     height: 100vh;
+
 }
 
 /* .char{
@@ -12,14 +14,18 @@ html{
 
 } */
 
-
+#title{
+    position: absolute;
+    margin-left: 27%;
+}
 
 #sprite{
-    width: 20%;
-    margin-top: 26%;
+    width: 15%;
+    margin-top: 31%;
 }
 #djk{
-margin-left: 51%;
+    width: 25%;
+margin-left: 59%;
 }
 
 .button{
@@ -31,28 +37,72 @@ margin-left: 51%;
     padding: 10px 10px 10px 10px; 
     text-decoration:none; 
     display:inline-block;
-    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
-     background-color: #c2ac65; 
-     background-image: linear-gradient(to bottom, #d5cea6, #c2ac65);
+    /* text-shadow: -1px -1px 0 rgba(0,0,0,0.3); */
+     background-color: #edc648; 
+     background-image: linear-gradient(to bottom, #e2d8a0, #dfbe53);
      height: 35px;
      width: 35px;
+     box-shadow: 1px 1px 1px black;
+
     }
+
+
     .buttonBox{
         display: flex;
         flex-wrap: wrap;
-        padding: 15px;
-        background-color: rgba(0, 0, 0, 0.276);
+        padding: 10px;
+        /* background-color: rgba(0, 0, 0, 0.276); */
         border-radius: 20px;
         width: 40%;
         text-align: center;
         justify-content: center;
-        margin-top: 10%;
+        margin-top: 12%;
+        margin-left: 28%;
         position: absolute;
     }
-/*     
+
+    .optButton{
+        border:10px inset #c3b980;
+        border-radius: 15px;
+        font-size: 30px;
+        text-align: center;
+        font-family:arial, helvetica, sans-serif; 
+        padding: 10px 10px 10px 10px; 
+        text-decoration:none; 
+        display:inline-block;
+        /* text-shadow: -1px -1px 0 rgba(0,0,0,0.3); */
+         background-color: #edc648; 
+         background-image: linear-gradient(to bottom, #e2d8a0, #dfbe53);
+         height: 35px;
+         width: 75px;
+         box-shadow: 1px 1px 1px black;
+         position: absolute;
+        } 
+
+    #lives{
+        margin-top: 12%;
+    }
+
+    #score{
+        margin-top: 12%;
+        margin-left: 92%;
+    }
+
+    #hint{
+        margin-top: 20%;
+        margin-left: 15%;
+    }
+    
+li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 70px;
+    
+}
+
     .button:hover{
-     border:1px solid #b4a861;
-     background-color: #c5bb83;  
+     background-color: #ffffff;  
      background-image: linear-gradient(to bottom, #c5bb83, #a29752);
-    } */
+    }
     
