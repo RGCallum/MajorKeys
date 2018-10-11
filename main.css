@@ -12,9 +12,10 @@ html{
     z-index: -2;
     animation: slide 10s infinite;
 }
+
 @keyframes slide {
-    0% { background-position:1242px } 
-    100% { background-position:0 }
+    100% { transform: translateX(-66.6666); } 
+    0% { margin-left: 0; }
   }
 /* .char{
     display: flex;
@@ -39,6 +40,8 @@ margin-left: 59%;
 .button{
     border:10px inset #c3b980;
     border-radius: 15px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
     font-size: 30px;
     text-align: center;
     font-family:arial, helvetica, sans-serif; 
@@ -74,6 +77,8 @@ margin-left: 59%;
         border-radius: 15px;
         font-size: 30px;
         text-align: center;
+        color: rgb(0, 0, 0);
+        text-shadow: 1px 1px 1px rgb(255, 255, 255);
         font-family:arial, helvetica, sans-serif; 
         padding: 10px 10px 10px 10px; 
         text-decoration:none; 
