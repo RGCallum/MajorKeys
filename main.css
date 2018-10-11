@@ -7,7 +7,15 @@ html{
     height: 100vh;
 
 }
-
+#clouds{
+    position: absolute;
+    z-index: -2;
+    animation: slide 10s infinite;
+}
+@keyframes slide {
+    0% { background-position:1242px } 
+    100% { background-position:0 }
+  }
 /* .char{
     display: flex;
     justify-content: space-between;
