@@ -17,19 +17,16 @@
 //start, input to submit btn, addeventlist classlist.add then to if/else
 let answer = document.querySelector('.answer')
 let submit = document.querySelector('.submit')
-let score = document.querySelector('#score')
+// let score = document.querySelector('#score')
+let score = 0;
 submit.addEventListener('click', (event) => {
-    console.log(answer.value)
-
-
+    // console.log(answer.value)
     if (answer.value === "diddy") {
-        console.log("yes")
-        // document.getElementById("score").classList.add('zero');
-        // document.getElementById("score").innerHTML = "Your account is Negative!";
-    } else {
-        console.log("no")
-    }
 
+        document.getElementById("score").innerHTML += 100;
+    } else {
+        document.getElementById("score").innerHTML -= 100;
+    }
 })
 
 
