@@ -19,47 +19,22 @@ let answer = document.querySelector('.answer')
 let submit = document.querySelector('.submit')
 // let score = document.querySelector('#score')
 let score = 0;
+let lives = 5;
 submit.addEventListener('click', (event) => {
     // console.log(answer.value)
-    if (answer.value === "diddy") {
-
-        document.getElementById("score").innerHTML += 100;
+    if (answer.value === "Diddy") {
+        score += 100
+        // var key = document.createElement('div')
+        // key.classList.add('keyImg')
+        // var score = document.getElementById('score')
+        // score.appendChild(key)
+        // document.getElementById("score").classList.add('keyImg');
+        document.getElementById("score").innerHTML = score;
     } else {
         document.getElementById("score").innerHTML -= 100;
+        document.getElementById("lives").innerHTML -= 1;
+        // document.getElementById("score").classList.remove('keyImg');
+        
     }
 })
 
-
-//declared vars for savings
-// let inputSav = document.querySelector('.inputSav')
-// let balanceSav = document.querySelector('.balance') 
-// let depositSav = document.querySelector('.depositSav')
-// let withdrawSav = document.querySelector('.withdrawSav')
-
-// let savingsAcct = 0;
-
-// //added on click event for deposit
-
-//     document.getElementById('lives').innerHTML = (`correct${counter}`)
-//     if (answer === "1") {
-//         document.getElementById("score").classList.add('zero');
-//         document.getElementById("score").innerHTML = "Your account is Negative!";
-//     } else {
-//         document.getElementById('score').classList.remove("zero");
-//     }
-// })
-
-
-// //created click event for savings
-// depositSav.addEventListener('click', (event) => {
-
-//     document.getElementById('savBalance').innerHTML = (`$${savingsAcct}`)
-//     if (savingsAcct <= 0) {
-//         document.getElementById('savBalance').classList.add("zero");
-//         document.getElementById('savBalance').innerHTML = "Your account is Negative!"
-//     } else {
-//         document.getElementById('savBalance').classList.remove("zero");
-//         // document.getElementById('savBalance').innerHTML = savingsAcct
-//     }
-//     // console.log(savBalance)
-// })

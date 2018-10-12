@@ -92,7 +92,6 @@ button{
      /* box-shadow: 1px 1px 1px black; */
      position: absolute;
      
-
     }
 
 
@@ -114,7 +113,6 @@ button{
      width: 35px;
      box-shadow: 1px 1px 1px black;
      
-
     }
 
 
@@ -166,7 +164,8 @@ button{
 
     #score{
         margin-top: 12%;
-        margin-left: 92%;
+        margin-left: 62%;
+        background-repeat: no-repeat;
     }
 
     #hint{
@@ -187,11 +186,11 @@ li{
      background-image: linear-gradient(to bottom, #c5bb83, #a29752);
     }
     
-    .optButton:hover{
+    /* .optButton:hover{
         background-color: #ffffff;  
         background-image: linear-gradient(to bottom, #c5bb83, #a29752);
-       }
-.zero {
-  background-color: #F52F4F;
+       } */
+.keyImg {
+  background-image: url(/Images/ScoreKey.png);
   color: #FFFFFF;
 }
