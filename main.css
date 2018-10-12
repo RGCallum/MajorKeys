@@ -1,5 +1,5 @@
 html{
-    background-image: url(/Images/GameWallpaperSceneryNoClouds.png);
+    background-image: url(/Images/BKGDS/GameWallpaperSceneryNoClouds.png);
     background-size: 100%;
     background-repeat: no-repeat;
     position: fixed;
@@ -10,13 +10,19 @@ html{
 #clouds{
     position: absolute;
     z-index: -2;
-    animation: slide 10s infinite;
+    width: 100%; 
+	height: 100%; 
+	background-image: url(/Images/BKGDS/clouds.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: slide 100s linear infinite;
 }
 
 @keyframes slide {
-    100% { transform: translateX(-66.6666); } 
-    0% { margin-left: 0; }
-  }
+	from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
 
 
 
