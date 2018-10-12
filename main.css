@@ -32,19 +32,69 @@ html{
 }
 
 #sprite{
-    width: 15%;
+    width: 13%;
     margin-top: 31%;
+    
 }
 #djk{
-    width: 25%;
+    width: 20%;
 margin-left: 59%;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+position: relative;
+margin-top: 30%;
+border-radius: 5px;
+font-size: 30px;
+text-align: center;
+}
+
+
+button{
+    width: 50%;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 5px inset #D1B464;
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+     color: rgb(255, 255, 255);
+     text-shadow: 1px 1px 1px rgb(0, 0, 0);
+     box-shadow: 1px 1px 2px black;
+     margin: auto;
+}
+
+.buttonQ{
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+    font-family:arial, helvetica, sans-serif; 
+    padding: 10px 10px 10px 10px; 
+    text-decoration:none; 
+    display:inline-block;
+    /* text-shadow: -1px -1px 0 rgba(0,0,0,0.3); */
+     /* background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%); */
+     height: 75px;
+     width: 505px;
+     /* box-shadow: 1px 1px 1px black; */
+     position: absolute;
+     
+
+    }
+
+
+
 .button{
-    border:10px inset #c3b980;
-    border-radius: 15px;
-    color: rgb(0, 0, 0);
-    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    border:10px inset #D1B464;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
     font-size: 30px;
     text-align: center;
     font-family:arial, helvetica, sans-serif; 
@@ -52,48 +102,54 @@ margin-left: 59%;
     text-decoration:none; 
     display:inline-block;
     /* text-shadow: -1px -1px 0 rgba(0,0,0,0.3); */
-     background-color: #edc648; 
-     background-image: linear-gradient(to bottom, #e2d8a0, #dfbe53);
-     height: 35px;
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);     height: 35px;
      width: 35px;
      box-shadow: 1px 1px 1px black;
+     
 
     }
 
 
     .buttonBox{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 10px;
-        /* background-color: rgba(0, 0, 0, 0.276); */
-        border-radius: 20px;
-        width: 40%;
-        text-align: center;
+        border:5px inset #D1B464;
+        display: block;
         justify-content: center;
+        padding: 10px;
+        /* background-color: rgba(0, 0, 0, 0.61); */
+        background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%); 
+        border-radius: 10px;
+        width: 38%;
         margin-top: 12%;
         margin-left: 28%;
         position: absolute;
     }
 
     .optButton{
-        border:10px inset #c3b980;
-        border-radius: 15px;
-        font-size: 30px;
+        border: 5px inset #D1B464;
+        border-radius: 10px;
+        font-size: 25px;
         text-align: center;
-        color: rgb(0, 0, 0);
-        text-shadow: 1px 1px 1px rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
         font-family:arial, helvetica, sans-serif; 
         padding: 10px 10px 10px 10px; 
         text-decoration:none; 
         display:inline-block;
         /* text-shadow: -1px -1px 0 rgba(0,0,0,0.3); */
-         background-color: #edc648; 
-         background-image: linear-gradient(to bottom, #e2d8a0, #dfbe53);
+         background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+         radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);         
          height: 35px;
          width: 75px;
          box-shadow: 1px 1px 1px black;
          position: absolute;
         } 
+
+        #start{
+            margin-top: 25%;
+        }
+    
 
     #lives{
         margin-top: 12%;
@@ -122,3 +178,7 @@ li{
      background-image: linear-gradient(to bottom, #c5bb83, #a29752);
     }
     
+    .optButton:hover{
+        background-color: #ffffff;  
+        background-image: linear-gradient(to bottom, #c5bb83, #a29752);
+       }
