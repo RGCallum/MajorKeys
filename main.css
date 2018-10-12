@@ -17,11 +17,8 @@ html{
     100% { transform: translateX(-66.6666); } 
     0% { margin-left: 0; }
   }
-/* .char{
-    display: flex;
-    justify-content: space-between;
 
-} */
+
 
 #title{
     position: absolute;
