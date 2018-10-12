@@ -190,3 +190,7 @@ li{
         background-color: #ffffff;  
         background-image: linear-gradient(to bottom, #c5bb83, #a29752);
        }
+.zero {
+  background-color: #F52F4F;
+  color: #FFFFFF;
+}

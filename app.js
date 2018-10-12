@@ -17,12 +17,24 @@
 //start, input to submit btn, addeventlist classlist.add then to if/else
 let answer = document.querySelector('.answer')
 let score = document.querySelector('#score')
-let depositChk = document.querySelector('.depositChk')
-let withdrawChk = document.querySelector('.withdrawChk')
-let lives = 0;
-//declared vars for savings
-let balanceSav = document.querySelector('.balance')
-let depositSav = document.querySelector('.depositSav')
-let withdrawSav = document.querySelector('.withdrawSav')
-let inputSav = document.querySelector('.inputSav')
-let savingsAcct = 0;
+let submit = document.querySelector('.submit')
+// let withdrawChk = document.querySelector('.withdrawChk')
+let counter = 0;
+// //declared vars for savings
+// let balanceSav = document.querySelector('.balance')
+// let depositSav = document.querySelector('.depositSav')
+// let withdrawSav = document.querySelector('.withdrawSav')
+// let inputSav = document.querySelector('.inputSav')
+// let savingsAcct = 0;
+
+//added on click event for deposit
+submit.addEventListener('click', (event) => {
+    score = (answer.value)
+    document.getElementById('lives').innerHTML = (`correct${counter}`)
+    if (answer === "1") {
+        document.getElementById("score").classList.add('zero');
+        document.getElementById("score").innerHTML = "Your account is Negative!";
+    } else {
+        document.getElementById('score').classList.remove("zero");
+    }
+})
