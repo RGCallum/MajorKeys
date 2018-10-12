@@ -16,25 +16,53 @@
 //declared vars
 //start, input to submit btn, addeventlist classlist.add then to if/else
 let answer = document.querySelector('.answer')
-let score = document.querySelector('#score')
 let submit = document.querySelector('.submit')
-// let withdrawChk = document.querySelector('.withdrawChk')
-let counter = 0;
-// //declared vars for savings
-// let balanceSav = document.querySelector('.balance')
+let score = document.querySelector('#score')
+submit.addEventListener('click', (event) => {
+    console.log(answer.value)
+
+
+    if (answer.value === "diddy") {
+        console.log("yes")
+        // document.getElementById("score").classList.add('zero');
+        // document.getElementById("score").innerHTML = "Your account is Negative!";
+    } else {
+        console.log("no")
+    }
+
+})
+
+
+//declared vars for savings
+// let inputSav = document.querySelector('.inputSav')
+// let balanceSav = document.querySelector('.balance') 
 // let depositSav = document.querySelector('.depositSav')
 // let withdrawSav = document.querySelector('.withdrawSav')
-// let inputSav = document.querySelector('.inputSav')
+
 // let savingsAcct = 0;
 
-//added on click event for deposit
-submit.addEventListener('click', (event) => {
-    score = (answer.value)
-    document.getElementById('lives').innerHTML = (`correct${counter}`)
-    if (answer === "1") {
-        document.getElementById("score").classList.add('zero');
-        document.getElementById("score").innerHTML = "Your account is Negative!";
-    } else {
-        document.getElementById('score').classList.remove("zero");
-    }
-})
+// //added on click event for deposit
+
+//     document.getElementById('lives').innerHTML = (`correct${counter}`)
+//     if (answer === "1") {
+//         document.getElementById("score").classList.add('zero');
+//         document.getElementById("score").innerHTML = "Your account is Negative!";
+//     } else {
+//         document.getElementById('score').classList.remove("zero");
+//     }
+// })
+
+
+// //created click event for savings
+// depositSav.addEventListener('click', (event) => {
+
+//     document.getElementById('savBalance').innerHTML = (`$${savingsAcct}`)
+//     if (savingsAcct <= 0) {
+//         document.getElementById('savBalance').classList.add("zero");
+//         document.getElementById('savBalance').innerHTML = "Your account is Negative!"
+//     } else {
+//         document.getElementById('savBalance').classList.remove("zero");
+//         // document.getElementById('savBalance').innerHTML = savingsAcct
+//     }
+//     // console.log(savBalance)
+// })
