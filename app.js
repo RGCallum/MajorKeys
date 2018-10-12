@@ -10,7 +10,19 @@
 //need to link start button to question1.
 //when user inputs answer, if correct go to if/else statement add for loop to i<5 and .length then if else inside that that says 
 //can i make it check for if 3 right go to win, or do i keep it going to end and check there.
-
-
 //looping through array to ask questions?
+//will need to hide everything until need to be shown, or setinterval?
 
+//declared vars
+//start, input to submit btn, addeventlist classlist.add then to if/else
+let answer = document.querySelector('.answer')
+let score = document.querySelector('#score')
+let depositChk = document.querySelector('.depositChk')
+let withdrawChk = document.querySelector('.withdrawChk')
+let lives = 0;
+//declared vars for savings
+let balanceSav = document.querySelector('.balance')
+let depositSav = document.querySelector('.depositSav')
+let withdrawSav = document.querySelector('.withdrawSav')
+let inputSav = document.querySelector('.inputSav')
+let savingsAcct = 0;
