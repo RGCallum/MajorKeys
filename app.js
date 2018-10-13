@@ -17,6 +17,7 @@
 //start, input to submit btn, addeventlist classlist.add then to if/else
 let answer = document.querySelector('.answer')
 let submit = document.querySelector('.submit')
+let next = document.querySelector('.next')
 // let score = document.querySelector('#score')
 let score = 0;
 let lives = 5;
@@ -33,8 +34,25 @@ submit.addEventListener('click', (event) => {
     } else {
         document.getElementById("score").innerHTML -= 100;
         document.getElementById("lives").innerHTML -= 1;
-        // document.getElementById("score").classList.remove('keyImg');
+        // document.getElementById("score").classList.add('keyImg');
         
     }
 })
 
+next.addEventListener('click', (event) => {
+    // console.log(answer.value)
+    if (answer.value === "Diddy") {
+        score += 100
+        // var key = document.createElement('div')
+        // key.classList.add('keyImg')
+        // var score = document.getElementById('score')
+        // score.appendChild(key)
+        // document.getElementById("score").classList.add('keyImg');
+        document.getElementById("score").innerHTML = score;
+    } else {
+        document.getElementById("score").innerHTML -= 100;
+        document.getElementById("lives").innerHTML -= 1;
+        // document.getElementById("score").classList.add('keyImg');
+        
+    }
+})
