@@ -18,19 +18,29 @@
 let answer = document.querySelector('.answer')
 let submit = document.querySelector('.submit')
 let next = document.querySelector('.next')
+let skip = document.querySelector('.skip')
 let daKey = document.querySelector('#daKey')
 // let score = document.querySelector('#score')
 let score = 0;
 let lives = 0;
-submit.addEventListener('click', function () {
+
+//hide all questions until onclick functions
+
+
+
+submit.addEventListener('click', function() {
     // console.log(answer.value)
     if (answer.value === "diddy") {
         score += 100;
         lives += 1;
         document.getElementById('audio1').play();
+        document.getElementById('youSmart').play();
+
+
         document.getElementById("lives").innerHTML = lives;
         document.getElementById("score").innerHTML = score;
-
+        
+     
 // THINGS I WANT TO DO
         // let key = document.createElement('div')
         // key.classList.add('keyImg')
@@ -43,22 +53,22 @@ submit.addEventListener('click', function () {
         document.getElementById("score").innerHTML -= 100;
         document.getElementById("lives").innerHTML -= 1;
     }
+
+    
+    if (lives >= 3) {
+        document.getElementById('lives').innerHTML = "You Won!"
+    }
+    if (lives <= 0) {
+        document.getElementById('lives').innerHTML = "You Done!"
+    }
 })
 
-next.addEventListener('click', (event) => {
-    // console.log(answer.value)
-    if (answer.value === "Diddy") {
-        score += 100
-        // var key = document.createElement('div')
-        // key.classList.add('keyImg')
-        // var score = document.getElementById('score')
-        // score.appendChild(key)
-        // document.getElementById("score").classList.add('keyImg');
-        document.getElementById("score").innerHTML = score;
-    } else {
-        document.getElementById("score").innerHTML -= 100;
-        document.getElementById("lives").innerHTML -= 1;
-        // document.getElementById("score").classList.add('keyImg');
+next.addEventListener('click', function() {
+//hide buttonQ1 and show buttonQ2
+})
 
-    }
+skip.addEventListener('click', function() {
+//skip to last question
+//if at last question and click again prompt do u really want to quit this awesome game?
+//if answer yes quit and game over .
 })
