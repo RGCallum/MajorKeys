@@ -18,24 +18,30 @@
 let answer = document.querySelector('.answer')
 let submit = document.querySelector('.submit')
 let next = document.querySelector('.next')
+let daKey = document.querySelector('#daKey')
 // let score = document.querySelector('#score')
 let score = 0;
-let lives = 5;
-submit.addEventListener('click', (event) => {
+let lives = 0;
+submit.addEventListener('click', function () {
     // console.log(answer.value)
-    if (answer.value === "Diddy") {
-        score += 100
-        // var key = document.createElement('div')
+    if (answer.value === "diddy") {
+        score += 100;
+        lives += 1;
+        document.getElementById('audio1').play();
+        document.getElementById("lives").innerHTML = lives;
+        document.getElementById("score").innerHTML = score;
+
+// THINGS I WANT TO DO
+        // let key = document.createElement('div')
         // key.classList.add('keyImg')
         // var score = document.getElementById('score')
-        // score.appendChild(key)
+        // score.appendChild('key')
         // document.getElementById("score").classList.add('keyImg');
-        document.getElementById("score").innerHTML = score;
+        // document.getElementById('youSmartGif').pause();
     } else {
+        document.getElementById('audio2').play();
         document.getElementById("score").innerHTML -= 100;
         document.getElementById("lives").innerHTML -= 1;
-        // document.getElementById("score").classList.add('keyImg');
-        
     }
 })
 
@@ -53,6 +59,6 @@ next.addEventListener('click', (event) => {
         document.getElementById("score").innerHTML -= 100;
         document.getElementById("lives").innerHTML -= 1;
         // document.getElementById("score").classList.add('keyImg');
-        
+
     }
 })
