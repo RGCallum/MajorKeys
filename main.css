@@ -34,6 +34,7 @@ audio{
     position: absolute;
     margin-top: 50%;
     margin-left: 38%;;
+    animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
 }
 
@@ -182,6 +183,8 @@ button{
         margin-top: 12%;
         margin-left: 28%;
         position: absolute;
+        animation: fade-in 10s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
 
     }
 
@@ -202,15 +205,27 @@ button{
          width: 90px;
          box-shadow: 1px 1px 1px black;
          position: absolute;
+         animation: fade-in 10s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
         } 
 
         #start{
             margin-top: 15%;
         }
+
+
+        @keyframes fade-in {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
     
-#lifeCountID{
-    margin-top: 5%;
-}
+        #lifeCountID{
+            margin-top: 5%;
+        }
      
 
     #scoreBox{
