@@ -31,13 +31,13 @@ let lives = 0;
 submit.addEventListener('click', function() {
     // console.log(answer.value)
     if (answer.value === "diddy") {
-        score += 100;
+        score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
         document.getElementById('youSmart').play();
 
 
-        document.getElementById("lives").innerHTML = lives;
+        document.getElementById("lives").innerHTML = lives + "🗝";
         document.getElementById("score").innerHTML = score;
         
      
@@ -50,7 +50,7 @@ submit.addEventListener('click', function() {
         // document.getElementById('youSmartGif').pause();
     } else {
         document.getElementById('audio2').play();
-        document.getElementById("score").innerHTML -= 100;
+        document.getElementById("score").innerHTML -= 1000;
         document.getElementById("lives").innerHTML -= 1;
     }
 

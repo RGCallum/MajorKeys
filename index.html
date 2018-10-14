@@ -7,14 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Major Keys</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animate.min.css">
     <script defer src="app.js"></script>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+    crossorigin="anonymous">   
+    
+    
+
 </head>
 
 <body>
-    <img id="title" src="/Images/MAJOR-KEYS2.png" alt="">
+    <img class = "" id="title" src="/Images/MAJOR-KEYS2.png" alt="">
 
-    <div class="optButton" id="start">Start</div>
+    <div class="optButton " id="start">Start</div>
 
     <div class="optButton" id="lifeCountID">Keys
         <div class="lifeCount" id="lives"></div>
@@ -38,11 +46,21 @@
         </div>
 
     </div>
+
+
+        <audio controls autoplay>
+            <source src="/audio/IGotKeys.mp3" type="audio/ogg">
+          </audio> 
+
+
+    <audio id="iGotKeys" src="/audio/IGotKeys.mp3"></audio>
     <audio id="audio1" src="/audio/success.wav"></audio>
-    <audio id= "youSmart" src="/audio/YouSmart.mp3"></audio>
+    <audio id="youSmart" src="/audio/YouSmart.mp3"></audio>
     <audio id="audio2" src="/audio/NeverGiveUp.mp3"></audio>
-<!-- add i got the keys for onload audio -->
-<!-- <video id="vid1" src="/Images/Motivational speech Dj Khaled.mp4"></video> -->
+    <audio id="theyDontWant" src="/audio/TheyDontWant.mp3"></audio>
+
+    <!-- add i got the keys for onload audio -->
+    <!-- <video id="vid1" src="/Images/Motivational speech Dj Khaled.mp4"></video> -->
     <!-- <img id= "youSmartGif" src="/Images/you smart.gif" alt=""> -->
     <!-- <div  class="buttonQ">Which rapper once went by the name Shrimp Daddy?</div>
             <div  class="buttonQ">Which rapper co-wrote Will Smith's 1998 single 'Gettin' Jiggy Wit It'?</div>
