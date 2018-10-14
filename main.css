@@ -8,6 +8,10 @@ html{
 
 }
 
+cursor-pointer{
+    cursor:url(Images/ScoreKey.png), auto;
+}
+
 #clouds{
     position: absolute;
     z-index: -2;
@@ -91,6 +95,22 @@ audio{
 
 }
 
+#spriteWon{
+    width: 11%;
+    margin-top: 28%;
+    margin-left: 48%;
+    position: absolute;
+    display: none;
+}
+
+#spriteLose{
+    width: 35%;
+    margin-top: 8%;
+    margin-left: 22%;
+    position: absolute;
+    display: none;
+}
+
 @keyframes slide-right {
     0% {
         transform: translateX(0);
@@ -102,7 +122,7 @@ audio{
 
 #djk{
     width: 20%;
-margin-left: 59%;
+margin-left: 65%;
 animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
 }
@@ -308,5 +328,6 @@ li{
 
 #confetti{
     position: absolute;
-    width: 30%;
+    width: 100%;
+    display: none;
 }
