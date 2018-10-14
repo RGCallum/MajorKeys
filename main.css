@@ -7,6 +7,7 @@ html{
     height: 100vh;
 
 }
+
 #clouds{
     position: absolute;
     z-index: -2;
@@ -35,24 +36,49 @@ audio{
     margin-top: 50%;
     margin-left: 38%;;
     animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    
 
 }
 
 #title{
     position: absolute; 
     margin-left: 27%;
-    animation: rotate-scale-up 1s linear both;
+    animation: bounce-in-top 1.5s both;
 }
 
-@keyframes rotate-scale-up {
+@keyframes bounce-in-top {
     0% {
-              transform: scale(1) rotateZ(0);
+              transform: translateY(-500px);
+              animation-timing-function: ease-in;
+      opacity: 0;
     }
-    50% {
-              transform: scale(2) rotateZ(180deg);
+    38% {
+              transform: translateY(0);
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+              transform: translateY(-65px);
+              animation-timing-function: ease-in;
+    }
+    72% {
+              transform: translateY(0);
+              animation-timing-function: ease-out;
+    }
+    81% {
+              transform: translateY(-28px);
+    }
+    90% {
+              transform: translateY(0);
+              animation-timing-function: ease-out;
+    }
+    95% {
+              transform: translateY(-8px);
+              animation-timing-function: ease-in;
     }
     100% {
-              transform: scale(1) rotateZ(360deg);
+              transform: translateY(0);
+              animation-timing-function: ease-out;
     }
   }
   
@@ -82,14 +108,17 @@ animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
 @keyframes slide-left {
     0% {
-      -webkit-transform: translateX(0);
+   
               transform: translateX(0);
     }
     100% {
-      -webkit-transform: translateX(-100px);
               transform: translateX(-100px);
     }
   }
+  
+
+
+ 
   
 
 form{
@@ -142,6 +171,8 @@ button{
      width: 500px;
      /* box-shadow: 1px 1px 1px black; */
      position: absolute;
+     z-index: 1;
+
      
     }
 
@@ -169,7 +200,7 @@ button{
 
     .buttonBox{
         
-        display: block;
+        display: none;
         justify-content: center;
         padding: 10px;
         /* background-color: rgba(0, 0, 0, 0.61); */
@@ -183,7 +214,8 @@ button{
         margin-top: 12%;
         margin-left: 28%;
         position: absolute;
-        animation: fade-in 10s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        z-index: 1;
+        /* animation: fade-in 10s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; */
 
 
     }
@@ -205,13 +237,17 @@ button{
          width: 90px;
          box-shadow: 1px 1px 1px black;
          position: absolute;
-         animation: fade-in 10s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+         animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+         z-index: 1;
 
         } 
 
         #start{
-            margin-top: 15%;
-        }
+            margin-top: 20%;
+            margin-left: 45%;
+            width: 6%;
+            height: 3%;       
+         }
 
 
         @keyframes fade-in {
@@ -232,11 +268,15 @@ button{
         margin-top: 12%;
         margin-left: 75%;
         background-repeat: no-repeat;
+        z-index: 1;
+
     }
 
     #hint{
         margin-top: 20%;
         margin-left: 15%;
+        z-index: 1;
+
     }
     
 li{
@@ -258,4 +298,9 @@ li{
        } */
 .keyImg {
   background-image: url(/Images/ScoreKey.png);
+}
+
+#confetti{
+    position: absolute;
+    width: 30%;
 }

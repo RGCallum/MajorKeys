@@ -20,13 +20,20 @@ let submit = document.querySelector('.submit')
 let next = document.querySelector('.next')
 let skip = document.querySelector('.skip')
 let daKey = document.querySelector('#daKey')
-// let score = document.querySelector('#score')
+let questions = document.querySelector('.buttonBox')
+let confetti = document.querySelector('#confetti') 
+let start = document.querySelector('#start')
 let score = 0;
 let lives = 0;
 
 //hide all questions until onclick functions
 
+start.addEventListener('click', function(){
+    document.querySelector('#start').style.display = 'none';
+    document.querySelector('.buttonBox').style.display = 'block';
 
+
+})
 
 submit.addEventListener('click', function() {
     // console.log(answer.value)
@@ -35,8 +42,6 @@ submit.addEventListener('click', function() {
         lives += 1;
         document.getElementById('audio1').play();
         document.getElementById('youSmart').play();
-
-
         document.getElementById("lives").innerHTML = lives + "🗝";
         document.getElementById("score").innerHTML = score;
         
@@ -56,7 +61,10 @@ submit.addEventListener('click', function() {
 
     
     if (lives >= 3) {
-        document.getElementById('lives').innerHTML = "You Won!"
+        document.getElementById('lives').innerHTML = "You Won! 🗝🗝🗝"
+        document.getElementById('allIDoIsWin').play();
+        document.getElementById('youSmart').pause();
+
     }
     if (lives <= 0) {
         document.getElementById('lives').innerHTML = "You Done!"
