@@ -16,26 +16,35 @@
 //declared vars
 //start, input to submit btn, addeventlist classlist.add then to if/else
 let answer = document.querySelector('.answer')
-let submit = document.querySelector('.submit')
+let submitQ1 = document.querySelector('.submitQ1')
+let submitQ2 = document.querySelector('.submitQ2')
+let submitQ3 = document.querySelector('.submitQ3')
+let submitQ4 = document.querySelector('.submitQ4')
+let submitQ5 = document.querySelector('.submitQ5')
 let next = document.querySelector('.next')
 let skip = document.querySelector('.skip')
 let daKey = document.querySelector('#daKey')
 let questions = document.querySelector('.buttonBox')
 let confetti = document.querySelector('#confetti') 
 let start = document.querySelector('#start')
-let score = 0;
+let score = 0; 
 let lives = 0;
 
+
+//use setInterval to display none on image tehen display blcok to next
 //hide all questions until onclick functions
+
+
 
 start.addEventListener('click', function(){
     document.querySelector('#start').style.display = 'none';
-    document.querySelector('.buttonBox').style.display = 'block';
-
+    document.querySelector('#q1').style.display = 'block';
+    document.getElementById('IGotKeys').pause();
+    
 
 })
 
-submit.addEventListener('click', function() {
+submitQ1.addEventListener('click', function() {
     // console.log(answer.value)
     if (answer.value === "diddy") {
         score += 1000;
@@ -44,19 +53,15 @@ submit.addEventListener('click', function() {
         document.getElementById('youSmart').play();
         document.getElementById("lives").innerHTML = lives + "🗝";
         document.getElementById("score").innerHTML = score;
-        
+        document.querySelector('#q1').style.display = 'none';
+        document.querySelector('#q2').style.display = 'block';
+
      
-// THINGS I WANT TO DO
-        // let key = document.createElement('div')
-        // key.classList.add('keyImg')
-        // var score = document.getElementById('score')
-        // score.appendChild('key')
-        // document.getElementById("score").classList.add('keyImg');
-        // document.getElementById('youSmartGif').pause();
     } else {
         document.getElementById('audio2').play();
         document.getElementById("score").innerHTML -= 1000;
         document.getElementById("lives").innerHTML -= 1;
+
     }
 
     
@@ -66,17 +71,69 @@ submit.addEventListener('click', function() {
         document.getElementById('youSmart').pause();
 
     }
-    if (lives <= 0) {
-        document.getElementById('lives').innerHTML = "You Done!"
-    }
+ 
+    
 })
 
-next.addEventListener('click', function() {
-//hide buttonQ1 and show buttonQ2
-})
 
-skip.addEventListener('click', function() {
-//skip to last question
-//if at last question and click again prompt do u really want to quit this awesome game?
-//if answer yes quit and game over .
-})
+
+// function move(){ //function is move
+//     var box = document.getElementById("astro"); //get that box
+//     var position = 0; //var for box's position
+//     var interval = setInterval(frame, 15); //var interval do the function setInterval for 5 secs create func frames
+//     function frame() { 
+//         if (position == 1300){ 
+//             box.style.transition = "4s";
+//             box.style.transform = "translate(200px, 100px)";
+//         } else {
+//             position++; 
+//             box.style.left = position + "px"; 
+//             box.style.bottom = position + "px";
+//             if (position == 400) {
+//                 box.style.transition = "4s";
+//                 box.style.transform = "translate(100px, 200px)";
+//                 console.log ();
+//             }
+//             if (position == 600) {
+//                 box.style.transition = "4s";
+//                 box.style.transform = "translate(300px, 400px)";
+//                 console.log ();
+//             }if (position == 1000) {
+//                 box.style.transition = "4s";
+//                 box.style.transform = "translate(500px, 800px)";
+//             clearInterval(interval)
+//             }
+//         }
+//         } 
+//         }
+// submitQ2.addEventListener('click', function() {
+//     if (answer.value === "Lil' Wayne") {
+//         score += 1000;
+//         lives += 1;
+//         document.getElementById('audio1').play();
+//         document.getElementById('youSmart').play();
+//         document.getElementById("lives").innerHTML = lives + "🗝🗝";
+//         document.getElementById("score").innerHTML = score;
+//         document.querySelector('#q2').style.display = 'none';
+//         document.querySelector('#q3').style.display = 'block';
+
+
+//     } else {
+//         document.getElementById('audio2').play();
+//         document.getElementById("score").innerHTML -= 1000;
+//         document.getElementById("lives").innerHTML -= 1;
+
+//     }
+
+    
+//     if (lives >= 3) {
+//         document.getElementById('lives').innerHTML = "You Won! 🗝🗝🗝"
+//         document.getElementById('allIDoIsWin').play();
+//         document.getElementById('youSmart').pause();
+
+//     }
+//     if (lives <= 0) {
+//         document.getElementById('lives').innerHTML = "You Done!"
+//     }
+// })
+

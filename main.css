@@ -84,10 +84,11 @@ audio{
   
 
 
-#sprite{
+#spriteRun{
     width: 13%;
     margin-top: 31%;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 }
 
 @keyframes slide-right {
@@ -161,7 +162,7 @@ button{
     font-family:arial, helvetica, sans-serif; 
     padding: 10px 10px 10px 10px; 
     text-decoration:none; 
-    display:inline-block;
+    display:block;
     background-color: rgba(209, 180, 100, 0.548);
 
     /* text-shadow: -1px -1px 0 rgba(0,0,0,0.3); */
@@ -176,7 +177,9 @@ button{
      
     }
 
-
+#q1, #q2, #q3, #q4, #q5{
+    display: none;
+}
 
 .button{
     border:10px inset #D1B464;
@@ -200,7 +203,7 @@ button{
 
     .buttonBox{
         
-        display: none;
+        display: block;
         justify-content: center;
         padding: 10px;
         /* background-color: rgba(0, 0, 0, 0.61); */
@@ -260,7 +263,8 @@ button{
           }
     
         #lifeCountID{
-            margin-top: 5%;
+            margin-top: 12%;
+
         }
      
 
@@ -276,6 +280,8 @@ button{
         margin-top: 20%;
         margin-left: 15%;
         z-index: 1;
+        width: 5%;
+        height: 3%;
 
     }
     
