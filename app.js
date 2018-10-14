@@ -58,6 +58,9 @@ submitQ1.addEventListener('click', function() {
         document.getElementById("score").innerHTML = score;
         document.querySelector('#q1').style.display = 'none';
         document.querySelector('#q2').style.display = 'block';
+        document.querySelector('#spriteRun').style.display = 'none';
+        document.querySelector('#spriteRun2').style.display = 'block';
+
 
      
     } else {
@@ -75,6 +78,10 @@ submitQ1.addEventListener('click', function() {
         document.querySelector('#confetti').style.display = 'block';
         document.querySelector('#spriteWon').style.display = 'block';
         document.querySelector('#spriteRun').style.display = 'none';
+        document.querySelector('#spriteRun2').style.display = 'none';
+        document.querySelector('#spriteRun3').style.display = 'none';
+        document.querySelector('#djk').style.display = 'none';    
+        document.querySelector('#questionBox').style.display = 'none';
 
 
 
@@ -85,6 +92,11 @@ submitQ1.addEventListener('click', function() {
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
         document.querySelector('#spriteRun').style.display = 'none';
+        document.querySelector('#gameOver').style.display = 'block';
+        document.querySelector('#djk').style.display = 'none';    
+        document.querySelector('#questionBox').style.display = 'none';
+        document.querySelector('#djk').style.display = 'none';    
+
 
     }
 
@@ -102,7 +114,8 @@ submitQ2.addEventListener('click', function() {
         document.getElementById("score").innerHTML = score;
         document.querySelector('#q2').style.display = 'none';
         document.querySelector('#q3').style.display = 'block';
-
+        document.querySelector('#spriteRun2').style.display = 'none';
+        document.querySelector('#spriteRun3').style.display = 'block';
 
     } else {
         document.getElementById('anotherOne').play();
@@ -119,6 +132,10 @@ submitQ2.addEventListener('click', function() {
         document.querySelector('#confetti').style.display = 'block';
         document.querySelector('#spriteWon').style.display = 'block';
         document.querySelector('#spriteRun').style.display = 'none';
+        document.querySelector('#spriteRun2').style.display = 'none';
+        document.querySelector('#spriteRun3').style.display = 'none';
+        document.querySelector('#djk').style.display = 'none';    
+        document.querySelector('#questionBox').style.display = 'none';
 
 
 
@@ -128,7 +145,11 @@ submitQ2.addEventListener('click', function() {
         document.getElementById('lives').innerHTML = "You Done!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
+        document.querySelector('#gameOver').style.display = 'block';
         document.querySelector('#spriteRun').style.display = 'none';
+        document.querySelector('#questionBox').style.display = 'none';
+        document.querySelector('#djk').style.display = 'none';    
+
 
     }
 })
@@ -160,7 +181,10 @@ submitQ3.addEventListener('click', function() {
         document.querySelector('#confetti').style.display = 'block';
         document.querySelector('#spriteWon').style.display = 'block';
         document.querySelector('#spriteRun').style.display = 'none';
-
+        document.querySelector('#spriteRun2').style.display = 'none';
+        document.querySelector('#spriteRun3').style.display = 'none';
+        document.querySelector('#djk').style.display = 'none';    
+        document.querySelector('#questionBox').style.display = 'none';
 
 
 
@@ -169,7 +193,11 @@ submitQ3.addEventListener('click', function() {
         document.getElementById('lives').innerHTML = "You Done!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
+        document.querySelector('#gameOver').style.display = 'block';
         document.querySelector('#spriteRun').style.display = 'none';
+        document.querySelector('#questionBox').style.display = 'none';
+        document.querySelector('#djk').style.display = 'none';    
+
 
     }
 })
