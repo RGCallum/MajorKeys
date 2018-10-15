@@ -278,7 +278,6 @@ button{
 .buttonQ{
     border-radius: 10px;
     border: 5px inset rgb(209, 180, 100);
-
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px 1px rgb(250, 250, 250);
     font-size: 35px;
@@ -292,10 +291,30 @@ button{
      width: 500px;
      /* box-shadow: 1px 1px 1px black; */
      position: absolute;
-     z-index: 1;
-
-     
+     z-index: 1;    
     }
+
+  #rules{
+        border-radius: 10px;
+        border: 5px inset rgb(209, 180, 100);
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+        font-size: 35px;
+        text-align: center;
+        font-family:arial, helvetica, sans-serif; 
+        padding: 10px 10px 10px 10px; 
+        display:none;
+        /* background-color: rgba(209, 180, 100, 0.68); */
+        background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%); 
+         height: 500px;
+         width: 800px;
+         margin-top: 13%;
+         margin-left: 27%;
+         box-shadow: 1px 1px 1px black;
+         position: absolute;
+         z-index: 10;    
+        }
 
 #q1, #q2, #q3, #q4, #q5{
     display: none;
@@ -356,6 +375,17 @@ button{
          z-index: 1;
 
         } 
+
+
+        #rulesButton{
+            margin-top: 20%;
+            margin-left: 10%;
+            width: 5%;
+            height: 5%;    
+            display: block;     
+            /* animation: bounce 1.5s infinite;  */
+ 
+         }
 
         #start{
             margin-top: 20%;

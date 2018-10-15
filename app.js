@@ -28,6 +28,7 @@ let submitQ4 = document.querySelector('.submitQ4')
 let submitQ5 = document.querySelector('.submitQ5')
 let questions = document.querySelector('.buttonBox')
 let start = document.querySelector('#start')
+let rules = document.querySelector('#rulesButton')
 let score = 0;
 let lives = 0;
 
@@ -49,6 +50,12 @@ start.addEventListener('click', function () {
     // clearInterval(spriteStop, 1000)  
     // console.log(spriteStop)
 })
+
+// rules.addEventListener('click', function () {
+//     document.querySelector('#rules').style.display = 'block';
+    
+// })
+
 
 // 1st question onclick answer
 submitQ1.addEventListener('click', function () {

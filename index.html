@@ -19,7 +19,8 @@
 <body>
     <img class="" id="title" src="/Images/MAJOR-KEYS2.png" alt="">
 
-<!-- stretch goal buttons -->
+    <!-- stretch goal buttons -->
+    <cursor-pointer></cursor-pointer>
     <div class="optButton" id="start">Start</div>
 
 
@@ -30,10 +31,19 @@
         <div class="scoreCount" id="score"></div>
     </div>
 
-    <!-- <div class="optButton" id="hint">Hint</div> -->
+    <!-- <div class="optButton" id="rulesButton">Rules</div>
+
+    <div class="rules">
+        <p id = "rules"> <strong>Rules</strong>  <br> Major Keys, is a variation of hangman and trivia games. Instead of guessing individual letters, players will guess the entire word.
+            The object of the game is to get 3 keys from DJ Khaled by typing the correct word in the input box. First 3
+            words correct wins the
+            game and the first 3 words incorrect, results in GAME OVER!!! If player
+            answers 1st question incorrect, game is over. Each word is worth 1000 points and 1 key, and player must maintain a score above 0 in order to
+            continue playing game. </p>
+    </div> -->
     <div id="clouds"></div>
 
-<!-- created big div for all questions in box, then ids for each question answer and submit button -->
+    <!-- created big div for all questions in box, then ids for each question answer and submit button -->
 
     <div class="buttonBox" id="questionBox">
 
@@ -65,12 +75,12 @@
 
     </div>
 
-<!-- <iframe id = "IGotKeys" src="/audio/IGotKeys.mp3" allow="autoplay" id="audio" style = "display:none" frameborder="0"></iframe> -->
+    <!-- <iframe id = "IGotKeys" src="/audio/IGotKeys.mp3" allow="autoplay" id="audio" style = "display:none" frameborder="0"></iframe> -->
     <audio id="IGotKeys" controls autoplay>
         <source src="/audio/IGotKeys.mp3" type="audio/ogg">
     </audio>
 
-<!-- audio reactions to answers -->
+    <!-- audio reactions to answers -->
     <audio id="audio1" src="/audio/success.wav"></audio>
     <audio id="youSmart" src="/audio/YouSmart.mp3"></audio>
     <audio id="youGenius" src="/audio/YouAGenius.mp3"></audio>
