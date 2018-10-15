@@ -62,6 +62,7 @@ submitQ1.addEventListener('click', function () {
     // console.log(answer.value)
     // setTimeout(spriteStop, 1000)  
 // start loop
+
     if (answer1.value === "diddy") {
         score += 1000;
         lives += 1;
@@ -72,15 +73,17 @@ submitQ1.addEventListener('click', function () {
         document.querySelector('#q1').style.display = 'none';
         document.querySelector('#q2').style.display = 'block';
         document.querySelector('#spriteRun2').style.display = 'block';
+        document.querySelector('#spriteReady1').remove();
     // animation function
+    
+        
+
         function spriteStop2() {
             document.querySelector('#spriteRun2').style.display = 'none';
-            document.querySelector('#spriteReady1').style.display = 'none';
             document.querySelector('#spriteReady2').style.display = 'block';
-
         }
+        
         setInterval(spriteStop2, 1000)
-
 
     } else {
         score -= 1000;
@@ -90,7 +93,7 @@ submitQ1.addEventListener('click', function () {
         document.getElementById('anotherOne').play();
         document.getElementById('audio2').play();
 
-    }
+    
 
 
     if (lives >= 3) {
@@ -118,7 +121,7 @@ submitQ1.addEventListener('click', function () {
 
 
     }
-
+    }
 })
 
 
@@ -135,10 +138,11 @@ submitQ2.addEventListener('click', function () {
         document.querySelector('#q3').style.display = 'block';
         document.querySelector('#spriteRun2').style.display = 'none';
         document.querySelector('#spriteRun3').style.display = 'block';
+        document.querySelector('#spriteReady2').remove();
+
 
         function spriteStop3() {
             document.querySelector('#spriteRun3').style.display = 'none';
-            document.querySelector('#spriteReady2').style.display = 'none';
             document.querySelector('#spriteReady3').style.display = 'block';
 
         }
@@ -150,7 +154,7 @@ submitQ2.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('anotherOne').play();
         document.getElementById('audio2').play();
-    }
+   
 
 
     if (lives >= 3) {
@@ -179,7 +183,7 @@ submitQ2.addEventListener('click', function () {
 
 
     }
-
+}
 })
 
 submitQ3.addEventListener('click', function () {
@@ -194,9 +198,10 @@ submitQ3.addEventListener('click', function () {
         document.querySelector('#q4').style.display = 'block';
         document.querySelector('#spriteRun3').style.display = 'none';
         document.querySelector('#spriteRun4').style.display = 'block';
+        document.querySelector('#spriteReady3').remove();
+
         function spriteStop4() {
             document.querySelector('#spriteRun4').style.display = 'none';
-            document.querySelector('#spriteReady3').style.display = 'none';
             document.querySelector('#spriteReady4').style.display = 'block';
 
         }
@@ -210,7 +215,7 @@ submitQ3.addEventListener('click', function () {
         document.getElementById('anotherOne').play();
         document.getElementById('audio2').play();
 
-    }
+   
 
 
     if (lives >= 3) {
@@ -237,7 +242,7 @@ submitQ3.addEventListener('click', function () {
 
 
     }
-
+}
 })
 
 submitQ4.addEventListener('click', function () {
@@ -250,10 +255,11 @@ submitQ4.addEventListener('click', function () {
         document.getElementById("score").innerHTML = score;
         document.querySelector('#q4').style.display = 'none';
         document.querySelector('#q5').style.display = 'block';
-        document.querySelector('#spriteRun4').style.display = 'none';
+        document.querySelector('#spriteRun5').style.display = 'block';
+        document.querySelector('#spriteReady4').remove();
+
         function spriteStop5() {
             document.querySelector('#spriteRun5').style.display = 'none';
-            document.querySelector('#spriteReady4').style.display = 'none';
             document.querySelector('#spriteReady5').style.display = 'block';
 
         }
@@ -266,7 +272,7 @@ submitQ4.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('anotherOne').play();
         document.getElementById('audio2').play();
-    }
+   
 
 
     if (lives >= 3) {
@@ -293,7 +299,7 @@ submitQ4.addEventListener('click', function () {
 
 
     }
-
+}
 })
 
 

@@ -162,7 +162,7 @@ display: none;
 #spriteRun2{
     width: 13%;
     margin-top: 35%;
-    margin-left: 5%;
+    margin-left: 17%;
     position: absolute;
     z-index: 1;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -172,7 +172,7 @@ display: none;
 #spriteRun3{
     width: 13%;
     margin-top: 35%;
-    margin-left: 20%;
+    margin-left: 32%;
     position: absolute;
     z-index: 1;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -182,7 +182,7 @@ display: none;
 #spriteRun4{
     width: 13%;
     margin-top: 35%;
-    margin-left: 36%;
+    margin-left: 48%;
     position: absolute;
     z-index: 1;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -192,7 +192,7 @@ display: none;
 #spriteRun5{
     width: 13%;
     margin-top: 35%;
-    margin-left: 56%;
+    margin-left: 68%;
     position: absolute;
     z-index: 1;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
