@@ -201,9 +201,8 @@ submitQ3.addEventListener('click', function() {
         lives -= 1;
         document.getElementById("score").innerHTML = score;
         document.getElementById("lives").innerHTML = lives;
+        document.getElementById('anotherOne').play();
         document.getElementById('audio2').play();
-        console.log(lives);
-        console.log(score);
 
     }
 
@@ -260,9 +259,8 @@ submitQ4.addEventListener('click', function() {
         lives -= 1;
         document.getElementById("score").innerHTML = score;
         document.getElementById("lives").innerHTML = lives;
+        document.getElementById('anotherOne').play();
         document.getElementById('audio2').play();
-        console.log(lives);
-        console.log(score);
     }
 
     
