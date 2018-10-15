@@ -25,9 +25,6 @@ let submitQ2 = document.querySelector('.submitQ2')
 let submitQ3 = document.querySelector('.submitQ3')
 let submitQ4 = document.querySelector('.submitQ4')
 let submitQ5 = document.querySelector('.submitQ5')
-let next = document.querySelector('.next')
-let skip = document.querySelector('.skip')
-let daKey = document.querySelector('#daKey')
 let questions = document.querySelector('.buttonBox')
 let start = document.querySelector('#start')
 let score = 0;   
@@ -64,6 +61,7 @@ submitQ1.addEventListener('click', function() {
 
      
     } else {
+        document.getElementById('anotherOne').play();
         document.getElementById('audio2').play();
         document.getElementById("score").innerHTML -= 1000;
         document.getElementById("lives").innerHTML -= 1;
@@ -118,9 +116,10 @@ submitQ2.addEventListener('click', function() {
         document.querySelector('#spriteRun3').style.display = 'block';
 
     } else {
-        document.getElementById('anotherOne').play();
+        document.getElementById('youLoyal').play();
         document.getElementById("score").innerHTML -= 1000;
         document.getElementById("lives").innerHTML -= 1;
+        document.getElementById('audio2').play();
 
     }
 
