@@ -12,9 +12,10 @@
 //can i make it check for if 3 right go to win, or do i keep it going to end and check there.
 //looping through array to ask questions?
 //will need to hide everything until need to be shown, or setinterval?
+//hide all questions until onclick functions
 
 //declared vars
-//start, input to submit btn, addeventlist classlist.add then to if/else
+//add addeventlist classlist.add then to if/else
 let answer1 = document.querySelector('#a1')
 let answer2 = document.querySelector('#a2')
 let answer3 = document.querySelector('#a3')
@@ -27,32 +28,33 @@ let submitQ4 = document.querySelector('.submitQ4')
 let submitQ5 = document.querySelector('.submitQ5')
 let questions = document.querySelector('.buttonBox')
 let start = document.querySelector('#start')
-let score = 0;   
+let score = 0;
 let lives = 0;
 
 
-//use setInterval to display none on image tehen display blcok to next
-//hide all questions until onclick functions
-setInterval(spriteStop, 1000)  
-
-function spriteStop(){
+//use setInterval to display none on image then display block to next animation
+setInterval(spriteStop, 1000)
+// function to animate chracter using gifs with css slide animation
+function spriteStop() {
     document.querySelector('#spriteRun').style.display = 'none';
     document.querySelector('#spriteReady1').style.display = 'block';
 
 }
 
-start.addEventListener('click', function(){
+// start button starts game onclick
+start.addEventListener('click', function () {
     document.querySelector('#start').style.display = 'none';
     document.querySelector('#q1').style.display = 'block';
     document.getElementById('IGotKeys').pause();
     // clearInterval(spriteStop, 1000)  
-console.log(spriteStop)
+    // console.log(spriteStop)
 })
 
-submitQ1.addEventListener('click', function() {
+// 1st question onclick answer
+submitQ1.addEventListener('click', function () {
     // console.log(answer.value)
-        // setTimeout(spriteStop, 1000)  
-
+    // setTimeout(spriteStop, 1000)  
+// start loop
     if (answer1.value === "diddy") {
         score += 1000;
         lives += 1;
@@ -63,16 +65,16 @@ submitQ1.addEventListener('click', function() {
         document.querySelector('#q1').style.display = 'none';
         document.querySelector('#q2').style.display = 'block';
         document.querySelector('#spriteRun2').style.display = 'block';
-        
-function spriteStop2(){
-    document.querySelector('#spriteRun2').style.display = 'none';
-    document.querySelector('#spriteReady1').style.display = 'none';
-    document.querySelector('#spriteReady2').style.display = 'block';
+    // animation function
+        function spriteStop2() {
+            document.querySelector('#spriteRun2').style.display = 'none';
+            document.querySelector('#spriteReady1').style.display = 'none';
+            document.querySelector('#spriteReady2').style.display = 'block';
 
-}
-setInterval(spriteStop2, 1000)
+        }
+        setInterval(spriteStop2, 1000)
 
-     
+
     } else {
         score -= 1000;
         lives -= 1;
@@ -83,7 +85,7 @@ setInterval(spriteStop2, 1000)
 
     }
 
-    
+
     if (lives >= 3) {
         document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝"
         document.getElementById('allIDoIsWin').play();
@@ -91,21 +93,19 @@ setInterval(spriteStop2, 1000)
         document.querySelector('#confetti').style.display = 'block';
         document.querySelector('#spriteWon').style.display = 'block';
         document.querySelector('#spriteRun').style.display = 'none';
-        document.querySelector('#djk').style.display = 'none';    
+        document.querySelector('#djk').style.display = 'none';
         document.querySelector('#questionBox').style.display = 'none';
         document.querySelector('.sprites').style.display = 'none';
 
-
-
     }
- 
+
     if (lives <= 0) {
         document.getElementById('lives').innerHTML = "You Lose!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
         document.querySelector('#spriteRun').style.display = 'none';
         document.querySelector('#gameOver').style.display = 'block';
-        document.querySelector('#djk').style.display = 'none';    
+        document.querySelector('#djk').style.display = 'none';
         document.querySelector('#questionBox').style.display = 'none';
         document.querySelector('.sprites').style.display = 'none';
 
@@ -115,8 +115,8 @@ setInterval(spriteStop2, 1000)
 })
 
 
-
-submitQ2.addEventListener('click', function() {
+//2nd question onclick answer and if/else
+submitQ2.addEventListener('click', function () {
     if (answer2.value === "lil wayne") {
         score += 1000;
         lives += 1;
@@ -128,12 +128,12 @@ submitQ2.addEventListener('click', function() {
         document.querySelector('#q3').style.display = 'block';
         document.querySelector('#spriteRun2').style.display = 'none';
         document.querySelector('#spriteRun3').style.display = 'block';
-        
-        function spriteStop3(){
+
+        function spriteStop3() {
             document.querySelector('#spriteRun3').style.display = 'none';
             document.querySelector('#spriteReady2').style.display = 'none';
             document.querySelector('#spriteReady3').style.display = 'block';
-        
+
         }
         setInterval(spriteStop3, 1000)
     } else {
@@ -145,14 +145,14 @@ submitQ2.addEventListener('click', function() {
         document.getElementById('audio2').play();
     }
 
-    
+
     if (lives >= 3) {
         document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝"
         document.getElementById('allIDoIsWin').play();
         document.getElementById('youSmart').pause();
         document.querySelector('#confetti').style.display = 'block';
         document.querySelector('#spriteWon').style.display = 'block';
-        document.querySelector('#djk').style.display = 'none';    
+        document.querySelector('#djk').style.display = 'none';
         document.querySelector('#questionBox').style.display = 'none';
         document.querySelector('.sprites').style.display = 'none';
 
@@ -167,16 +167,15 @@ submitQ2.addEventListener('click', function() {
         document.querySelector('#gameOver').style.display = 'block';
         document.querySelector('#spriteRun').style.display = 'none';
         document.querySelector('#questionBox').style.display = 'none';
-        document.querySelector('#djk').style.display = 'none';    
+        document.querySelector('#djk').style.display = 'none';
         document.querySelector('.sprites').style.display = 'none';
 
 
     }
-    console.log(lives);
-    console.log(score);
+
 })
 
-submitQ3.addEventListener('click', function() {
+submitQ3.addEventListener('click', function () {
     if (answer3.value === "nas") {
         score += 1000;
         lives += 1;
@@ -188,11 +187,11 @@ submitQ3.addEventListener('click', function() {
         document.querySelector('#q4').style.display = 'block';
         document.querySelector('#spriteRun3').style.display = 'none';
         document.querySelector('#spriteRun4').style.display = 'block';
-        function spriteStop4(){
+        function spriteStop4() {
             document.querySelector('#spriteRun4').style.display = 'none';
             document.querySelector('#spriteReady3').style.display = 'none';
             document.querySelector('#spriteReady4').style.display = 'block';
-        
+
         }
         setInterval(spriteStop4, 1000)
 
@@ -206,14 +205,14 @@ submitQ3.addEventListener('click', function() {
 
     }
 
-    
+
     if (lives >= 3) {
         document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝"
         document.getElementById('allIDoIsWin').play();
         document.getElementById('youSmart').pause();
         document.querySelector('#confetti').style.display = 'block';
         document.querySelector('#spriteWon').style.display = 'block';
-        document.querySelector('#djk').style.display = 'none';    
+        document.querySelector('#djk').style.display = 'none';
         document.querySelector('#questionBox').style.display = 'none';
         document.querySelector('.sprites').style.display = 'none';
 
@@ -226,16 +225,15 @@ submitQ3.addEventListener('click', function() {
         document.querySelector('#spriteLose').style.display = 'block';
         document.querySelector('#gameOver').style.display = 'block';
         document.querySelector('#questionBox').style.display = 'none';
-        document.querySelector('#djk').style.display = 'none';    
+        document.querySelector('#djk').style.display = 'none';
         document.querySelector('.sprites').style.display = 'none';
 
 
     }
-    console.log(lives);
-    console.log(score);
+
 })
 
-submitQ4.addEventListener('click', function() {
+submitQ4.addEventListener('click', function () {
     if (answer4.value === "ice t") {
         score += 1000;
         lives += 1;
@@ -246,11 +244,11 @@ submitQ4.addEventListener('click', function() {
         document.querySelector('#q4').style.display = 'none';
         document.querySelector('#q5').style.display = 'block';
         document.querySelector('#spriteRun4').style.display = 'none';
-        function spriteStop5(){
+        function spriteStop5() {
             document.querySelector('#spriteRun5').style.display = 'none';
             document.querySelector('#spriteReady4').style.display = 'none';
             document.querySelector('#spriteReady5').style.display = 'block';
-        
+
         }
         setInterval(spriteStop5, 1000)
 
@@ -263,14 +261,14 @@ submitQ4.addEventListener('click', function() {
         document.getElementById('audio2').play();
     }
 
-    
+
     if (lives >= 3) {
         document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝"
         document.getElementById('allIDoIsWin').play();
         document.getElementById('youSmart').pause();
         document.querySelector('#confetti').style.display = 'block';
         document.querySelector('#spriteWon').style.display = 'block';
-        document.querySelector('#djk').style.display = 'none';    
+        document.querySelector('#djk').style.display = 'none';
         document.querySelector('#questionBox').style.display = 'none';
         document.querySelector('.sprites').style.display = 'none';
 
@@ -283,17 +281,16 @@ submitQ4.addEventListener('click', function() {
         document.querySelector('#spriteLose').style.display = 'block';
         document.querySelector('#gameOver').style.display = 'block';
         document.querySelector('#questionBox').style.display = 'none';
-        document.querySelector('#djk').style.display = 'none';    
+        document.querySelector('#djk').style.display = 'none';
         document.querySelector('.sprites').style.display = 'none';
 
 
     }
-    console.log(lives);
-    console.log(score);
+
 })
 
 
-submitQ5.addEventListener('click', function() {
+submitQ5.addEventListener('click', function () {
     if (answer5.value === "eazy e" && lives >= 3) {
         score += 1000;
         lives += 1;
@@ -305,7 +302,7 @@ submitQ5.addEventListener('click', function() {
         document.querySelector('#spriteRun').style.display = 'none';
         document.querySelector('#spriteRun2').style.display = 'none';
         document.querySelector('#spriteRun3').style.display = 'none';
-        document.querySelector('#djk').style.display = 'none';    
+        document.querySelector('#djk').style.display = 'none';
         document.querySelector('#questionBox').style.display = 'none';
 
     }
@@ -316,7 +313,7 @@ submitQ5.addEventListener('click', function() {
         document.querySelector('#gameOver').style.display = 'block';
         document.querySelector('#spriteRun').style.display = 'none';
         document.querySelector('#questionBox').style.display = 'none';
-        document.querySelector('#djk').style.display = 'none';    
+        document.querySelector('#djk').style.display = 'none';
         document.querySelector('.sprites').style.display = 'none';
 
 
@@ -324,33 +321,3 @@ submitQ5.addEventListener('click', function() {
     console.log(lives);
     console.log(score);
 })
-//FUNCTION TO POSSIBLY ANIMATE SPRITE
-// function move(){ //function is move
-//     var box = document.getElementById("astro"); //get that box
-//     var position = 0; //var for box's position
-//     var interval = setInterval(frame, 15); //var interval do the function setInterval for 5 secs create func frames
-//     function frame() { 
-//         if (position == 1300){ 
-//             box.style.transition = "4s";
-//             box.style.transform = "translate(200px, 100px)";
-//         } else {
-//             position++; 
-//             box.style.left = position + "px"; 
-//             box.style.bottom = position + "px";
-//             if (position == 400) {
-//                 box.style.transition = "4s";
-//                 box.style.transform = "translate(100px, 200px)";
-//                 console.log ();
-//             }
-//             if (position == 600) {
-//                 box.style.transition = "4s";
-//                 box.style.transform = "translate(300px, 400px)";
-//                 console.log ();
-//             }if (position == 1000) {
-//                 box.style.transition = "4s";
-//                 box.style.transform = "translate(500px, 800px)";
-//             clearInterval(interval)
-//             }
-//         }
-//         } 
-//         }
