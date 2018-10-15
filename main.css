@@ -356,7 +356,7 @@ button{
          radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);         
          height: 75px;
          width: 90px;
-         box-shadow: 1px 1px 1px black;
+         box-shadow: 2px 2px 2px black;
          position: absolute;
          animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
          z-index: 1;
@@ -367,9 +367,21 @@ button{
             margin-top: 20%;
             margin-left: 48%;
             width: 5%;
-            height: 5%;       
+            height: 5%;         
+            animation: bounce 1.5s infinite; 
+ 
          }
 
+
+         @keyframes bounce{
+             0%{
+               
+             }
+             50%{
+               transform: translate(0, 8px);
+             }
+         
+           }
 
         @keyframes fade-in {
             0% {
@@ -431,6 +443,6 @@ li{
 #confetti{
     position: absolute;
     z-index: 10;
-    width: 100%;
+    width: 105%;
     display: none;
 }
