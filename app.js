@@ -85,7 +85,7 @@ setInterval(spriteStop2, 1000)
 
     
     if (lives >= 3) {
-        document.getElementById('lives').innerHTML = "You Won! 🗝🗝🗝"
+        document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝"
         document.getElementById('allIDoIsWin').play();
         document.getElementById('youSmart').pause();
         document.querySelector('#confetti').style.display = 'block';
@@ -100,7 +100,7 @@ setInterval(spriteStop2, 1000)
     }
  
     if (lives <= 0) {
-        document.getElementById('lives').innerHTML = "You Done!"
+        document.getElementById('lives').innerHTML = "You Lose!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
         document.querySelector('#spriteRun').style.display = 'none';
@@ -147,7 +147,7 @@ submitQ2.addEventListener('click', function() {
 
     
     if (lives >= 3) {
-        document.getElementById('lives').innerHTML = "You Won! 🗝🗝🗝"
+        document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝"
         document.getElementById('allIDoIsWin').play();
         document.getElementById('youSmart').pause();
         document.querySelector('#confetti').style.display = 'block';
@@ -161,7 +161,7 @@ submitQ2.addEventListener('click', function() {
 
     }
     if (lives < 0) {
-        document.getElementById('lives').innerHTML = "You Done!"
+        document.getElementById('lives').innerHTML = "You Lose!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
         document.querySelector('#gameOver').style.display = 'block';
@@ -208,7 +208,7 @@ submitQ3.addEventListener('click', function() {
 
     
     if (lives >= 3) {
-        document.getElementById('lives').innerHTML = "You Won! 🗝🗝🗝"
+        document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝"
         document.getElementById('allIDoIsWin').play();
         document.getElementById('youSmart').pause();
         document.querySelector('#confetti').style.display = 'block';
@@ -221,7 +221,7 @@ submitQ3.addEventListener('click', function() {
 
     }
     if (lives <= 0) {
-        document.getElementById('lives').innerHTML = "You Done!"
+        document.getElementById('lives').innerHTML = "You Lose!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
         document.querySelector('#gameOver').style.display = 'block';
@@ -265,7 +265,7 @@ submitQ4.addEventListener('click', function() {
 
     
     if (lives >= 3) {
-        document.getElementById('lives').innerHTML = "You Won! 🗝🗝🗝"
+        document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝"
         document.getElementById('allIDoIsWin').play();
         document.getElementById('youSmart').pause();
         document.querySelector('#confetti').style.display = 'block';
@@ -278,7 +278,7 @@ submitQ4.addEventListener('click', function() {
 
     }
     if (lives <= 0) {
-        document.getElementById('lives').innerHTML = "You Done!"
+        document.getElementById('lives').innerHTML = "You Lose!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
         document.querySelector('#gameOver').style.display = 'block';
@@ -297,7 +297,7 @@ submitQ5.addEventListener('click', function() {
     if (answer5.value === "eazy e" && lives >= 3) {
         score += 1000;
         lives += 1;
-        document.getElementById('lives').innerHTML = "You Won! 🗝🗝🗝"
+        document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝"
         document.getElementById('allIDoIsWin').play();
         document.getElementById('youSmart').pause();
         document.querySelector('#confetti').style.display = 'block';
@@ -310,7 +310,7 @@ submitQ5.addEventListener('click', function() {
 
     }
     if (lives <= 2) {
-        document.getElementById('lives').innerHTML = "You Done!"
+        document.getElementById('lives').innerHTML = "You Lose!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
         document.querySelector('#gameOver').style.display = 'block';
