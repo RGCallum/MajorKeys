@@ -33,24 +33,26 @@ let lives = 0;
 
 //use setInterval to display none on image tehen display blcok to next
 //hide all questions until onclick functions
+setInterval(spriteStop, 1000)  
 
 function spriteStop(){
     document.querySelector('#spriteRun').style.display = 'none';
     document.querySelector('#spriteReady1').style.display = 'block';
 
 }
-setInterval(spriteStop, 1000)  
 
 start.addEventListener('click', function(){
     document.querySelector('#start').style.display = 'none';
     document.querySelector('#q1').style.display = 'block';
     document.getElementById('IGotKeys').pause();
     // clearInterval(spriteStop, 1000)  
-
+console.log(spriteStop)
 })
 
 submitQ1.addEventListener('click', function() {
     // console.log(answer.value)
+        // setTimeout(spriteStop, 1000)  
+
     if (answer1.value === "diddy") {
         score += 1000;
         lives += 1;
@@ -60,11 +62,11 @@ submitQ1.addEventListener('click', function() {
         document.getElementById("score").innerHTML = score;
         document.querySelector('#q1').style.display = 'none';
         document.querySelector('#q2').style.display = 'block';
-        document.querySelector('#spriteRun').style.display = 'none';
-        document.querySelector('#spriteReady1').style.display = 'none';
         document.querySelector('#spriteRun2').style.display = 'block';
+        
 function spriteStop2(){
     document.querySelector('#spriteRun2').style.display = 'none';
+    document.querySelector('#spriteReady1').style.display = 'none';
     document.querySelector('#spriteReady2').style.display = 'block';
 
 }
@@ -126,8 +128,10 @@ submitQ2.addEventListener('click', function() {
         document.querySelector('#q3').style.display = 'block';
         document.querySelector('#spriteRun2').style.display = 'none';
         document.querySelector('#spriteRun3').style.display = 'block';
+        
         function spriteStop3(){
             document.querySelector('#spriteRun3').style.display = 'none';
+            document.querySelector('#spriteReady2').style.display = 'none';
             document.querySelector('#spriteReady3').style.display = 'block';
         
         }
@@ -186,6 +190,7 @@ submitQ3.addEventListener('click', function() {
         document.querySelector('#spriteRun4').style.display = 'block';
         function spriteStop4(){
             document.querySelector('#spriteRun4').style.display = 'none';
+            document.querySelector('#spriteReady3').style.display = 'none';
             document.querySelector('#spriteReady4').style.display = 'block';
         
         }
@@ -242,7 +247,13 @@ submitQ4.addEventListener('click', function() {
         document.querySelector('#q4').style.display = 'none';
         document.querySelector('#q5').style.display = 'block';
         document.querySelector('#spriteRun4').style.display = 'none';
-
+        function spriteStop5(){
+            document.querySelector('#spriteRun5').style.display = 'none';
+            document.querySelector('#spriteReady4').style.display = 'none';
+            document.querySelector('#spriteReady5').style.display = 'block';
+        
+        }
+        setInterval(spriteStop5, 1000)
 
     } else {
         score -= 1000;

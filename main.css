@@ -139,9 +139,19 @@ display: none;
 display: none;
 }
 
+#spriteReady5{
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 70%;
+    position: absolute;
+    z-index: -1;
+display: none;
+}
+
 #spriteRun{
     width: 13%;
     margin-top: 35%;
+    margin-left: auto;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
 }
@@ -171,6 +181,16 @@ display: none;
     width: 13%;
     margin-top: 35%;
     margin-left: 36%;
+    position: absolute;
+    z-index: 1;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+display: none;
+}
+
+#spriteRun5{
+    width: 13%;
+    margin-top: 35%;
+    margin-left: 56%;
     position: absolute;
     z-index: 1;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
