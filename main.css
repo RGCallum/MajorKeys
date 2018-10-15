@@ -100,17 +100,57 @@ audio{
         
     }
 }
+
+
+
+#spriteReady1{
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 10%;
+    position: absolute;
+    z-index: -1;
+display: none;
+}
+
+#spriteReady2{
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 28%;
+    position: absolute;
+    z-index: -1;
+display: none;
+}
+
+#spriteReady3{
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 43%;
+    position: absolute;
+    z-index: -1;
+display: none;
+}
+
+#spriteReady4{
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 60%;
+    position: absolute;
+    z-index: -1;
+display: none;
+}
+
 #spriteRun{
     width: 13%;
-    margin-top: 31%;
+    margin-top: 35%;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
 }
 
+
 #spriteRun2{
     width: 13%;
-    margin-top: 31%;
-    margin-left: 10%;
+    margin-top: 35%;
+    margin-left: 5%;
     position: absolute;
     z-index: 1;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -119,7 +159,7 @@ display: none;
 
 #spriteRun3{
     width: 13%;
-    margin-top: 31%;
+    margin-top: 35%;
     margin-left: 20%;
     position: absolute;
     z-index: 1;
@@ -129,7 +169,7 @@ display: none;
 
 #spriteRun4{
     width: 13%;
-    margin-top: 31%;
+    margin-top: 35%;
     margin-left: 36%;
     position: absolute;
     z-index: 1;
@@ -166,11 +206,12 @@ display: none;
 
 #djk{
     width: 20%;
-margin-left: 65%;
+margin-left: 80%;
 margin-top: 25%;
 animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 position: absolute;
-z-index: 1;
+z-index: -2;
+
 }
 
 @keyframes slide-left {
