@@ -32,6 +32,14 @@ let rules = document.querySelector('#rulesButton')
 let score = 0;
 let lives = 0;
 
+function showRules() {
+ 
+    swal("MAJOR KEYS, is a variation of hangman and trivia games. Instead of guessing individual letters, players will guess the entire word. The object of the game is to get 3 keys from DJ Khaled by typing the correct word in the input box. Lowercase words only, and no special characters. First 3 words correct wins the game and the first 3 words incorrect, results in GAME OVER!!! If player answers 1st question incorrect, game is over. Each word is worth 1000 points and 1 key, and player must maintain a score above 0 in order to continue playing game."
+    , {
+        buttons: ["Close", true],
+      });
+}
+
 
 //use setInterval to display none on image then display block to next animation
 setInterval(spriteStop, 1000)

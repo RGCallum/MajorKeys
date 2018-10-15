@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
         crossorigin="anonymous">
 
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
 </head>
@@ -30,8 +31,8 @@
     <div class="optButton" id="scoreBox">Score
         <div class="scoreCount" id="score"></div>
     </div>
-
-    <!-- <div class="optButton" id="rulesButton">Rules</div>
+    <div class="optButton" id="rulesButton" onclick = "showRules()">Rules</div>
+    <!-- 
 
     <div class="rules">
         <p id = "rules"> <strong>Rules</strong>  <br> Major Keys, is a variation of hangman and trivia games. Instead of guessing individual letters, players will guess the entire word.
