@@ -9,10 +9,13 @@ The object of the game is to get 3 keys from DJ Khaled by typing the correct wor
 
 Web Link:
 
+Wireframe Link:
+https://www.figma.com/file/JtEgkvS8kgtHeRfxsyMR5IoX/Untitled?node-id=0%3A1
+
 
 Technologies Used
 Languages - HTML5, CSS3, Javascript, 
-Design - Player Character, original drawing by Nyemah Crippen, Dj Khaled Gif by Emma Gilberg Google Fonts, Animista.com, Textcraft.net 
+Design - Player Character, original drawing by Nyemah Crippen, Dj Khaled Gif by Emma Gilberg Google Fonts, SweetAlerts, Animista.com, Textcraft.net 
 Project Planning & User Stories - Trello
 Software - Visual Studio, PhotoShop, Final Cut Pro, EZGif.com
 Wireframe by Figma

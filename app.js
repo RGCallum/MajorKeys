@@ -101,7 +101,7 @@ submitQ1.addEventListener('click', function () {
         document.getElementById('anotherOne').play();
         document.getElementById('audio2').play();
 
-    
+    }
 
 
     if (lives >= 3) {
@@ -129,7 +129,7 @@ submitQ1.addEventListener('click', function () {
 
 
     }
-    }
+   
 })
 
 
@@ -163,7 +163,7 @@ submitQ2.addEventListener('click', function () {
         document.getElementById('anotherOne').play();
         document.getElementById('audio2').play();
    
-
+    }
 
     if (lives >= 3) {
         document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝"
@@ -191,7 +191,7 @@ submitQ2.addEventListener('click', function () {
 
 
     }
-}
+
 })
 
 submitQ3.addEventListener('click', function () {
@@ -199,7 +199,7 @@ submitQ3.addEventListener('click', function () {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
-        document.getElementById('youSmart').play();
+        document.getElementById('youLoyal').play();
         document.getElementById("lives").innerHTML = lives + "🗝🗝🗝";
         document.getElementById("score").innerHTML = score;
         document.querySelector('#q3').style.display = 'none';
@@ -223,7 +223,7 @@ submitQ3.addEventListener('click', function () {
         document.getElementById('anotherOne').play();
         document.getElementById('audio2').play();
 
-   
+    }
 
 
     if (lives >= 3) {
@@ -250,7 +250,7 @@ submitQ3.addEventListener('click', function () {
 
 
     }
-}
+
 })
 
 submitQ4.addEventListener('click', function () {
@@ -280,7 +280,7 @@ submitQ4.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('anotherOne').play();
         document.getElementById('audio2').play();
-   
+    }
 
 
     if (lives >= 3) {
@@ -307,7 +307,7 @@ submitQ4.addEventListener('click', function () {
 
 
     }
-}
+
 })
 
 
