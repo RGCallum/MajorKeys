@@ -11,12 +11,13 @@ html{
 #clouds{
     position: absolute;
     z-index: -2;
-    width: 100%; 
-	height: 100%; 
+    width: 100vw; 
+	height: 100vh; 
 	background-image: url(/Images/BKGDS/clouds.png);
-	background-position: 0px 0px;
+	background-position: fixed;
 	background-repeat: repeat-x;
-	animation: slide 100s linear infinite;
+    animation: slide 100s linear infinite;
+    
 }
 
 
@@ -276,7 +277,7 @@ button{
     border: 5px inset rgb(209, 180, 100);
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px 1px rgb(250, 250, 250);
-    font-size: 35px;
+    font-size: calc(1em + 1vw) ;
     text-align: center;
     font-family:arial, helvetica, sans-serif; 
     padding: 10px 10px 10px 10px; 
@@ -346,11 +347,33 @@ button{
         position: fixed;
         z-index: 1;
         /* animation: fade-in 10s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
 
+
+    }
+    @media only screen and (max-width: 800px) {
+        .buttonBox, buttonQ {
+            margin-top: 5%;
+            margin-left: -5%;
+
+        }
+    }
+    @media only screen and (max-width: 800px) {
+       buttonQ{
+        height: 75px;
+        width: 100px;
+
+        }
+    }
+
+
+    @media only screen and (max-width: 800px) {
+        input, button {
+            width: 160px;
+            height: 30px;
+            margin-top: 0%;
+            margin-left: 0%;
+
+        }
     }
 
     .optButton{
