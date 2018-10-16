@@ -41,9 +41,9 @@ function showRules() {
 }
 
 
-//use setInterval to display none on image then display block to next animation
+//use setInterval to display none one image then display block on running gif to create animation
 setInterval(spriteStop, 1000)
-// function to animate chracter using gifs with css slide animation
+// function to animate character using gifs with css slide animation
 function spriteStop() {
     document.querySelector('#spriteRun').style.display = 'none';
     document.querySelector('#spriteReady1').style.display = 'block';
@@ -55,20 +55,13 @@ start.addEventListener('click', function () {
     document.querySelector('#start').style.display = 'none';
     document.querySelector('#q1').style.display = 'block';
     document.getElementById('IGotKeys').pause();
-    // clearInterval(spriteStop, 1000)  
-    // console.log(spriteStop)
 })
 
-// rules.addEventListener('click', function () {
-//     document.querySelector('#rules').style.display = 'block';
-    
-// })
 
 
 // 1st question onclick answer
 submitQ1.addEventListener('click', function () {
-    // console.log(answer.value)
-    // setTimeout(spriteStop, 1000)  
+
 // start loop
 
     if (answer1.value === "diddy") {
@@ -85,9 +78,6 @@ submitQ1.addEventListener('click', function () {
 //.remove was the only thing that actually stopped the Sprites from blinking with the set interval
 
     // animation function
-    
-        
-
         function spriteStop2() {
             document.querySelector('#spriteRun2').style.display = 'none';
             document.querySelector('#spriteReady2').style.display = 'block';
@@ -103,11 +93,11 @@ submitQ1.addEventListener('click', function () {
         document.getElementById('anotherOne').play();
         document.getElementById('audio2').play();
 
-    }
+    
 
 
     if (lives >= 3) {
-        document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝"
+        document.getElementById('lives').innerHTML = "You Win!"
         document.getElementById('allIDoIsWin').play();
         document.getElementById('youSmart').pause();
         document.querySelector('#confetti').style.display = 'block';
@@ -131,7 +121,7 @@ submitQ1.addEventListener('click', function () {
 
 
     }
-   
+}
 })
 
 
@@ -150,7 +140,6 @@ submitQ2.addEventListener('click', function () {
         document.querySelector('#spriteRun3').style.display = 'block';
         document.querySelector('#spriteReady2').remove();
 
-
         function spriteStop3() {
             document.querySelector('#spriteRun3').style.display = 'none';
             document.querySelector('#spriteReady3').style.display = 'block';
@@ -165,10 +154,10 @@ submitQ2.addEventListener('click', function () {
         document.getElementById('anotherOne').play();
         document.getElementById('audio2').play();
    
-    }
+   
 
     if (lives >= 3) {
-        document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝"
+        document.getElementById('lives').innerHTML = "You Win!"
         document.getElementById('allIDoIsWin').play();
         document.getElementById('youSmart').pause();
         document.querySelector('#confetti').style.display = 'block';
@@ -193,7 +182,7 @@ submitQ2.addEventListener('click', function () {
 
 
     }
-
+}
 })
 
 submitQ3.addEventListener('click', function () {
@@ -225,11 +214,11 @@ submitQ3.addEventListener('click', function () {
         document.getElementById('anotherOne').play();
         document.getElementById('audio2').play();
 
-    }
+   
 
 
     if (lives >= 3) {
-        document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝"
+        document.getElementById('lives').innerHTML = "You Win!"
         document.getElementById('allIDoIsWin').play();
         document.getElementById('youSmart').pause();
         document.querySelector('#confetti').style.display = 'block';
@@ -252,7 +241,7 @@ submitQ3.addEventListener('click', function () {
 
 
     }
-
+}
 })
 
 submitQ4.addEventListener('click', function () {
@@ -282,11 +271,11 @@ submitQ4.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('anotherOne').play();
         document.getElementById('audio2').play();
-    }
+  
 
 
     if (lives >= 3) {
-        document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝"
+        document.getElementById('lives').innerHTML = "You Win!"
         document.getElementById('allIDoIsWin').play();
         document.getElementById('youSmart').pause();
         document.querySelector('#confetti').style.display = 'block';
@@ -309,7 +298,7 @@ submitQ4.addEventListener('click', function () {
 
 
     }
-
+}
 })
 
 
@@ -317,7 +306,7 @@ submitQ5.addEventListener('click', function () {
     if (answer5.value === "eazy e") {
         score += 1000;
         lives += 1;
-        document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝"
+        document.getElementById('lives').innerHTML = "You Win!"
         document.getElementById('allIDoIsWin').play();
         document.getElementById('youSmart').pause();
         document.querySelector('#confetti').style.display = 'block';
