@@ -34,7 +34,7 @@ let lives = 0;
 
 function showRules() {
  
-    swal("MAJOR KEYS, is a variation of hangman and trivia games. Instead of guessing individual letters, players will guess the entire word. The object of the game is to get 3 keys from DJ Khaled by typing the correct word in the input box. Lowercase words only, and no special characters. First 3 words correct wins the game and the first 3 words incorrect, results in GAME OVER!!! If player answers 1st question incorrect, game is over. Each word is worth 1000 points and 1 key, and player must maintain a score above 0 in order to continue playing game."
+    swal("MAJOR KEYS, is a variation of hangman and trivia games. Instead of guessing individual letters, players will guess the entire word. If the word is incorrect you get no key, but you will have another chance to answer the question. 3 incorrect questions results in Game Over! The object of the game is to get 3 keys from DJ Khaled by typing the correct word in the input box. First 3 words correct wins the game and the first 3 words incorrect, results in GAME OVER!!! If player answers 1st question incorrect, game is over. Each word is worth 1000 points and 1 key, and player must maintain a score above 0 in order to continue playing game."
     , {
         buttons: ["Close", true],
       });
@@ -64,7 +64,7 @@ submitQ1.addEventListener('click', function () {
 
 // start loop
 
-    if (answer1.value === "diddy") {
+    if (answer1.value === "diddy" || answer1.value === "Diddy" || answer1.value === "Puffy" || answer1.value === "P. Diddy") {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -127,7 +127,7 @@ submitQ1.addEventListener('click', function () {
 
 //2nd question onclick answer and if/else
 submitQ2.addEventListener('click', function () {
-    if (answer2.value === "lil wayne") {
+    if (answer2.value === "lil wayne" || answer1.value === "Lil Wayne" || answer1.value === "Lil' Wayne" || answer1.value === "Weezy") {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -186,7 +186,7 @@ submitQ2.addEventListener('click', function () {
 })
 
 submitQ3.addEventListener('click', function () {
-    if (answer3.value === "nas") {
+    if (answer3.value === "nas" || answer1.value === "Nas") {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -245,7 +245,7 @@ submitQ3.addEventListener('click', function () {
 })
 
 submitQ4.addEventListener('click', function () {
-    if (answer4.value === "ice t") {
+    if (answer4.value === "ice t" || answer1.value === "Ice T" || answer1.value === "Ice-T") {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -303,7 +303,7 @@ submitQ4.addEventListener('click', function () {
 
 
 submitQ5.addEventListener('click', function () {
-    if (answer5.value === "eazy e") {
+    if (answer5.value === "eazy e" || answer1.value === "Eazy E" || answer1.value === "Eazy-E") {
         score += 1000;
         lives += 1;
         document.getElementById('lives').innerHTML = "You Win!"

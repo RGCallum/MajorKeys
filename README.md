@@ -3,7 +3,7 @@
 Major Keys Overview
 For project #1, I created a variation on the hangman game and hip hop trivia games.
 When a player visits the site, they hear the Major Keys theme music, then clicks on start or Rules. 
-The object of the game is to get 3 keys from DJ Khaled by typing the correct word in the input box. First 3 words correct wins the game and the first 3 words incorrect, the player will lose the game. Best 3 out of 5 wins. If player answers 1st question incorrect, player loses. Each word is worth 1000 points and 1 key, and player must maintain a score above 0 in order to continue game. 
+The object of the game is to get 3 keys from DJ Khaled by typing the correct word in the input box. If the word is incorrect you get no key, but you will have another chance to answer the question. 3 incorrect questions results in Game Over! First 3 words correct wins the game and the first 3 words incorrect, the player will lose the game. Best 3 out of 5 wins. If player answers 1st question incorrect, player loses. Each word is worth 1000 points and 1 key, and player must maintain a score above 0 in order to continue game. 
 
 Web Link:
 https://app.netlify.com/drop/unruffled-bhabha-5d9fd4
