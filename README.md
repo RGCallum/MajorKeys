@@ -6,7 +6,7 @@ When a player visits the site, they hear the Major Keys theme music, then clicks
 The object of the game is to get 3 keys from DJ Khaled by typing the correct word in the input box. If the word is incorrect you get no key, but you will have another chance to answer the question. 3 incorrect questions results in Game Over! First 3 words correct wins the game and the first 3 words incorrect, the player will lose the game. Best 3 out of 5 wins. If player answers 1st question incorrect, player loses. Each word is worth 1000 points and 1 key, and player must maintain a score above 0 in order to continue game. 
 
 Web Link:
-https://app.netlify.com/drop/unruffled-bhabha-5d9fd4
+http://amazing-stonebraker-281d5e.netlify.com/
 
 Wireframe Link:
 https://www.figma.com/file/JtEgkvS8kgtHeRfxsyMR5IoX/Untitled?node-id=0%3A1
