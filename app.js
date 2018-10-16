@@ -312,7 +312,7 @@ submitQ4.addEventListener('click', function () {
 
 
 submitQ5.addEventListener('click', function () {
-    if (answer5.value === "eazy e" && lives >= 3) {
+    if (answer5.value === "eazy e") {
         score += 1000;
         lives += 1;
         document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝"
@@ -325,9 +325,15 @@ submitQ5.addEventListener('click', function () {
         document.querySelector('#spriteRun3').style.display = 'none';
         document.querySelector('#djk').style.display = 'none';
         document.querySelector('#questionBox').style.display = 'none';
+        document.querySelector('#spriteReady5').remove();
 
+        function spriteStop6() {
+            document.querySelector('#spriteReady5').style.display = 'none';
+
+        }
+        setInterval(spriteStop6, 1000)
     }
-    if (lives <= 2) {
+    if (lives <= 0) {
         document.getElementById('lives').innerHTML = "You Lose!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
