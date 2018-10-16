@@ -8,7 +8,7 @@ The object of the game is to get 3 keys from DJ Khaled by typing the correct wor
 I did a lot of editing in Photoshop to create and color characters, edit background photo and edit downloaded gifs as well as final cut pro to edit audio. The Dj khaled gif alone was time consuming as it came with a white background that I had to delete the background for 21 times and the re-export as a gif. My Javascript is pretty simple with if/else statements and set interval to create the illusion of the character running towards DJ Khaled for a correct answer. I'm really proud of my Javascript as I came up with it on my own. I know my Javascript can be even more dry with a for loop, however I was hacing a little trouble with my arrays, so I switched to what I know, a long a$$ if/else statement! lol. Making this game was awesome, and allowed me to challenge myself. Enjoy the game!!
 
 Web Link:
-http://amazing-stonebraker-281d5e.netlify.com/
+http://keen-curran-f6622b.netlify.com/
 
 Wireframe Link:
 https://www.figma.com/file/JtEgkvS8kgtHeRfxsyMR5IoX/Untitled?node-id=0%3A1
