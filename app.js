@@ -306,7 +306,7 @@ submitQ5.addEventListener('click', function () {
     if (answer5.value === "eazy e" || answer1.value === "Eazy E" || answer1.value === "Eazy-E") {
         score += 1000;
         lives += 1;
-        document.getElementById('lives').innerHTML = "You Win!"
+        document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝🗝🗝"
         document.getElementById('allIDoIsWin').play();
         document.getElementById('youSmart').pause();
         document.querySelector('#confetti').style.display = 'block';
