@@ -5,7 +5,6 @@ html{
     position: fixed;
     width: 100vw;
     height: 100vh;
-
 }
 
 
@@ -344,17 +343,20 @@ button{
         width: 38%;
         margin-top: 15%;
         margin-left: 35%;
-        position: absolute;
+        position: fixed;
         z-index: 1;
         /* animation: fade-in 10s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; */
-
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
     }
 
     .optButton{
         border: 5px inset #D1B464;
         border-radius: 10px;
-        font-size: 30px;
+        font-size: calc(.5em + 1vw) ;
         text-align: center;
         justify-content: center;        
         color: rgb(255, 255, 255);
@@ -367,9 +369,10 @@ button{
          height: 75px;
          width: 90px;
          box-shadow: 2px 2px 2px black;
-         position: absolute;
+         position: fixed;
          animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
          z-index: 1;
+         
 
         } 
 
@@ -377,7 +380,7 @@ button{
         #rulesButton{
             margin-top: 20%;
             margin-left: 10%;
-            width: 5%;
+            width: 8%;
             height: 5%;    
             display: block;     
             /* animation: bounce 1.5s infinite;  */
@@ -387,7 +390,7 @@ button{
         #start{
             margin-top: 20%;
             margin-left: 48%;
-            width: 5%;
+            width: 8%;
             height: 5%;         
             animation: bounce 1.5s infinite; 
  
