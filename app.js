@@ -127,7 +127,7 @@ submitQ1.addEventListener('click', function () {
 
 //2nd question onclick answer and if/else
 submitQ2.addEventListener('click', function () {
-    if (answer2.value === "lil wayne" || answer1.value === "Lil Wayne" || answer1.value === "Lil' Wayne" || answer1.value === "Weezy") {
+    if (answer2.value === "lil wayne" || answer1.value === "Lil Wayne" || answer1.value === "Lil' Wayne" || answer1.value === "Lil wayne") {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -245,7 +245,7 @@ submitQ3.addEventListener('click', function () {
 })
 
 submitQ4.addEventListener('click', function () {
-    if (answer4.value === "ice t" || answer1.value === "Ice T" || answer1.value === "Ice-T") {
+    if (answer4.value === "ice t" || answer1.value === "Ice T" || answer1.value === "Ice-T" || answer1.value === "Ice-t" || answer1.value === "Ice t") {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
