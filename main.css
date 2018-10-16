@@ -8,9 +8,6 @@ html{
 
 }
 
-cursor-pointer{
-    cursor:url(Images/ScoreKey.png), auto;
-}
 
 #clouds{
     position: absolute;
