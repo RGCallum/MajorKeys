@@ -82,6 +82,8 @@ submitQ1.addEventListener('click', function () {
         document.querySelector('#q2').style.display = 'block';
         document.querySelector('#spriteRun2').style.display = 'block';
         document.querySelector('#spriteReady1').remove();
+//.remove was the only thing that actually stopped the Sprites from blinking with the set interval
+
     // animation function
     
         
