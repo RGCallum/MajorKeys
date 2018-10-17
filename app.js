@@ -127,7 +127,7 @@ submitQ1.addEventListener('click', function () {
 
 //2nd question onclick answer and if/else
 submitQ2.addEventListener('click', function () {
-    if (answer2.value === "lil wayne" || answer1.value === "Lil Wayne" || answer1.value === "Lil' Wayne" || answer1.value === "Lil wayne") {
+    if (answer2.value === "lil wayne" || answer2.value === "Lil Wayne" || answer2.value === "Lil' Wayne" || answer2.value === "Lil wayne") {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -186,7 +186,7 @@ submitQ2.addEventListener('click', function () {
 })
 
 submitQ3.addEventListener('click', function () {
-    if (answer3.value === "nas" || answer1.value === "Nas") {
+    if (answer3.value === "nas" || answer3.value === "Nas") {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -245,7 +245,7 @@ submitQ3.addEventListener('click', function () {
 })
 
 submitQ4.addEventListener('click', function () {
-    if (answer4.value === "ice t" || answer1.value === "Ice T" || answer1.value === "Ice-T" || answer1.value === "Ice-t" || answer1.value === "Ice t") {
+    if (answer4.value === "ice t" || answer4.value === "Ice T" || answer4.value === "Ice-T" || answer4.value === "Ice-t" || answer4.value === "Ice t") {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -303,7 +303,7 @@ submitQ4.addEventListener('click', function () {
 
 
 submitQ5.addEventListener('click', function () {
-    if (answer5.value === "eazy e" || answer1.value === "Eazy E" || answer1.value === "Eazy-E") {
+    if (answer5.value === "eazy e" || answer5.value === "Eazy E" || answer5.value === "Eazy-E") {
         score += 1000;
         lives += 1;
         document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝🗝🗝"
@@ -317,12 +317,9 @@ submitQ5.addEventListener('click', function () {
         document.querySelector('#djk').style.display = 'none';
         document.querySelector('#questionBox').style.display = 'none';
         document.querySelector('#spriteReady5').remove();
+        
 
-        function spriteStop6() {
-            document.querySelector('#spriteReady5').style.display = 'none';
 
-        }
-        setInterval(spriteStop6, 1000)
     }
     if (lives <= 0) {
         document.getElementById('lives').innerHTML = "You Lose!"
