@@ -245,11 +245,15 @@ submitQ3.addEventListener('click', function () {
 })
 
 submitQ4.addEventListener('click', function () {
+<<<<<<< HEAD
     if (answer4.value === "ice t" || answer4.value === "Ice T" || answer4.value === "Ice-T" || answer4.value === "Ice-t" || answer4.value === "Ice t") {
+=======
+    if (answer4.value === "ice t" || answer4.value === "Ice T" || answer4.value === "Ice-T" || answer4.value === "Ice-t" || answer1.value === "Ice t") {
+>>>>>>> ce2ab3388c6aab87e7b90e5d577803122bcbdd2a
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
-        document.getElementById('youGenius').play();
+        document.getElementById('weDaBest').play();
         document.getElementById("lives").innerHTML = lives + "🗝🗝🗝🗝";
         document.getElementById("score").innerHTML = score;
         document.querySelector('#q4').style.display = 'none';
@@ -303,9 +307,15 @@ submitQ4.addEventListener('click', function () {
 
 
 submitQ5.addEventListener('click', function () {
+<<<<<<< HEAD
     if (answer5.value === "eazy e" || answer5.value === "Eazy E" || answer5.value === "Eazy-E") {
+=======
+    if (answer5.value === "eazy e" || answer5.value === "Eazy E" || answer5.value === "Eazy-E" || answer5.value === "Eazy-e" || answer5.value === "Eazy E" || answer5.value === "EazyE" || lives >= 3) {
+>>>>>>> ce2ab3388c6aab87e7b90e5d577803122bcbdd2a
         score += 1000;
         lives += 1;
+        document.getElementById("score").innerHTML = score;
+        document.getElementById("lives").innerHTML = lives;
         document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝🗝🗝"
         document.getElementById('allIDoIsWin').play();
         document.getElementById('youSmart').pause();
@@ -320,8 +330,18 @@ submitQ5.addEventListener('click', function () {
         
 
 
+<<<<<<< HEAD
     }
     if (lives <= 0) {
+=======
+        }
+        setInterval(spriteStop6, 1000)
+   
+
+
+
+    } else if (lives <= 0) {
+>>>>>>> ce2ab3388c6aab87e7b90e5d577803122bcbdd2a
         document.getElementById('lives').innerHTML = "You Lose!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
@@ -331,8 +351,8 @@ submitQ5.addEventListener('click', function () {
         document.querySelector('#djk').style.display = 'none';
         document.querySelector('.sprites').style.display = 'none';
 
-
     }
+    
     console.log(lives);
     console.log(score);
 })
