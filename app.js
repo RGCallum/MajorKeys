@@ -246,7 +246,7 @@ submitQ3.addEventListener('click', function () {
 })
 
 submitQ4.addEventListener('click', function () {
-    if (answer4.value === "ice t" || answer4.value === "Ice T" || answer4.value === "Ice-T" || answer4.value === "Ice-t" || answer1.value === "Ice t") {
+    if (answer4.value === "ice t" || answer4.value === "Ice T" || answer4.value === "Ice-T" || answer4.value === "Ice-t" || answer4.value === "Ice t") {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
