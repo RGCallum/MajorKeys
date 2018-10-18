@@ -285,7 +285,7 @@ button{
     border: 5px inset rgb(209, 180, 100);
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px 1px rgb(250, 250, 250);
-    font-size: 15px;
+    font-size: 30px;
     text-align: center;
     font-family:arial, helvetica, sans-serif; 
     padding: 10px 10px 10px 10px; 
@@ -299,27 +299,17 @@ button{
      z-index: 1;    
     }
 
-  #rules{
-        border-radius: 10px;
-        border: 5px inset rgb(209, 180, 100);
-        color: rgb(255, 255, 255);
-        text-shadow: 2px 2px 2px rgb(0, 0, 0);
-        font-size: 35px;
-        text-align: center;
-        font-family:arial, helvetica, sans-serif; 
-        padding: 10px 10px 10px 10px; 
-        display:none;
-        /* background-color: rgba(209, 180, 100, 0.68); */
-        background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%); 
-         height: 500px;
-         width: 800px;
-         margin-top: 13%;
-         margin-left: 27%;
-         box-shadow: 1px 1px 1px black;
-         position: absolute;
-         z-index: 10;    
-        }
+
+
+        #rulesButton{
+            margin-top: 22%;
+            margin-left: 6.5%;
+            width: 8%;
+            height: 3%;    
+            display: block;     
+            /* animation: bounce 1.5s infinite;  */
+ 
+         }
 
 #q1, #q2, #q3, #q4, #q5{
     display: none;
@@ -358,40 +348,12 @@ button{
 
 
     }
-    @media only screen and (max-width: 800px) {
-        .buttonBox, buttonQ {
-            margin-top: 5%;
-            margin-left: -5%;
-
-        }
-    }
-    @media only screen and (max-width: 800px) {
-       buttonQ{
-        height: 75px;
-        width: 100px;
-
-        }
-    }
-
-    @media only screen and (max-width: 800px) {
-        #clouds{
-        }
-    }
-
-    @media only screen and (max-width: 800px) {
-        input, button {
-            width: 160px;
-            height: 30px;
-            margin-top: 0%;
-            margin-left: 0%;
-
-        }
-    }
+   
 
     .optButton{
         border: 5px inset #D1B464;
         border-radius: 10px;
-        font-size: calc(.5em + 1vw) ;
+        font-size: calc(.3em + 1vw) ;
         text-align: center;
         justify-content: center;        
         color: rgb(255, 255, 255);
@@ -412,21 +374,13 @@ button{
         } 
 
 
-        #rulesButton{
-            margin-top: 20%;
-            margin-left: 10%;
-            width: 8%;
-            height: 5%;    
-            display: block;     
-            /* animation: bounce 1.5s infinite;  */
- 
-         }
+
 
         #start{
             margin-top: 20%;
             margin-left: 48%;
             width: 8%;
-            height: 5%;         
+            height: 3%;         
             animation: bounce 5.5s infinite; 
  
          }
@@ -454,8 +408,8 @@ button{
         #lifeCountID{
             margin-top: 12%;
             margin-left: 5%;
-            width: 15%;
-            height: 10%;
+            width: calc(6em + 1vw);
+            height: calc(2.5em + 1vh);
         }
      
 
@@ -465,8 +419,8 @@ button{
         background-repeat: no-repeat;
         position: fixed;
         z-index: 1;
-        width: 15%;
-        height: 10%;
+        width: calc(3em + 1vw);
+        height: calc(2em + 1vh);
 
     }
 
@@ -499,15 +453,90 @@ li{
 }
 
 .swal-text{
-    font-size: 40px;
+    font-size: 20px;
+    text-align: center;
+    /* text-shadow: 1px 1px 1px black; */
 }
 .swal-modal{
-    width: 800px;
-    margin-top: 9%;
+    width: 500px;
+    margin-top: 1%;;
     border: 5px inset #D1B464;
     border-radius: 10px;
     box-shadow: 2px 2px 2px black;
     background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);    
 }
+
+
+@media only screen and (max-width: 800px) {
+    .buttonBox {
+        margin-top: 5%;
+        margin-left: -5%;
+
+    }
+}
+@media only screen and (max-width: 800px) {
+   .buttonQ{
+    height: 70px;
+    width: 160px;
+    font-size: 15px;
+    margin-top: 5%;
+    margin-left: 85%;
+
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #clouds{
+    }
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    #djk{
+        margin-left: 95%;
+        }
+    }
+
+@media only screen and (max-width: 800px) {
+    input, button {
+        width: 110px;
+        height: 20px;
+        margin-top: 0%;
+        margin-left: 0%;
+        font-size: 15px;
+
+    }
+}
+  
+@media only screen and (max-width: 800px) {
+    #spriteRun{   
+        margin-left: -12%;
+    }
+} 
+
+@media only screen and (max-width: 800px) {
+    #spriteRun2{   
+        margin-left: 4%;
+    }
+} 
+@media only screen and (max-width: 800px) { 
+    #spriteRun3 {   
+        margin-left: 19%;
+    }}
+
+
+@media only screen and (max-width: 800px) {
+    #spriteRun4 {   
+        margin-left: 36%;
+    }} 
+
+@media only screen and (max-width: 800px) {
+    #spriteRun5 {   
+        margin-left: 51%;
+    }
+}
+
+
 

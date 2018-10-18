@@ -34,7 +34,7 @@ let lives = 0;
 
 function showRules() {
  
-    swal("MAJOR KEYS, is a variation of hangman and trivia games. Instead of guessing individual letters, players will guess the entire word. If the word is incorrect you get no key, but you will have another chance to answer the question. 3 incorrect questions results in Game Over! The object of the game is to get 3 keys from DJ Khaled by typing the correct word in the input box. First 3 words correct wins the game and the first 3 words incorrect, results in GAME OVER!!! If player answers 1st question incorrect, game is over. Each word is worth 1000 points and 1 key, and player must maintain a score above 0 in order to continue playing game."
+    swal("MAJOR KEYS, \n The object of the game is to get keys from DJ Khaled by answering trivia questions to advance your character toward DJ Khaled to collect his Major Keys. If the word typed in the box is correct the character collects a key and runs closer to DJ Khaled. If the word is incorrect, the character stays in place and doesn't get any keys. If the first question is answered incorrect questions results in Game Over! You need 3 out of 5 correct words to win the game. If player answers 1st question incorrect, player loses. Each word is worth 1000 points and 1 key, and player must maintain a score above 0 in order to continue game."  
     , {
         buttons: ["Close", true],
       });
@@ -96,31 +96,31 @@ submitQ1.addEventListener('click', function () {
     
 
 
-    if (lives >= 3) {
-        document.getElementById('lives').innerHTML = "You Win!"
-        document.getElementById('allIDoIsWin').play();
-        document.getElementById('youSmart').pause();
-        document.querySelector('#confetti').style.display = 'block';
-        document.querySelector('#spriteWon').style.display = 'block';
-        document.querySelector('#spriteRun').style.display = 'none';
-        document.querySelector('#djk').style.display = 'none';
-        document.querySelector('#questionBox').style.display = 'none';
-        document.querySelector('.sprites').style.display = 'none';
+    // if (lives >= 3) {
+    //     document.getElementById('lives').innerHTML = "You Win!"
+    //     document.getElementById('allIDoIsWin').play();
+    //     document.getElementById('youSmart').pause();
+    //     document.querySelector('#confetti').style.display = 'block';
+    //     document.querySelector('#spriteWon').style.display = 'block';
+    //     document.querySelector('#spriteRun').style.display = 'none';
+    //     document.querySelector('#djk').style.display = 'none';
+    //     document.querySelector('#questionBox').style.display = 'none';
+    //     document.querySelector('.sprites').style.display = 'none';
 
-    }
+    // }
 
-    if (lives <= 0) {
-        document.getElementById('lives').innerHTML = "You Lose!"
-        document.getElementById('theyDontWant').play();
-        document.querySelector('#spriteLose').style.display = 'block';
-        document.querySelector('#spriteRun').style.display = 'none';
-        document.querySelector('#gameOver').style.display = 'block';
-        document.querySelector('#djk').style.display = 'none';
-        document.querySelector('#questionBox').style.display = 'none';
-        document.querySelector('.sprites').style.display = 'none';
+    // if (lives <= 0) {
+    //     document.getElementById('lives').innerHTML = "You Lose!"
+    //     document.getElementById('theyDontWant').play();
+    //     document.querySelector('#spriteLose').style.display = 'block';
+    //     document.querySelector('#spriteRun').style.display = 'none';
+    //     document.querySelector('#gameOver').style.display = 'block';
+    //     document.querySelector('#djk').style.display = 'none';
+    //     document.querySelector('#questionBox').style.display = 'none';
+    //     document.querySelector('.sprites').style.display = 'none';
 
 
-    }
+    // }
 }
 })
 
@@ -132,7 +132,7 @@ submitQ2.addEventListener('click', function () {
         lives += 1;
         document.getElementById('audio1').play();
         document.getElementById('youGenius').play();
-        document.getElementById("lives").innerHTML = lives + "🗝🗝";
+        document.getElementById("lives").innerHTML = lives + "🗝";
         document.getElementById("score").innerHTML = score;
         document.querySelector('#q2').style.display = 'none';
         document.querySelector('#q3').style.display = 'block';
@@ -170,7 +170,7 @@ submitQ2.addEventListener('click', function () {
 
 
     }
-    if (lives < 0) {
+    if (lives < -1) {
         document.getElementById('lives').innerHTML = "You Lose!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
@@ -191,7 +191,7 @@ submitQ3.addEventListener('click', function () {
         lives += 1;
         document.getElementById('audio1').play();
         document.getElementById('youLoyal').play();
-        document.getElementById("lives").innerHTML = lives + "🗝🗝🗝";
+        document.getElementById("lives").innerHTML = lives + "🗝";
         document.getElementById("score").innerHTML = score;
         document.querySelector('#q3').style.display = 'none';
         document.querySelector('#q4').style.display = 'block';
@@ -245,16 +245,12 @@ submitQ3.addEventListener('click', function () {
 })
 
 submitQ4.addEventListener('click', function () {
-<<<<<<< HEAD
-    if (answer4.value === "ice t" || answer4.value === "Ice T" || answer4.value === "Ice-T" || answer4.value === "Ice-t" || answer4.value === "Ice t") {
-=======
     if (answer4.value === "ice t" || answer4.value === "Ice T" || answer4.value === "Ice-T" || answer4.value === "Ice-t" || answer1.value === "Ice t") {
->>>>>>> ce2ab3388c6aab87e7b90e5d577803122bcbdd2a
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
         document.getElementById('weDaBest').play();
-        document.getElementById("lives").innerHTML = lives + "🗝🗝🗝🗝";
+        document.getElementById("lives").innerHTML = lives + "🗝";
         document.getElementById("score").innerHTML = score;
         document.querySelector('#q4').style.display = 'none';
         document.querySelector('#q5').style.display = 'block';
@@ -307,16 +303,12 @@ submitQ4.addEventListener('click', function () {
 
 
 submitQ5.addEventListener('click', function () {
-<<<<<<< HEAD
-    if (answer5.value === "eazy e" || answer5.value === "Eazy E" || answer5.value === "Eazy-E") {
-=======
     if (answer5.value === "eazy e" || answer5.value === "Eazy E" || answer5.value === "Eazy-E" || answer5.value === "Eazy-e" || answer5.value === "Eazy E" || answer5.value === "EazyE" || answer5.value === "Easy-E" || answer5.value === "Easy E" || answer5.value === "Easy e" || answer5.value === "easy e" || lives >= 3) {
->>>>>>> ce2ab3388c6aab87e7b90e5d577803122bcbdd2a
         score += 1000;
         lives += 1;
         document.getElementById("score").innerHTML = score;
         document.getElementById("lives").innerHTML = lives;
-        document.getElementById('lives').innerHTML = "You Win! 🗝🗝🗝🗝🗝"
+        document.getElementById('lives').innerHTML = "You Win! 🗝";
         document.getElementById('allIDoIsWin').play();
         document.getElementById('youSmart').pause();
         document.querySelector('#confetti').style.display = 'block';
@@ -330,18 +322,8 @@ submitQ5.addEventListener('click', function () {
         
 
 
-<<<<<<< HEAD
     }
-    if (lives <= 0) {
-=======
-        }
-        setInterval(spriteStop6, 1000)
-   
-
-
-
-    } else if (lives <= 0) {
->>>>>>> ce2ab3388c6aab87e7b90e5d577803122bcbdd2a
+    if (lives < 2) {
         document.getElementById('lives').innerHTML = "You Lose!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
