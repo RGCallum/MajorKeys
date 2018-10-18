@@ -1,5 +1,5 @@
 html{
-    background-image: url(/Images/BKGDS/GameWallpaperSceneryNoClouds.png);
+    background-image: url(/MajorKeys/Images/BKGDS/GameWallpaperSceneryNoClouds.png);
     background-size: 100%;
     background-repeat: no-repeat;
     position: fixed;
@@ -21,7 +21,7 @@ body{
     z-index: -2;
     width: 102vw; 
 	height: 100vh; 
-	background-image: url(/Images/BKGDS/clouds2.png);
+	background-image: url(/MajorKeys/Images/BKGDS/clouds2.png);
 	background-position: fixed;
 	background-repeat: repeat-x;
     animation: slide 70s linear infinite;
