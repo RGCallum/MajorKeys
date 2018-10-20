@@ -34,7 +34,7 @@ let lives = 0;
 
 function showRules() {
  
-    swal("MAJOR KEYS, \n A combination of the classic hangman game and hip-hop trivia. The object of the game is to get keys from DJ Khaled by answering trivia questions to advance your character toward DJ Khaled to collect his Major Keys. If the word typed in the box is correct the character collects a key, hears one of DJ Khaled's motivational words(keys) of wisdom, and she runs closer to DJ Khaled. Each correct word is worth 1000 points and 1 key. If the word is incorrect, the character stays in place and doesn't get any points or motivational keys from DJ Khaled. To win the game, the player has to have at least 3 questions correct by the end of the game. Each correct word is worth 1000 points and 1 key."  
+    swal("MAJOR KEYS, \n A combination of the classic hangman game and hip-hop trivia. The object of the game is to get keys from DJ Khaled by answering trivia questions to advance your character toward DJ Khaled. If the word typed in the box is correct the character collects a key, hears one of DJ Khaled's motivational words(keys) of wisdom, and runs closer to him. Each correct word is worth 1000 points and 1 key. If the word is incorrect, the character stays in place and doesn't get any points or motivational keys from DJ Khaled. To win the game, the player has to have at least 3 questions correct by the end of the game. Get 3 questions wrong and you lose!"  
     , {
         buttons: ["Close", true],
       });
