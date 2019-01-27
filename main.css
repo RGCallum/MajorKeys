@@ -1,10 +1,22 @@
-html{
-    background-image: url(./Images/BKGDS/streetBkgd.jpg);
+.bkgd1{
+    background-image: url(./Images/BKGDS/sesame3.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     position: fixed;
+    z-index: -100;
     width: 100vw;
     height: 100vh;
+}
+
+.bkgd2{
+    background-image: url(./Images/BKGDS/DJKhaledHouse.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -100;
+    width: 100vw;
+    height: 100vh;
+    display: none;
 }
 
 body{
@@ -14,7 +26,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#clouds{
+/* #clouds{
     position: absolute;
     margin-top: -10%;
     margin-left: -1%;
@@ -26,7 +38,7 @@ body{
 	background-repeat: repeat-x;
     animation: slide 70s linear infinite;
     
-}
+} */
 
 
 
@@ -114,7 +126,7 @@ audio{
     width: 60%;
     margin-top: 17%;
     margin-left: 10%;
-    position: absolute;
+    position: fixed;
     z-index: -1;
 display: none;
 }
@@ -123,7 +135,7 @@ display: none;
     width: 60%;
     margin-top: 17%;
     margin-left: 26%;
-    position: absolute;
+    position: fixed;
     z-index: -1;
 display: none;
 }
@@ -132,7 +144,7 @@ display: none;
     width: 60%;
     margin-top: 17%;
     margin-left: 41%;
-    position: absolute;
+    position: fixed;
     z-index: -1;
 display: none;
 }
@@ -141,7 +153,7 @@ display: none;
     width: 60%;
     margin-top: 17%;
     margin-left: 57%;
-    position: absolute;
+    position: fixed;
     z-index: -1;
 display: none;
 }
@@ -150,7 +162,7 @@ display: none;
     width: 60%;
     margin-top: 17%;
     margin-left: 73%;
-    position: absolute;
+    position: fixed;
     z-index: -1;
 display: none;
 }
@@ -168,7 +180,7 @@ display: none;
     width: 13%;
     margin-top: 35%;
     margin-left: 17%;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 display: none;
@@ -178,7 +190,7 @@ display: none;
     width: 13%;
     margin-top: 35%;
     margin-left: 32%;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 display: none;
@@ -188,7 +200,7 @@ display: none;
     width: 13%;
     margin-top: 35%;
     margin-left: 48%;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 display: none;
@@ -198,7 +210,7 @@ display: none;
     width: 13%;
     margin-top: 35%;
     margin-left: 65%;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 display: none;
@@ -208,7 +220,7 @@ display: none;
     width: 32%;
     margin-top: 5%;
     margin-left: 35%;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     display: none;
 }
@@ -217,7 +229,7 @@ display: none;
     width: 35%;
     margin-top: 8%;
     margin-left: 30%;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     display: none;
 }
@@ -291,7 +303,7 @@ button{
     padding: 10px 10px 10px 10px; 
     text-decoration:none; 
     display: block;
-    background-color: rgba(209, 180, 100, 0.548);
+    background-color: rgba(209, 180, 100, 0.9);
      height: 175px;
      width: 500px;
      /* box-shadow: 1px 1px 1px black; */

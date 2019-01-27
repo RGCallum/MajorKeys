@@ -91,7 +91,7 @@ submitQ1.addEventListener('click', function () {
         lives -= 1;
         document.getElementById("score").innerHTML = score;
         document.getElementById("lives").innerHTML = lives;
-        document.getElementById('anotherOne').play();
+        document.getElementById('dontPlay').play();
         document.getElementById('audio2').play();
 
     
@@ -110,7 +110,7 @@ submitQ1.addEventListener('click', function () {
 
     }
 
-    if (lives < -1) {
+    if (lives <= -3) {
         document.getElementById('lives').innerHTML = "You Lose!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
@@ -152,7 +152,7 @@ submitQ2.addEventListener('click', function () {
         lives -= 1;
         document.getElementById("score").innerHTML = score;
         document.getElementById("lives").innerHTML = lives;
-        document.getElementById('anotherOne').play();
+        document.getElementById('noExcuses').play();
         document.getElementById('audio2').play();
    
    
@@ -171,7 +171,7 @@ submitQ2.addEventListener('click', function () {
 
 
     }
-    if (lives < 0) {
+    if (lives <= -3) {
         document.getElementById('lives').innerHTML = "You Lose!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
@@ -212,7 +212,7 @@ submitQ3.addEventListener('click', function () {
         lives -= 1;
         document.getElementById("score").innerHTML = score;
         document.getElementById("lives").innerHTML = lives;
-        document.getElementById('anotherOne').play();
+        document.getElementById('dontPlay').play();
         document.getElementById('audio2').play();
 
    
@@ -231,7 +231,7 @@ submitQ3.addEventListener('click', function () {
 
 
     }
-    if (lives <= 0) {
+    if (lives <= -3) {
         document.getElementById('lives').innerHTML = "You Lose!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
@@ -270,7 +270,7 @@ submitQ4.addEventListener('click', function () {
         lives -= 1;
         document.getElementById("score").innerHTML = score;
         document.getElementById("lives").innerHTML = lives;
-        document.getElementById('anotherOne').play();
+        document.getElementById('noExcuses').play();
         document.getElementById('audio2').play();
   
 
@@ -288,7 +288,7 @@ submitQ4.addEventListener('click', function () {
 
 
     }
-    if (lives <= 0) {
+    if (lives <= -3) {
         document.getElementById('lives').innerHTML = "You Lose!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
@@ -324,7 +324,7 @@ submitQ5.addEventListener('click', function () {
 
 
     }
-    if (lives < 2) {
+    if (lives <= -3) {
         document.getElementById('lives').innerHTML = "You Lose!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
