@@ -105,7 +105,20 @@ submitQ1.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('dontPlay').play();
         document.getElementById('audio2').play();
+        document.querySelector('#q1').style.display = 'none';
+        document.querySelector('#q2').style.display = 'block';
+        document.querySelector('#spriteRun2').style.display = 'block';
+        document.querySelector('#spriteReady1').remove();
+        //.remove was the only thing that actually stopped the Sprites from blinking with the set interval
 
+        // animation function
+        function spriteStop2() {
+            document.querySelector('#spriteRun2').style.display = 'none';
+            document.querySelector('#spriteReady2').style.display = 'block';
+
+        }
+
+        setInterval(spriteStop2, 1000)
 
 
         if (lives <= -3) {
@@ -154,7 +167,18 @@ submitQ2.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('noExcuses').play();
         document.getElementById('audio2').play();
+        document.querySelector('#q2').style.display = 'none';
+        document.querySelector('#q3').style.display = 'block';
+        document.querySelector('#spriteRun2').style.display = 'none';
+        document.querySelector('#spriteRun3').style.display = 'block';
+        document.querySelector('#spriteReady2').remove();
 
+        function spriteStop3() {
+            document.querySelector('#spriteRun3').style.display = 'none';
+            document.querySelector('#spriteReady3').style.display = 'block';
+
+        }
+        setInterval(spriteStop3, 1000)
 
         if (lives <= -3) {
             document.getElementById('lives').innerHTML = "You Lose!"
@@ -200,6 +224,18 @@ submitQ3.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('neverGiveUp').play();
         document.getElementById('audio2').play();
+        document.querySelector('#q3').style.display = 'none';
+        document.querySelector('#q4').style.display = 'block';
+        document.querySelector('#spriteRun3').style.display = 'none';
+        document.querySelector('#spriteRun4').style.display = 'block';
+        document.querySelector('#spriteReady3').remove();
+
+        function spriteStop4() {
+            document.querySelector('#spriteRun4').style.display = 'none';
+            document.querySelector('#spriteReady4').style.display = 'block';
+
+        }
+        setInterval(spriteStop4, 1000)
 
 
         if (lives <= -3) {
@@ -244,6 +280,17 @@ submitQ4.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('noExcuses').play();
         document.getElementById('audio2').play();
+        document.querySelector('#q4').style.display = 'none';
+        document.querySelector('#q5').style.display = 'block';
+        document.querySelector('#spriteRun5').style.display = 'block';
+        document.querySelector('#spriteReady4').remove();
+
+        function spriteStop5() {
+            document.querySelector('#spriteRun5').style.display = 'none';
+            document.querySelector('#spriteReady5').style.display = 'block';
+
+        }
+        setInterval(spriteStop5, 1000)
 
         if (lives <= -3) {
             document.getElementById('lives').innerHTML = "You Lose!"
@@ -262,7 +309,7 @@ submitQ4.addEventListener('click', function () {
 
 
 submitQ5.addEventListener('click', function () {
-    if (answer5.value === "eazy e" || answer5.value === "Eazy E" || answer5.value === "Eazy-E" || answer5.value === "Eazy-e" || answer5.value === "Eazy E" || answer5.value === "EazyE" || answer5.value === "Easy-E" || answer5.value === "Easy E" || answer5.value === "Easy e" || answer5.value === "easy e" || lives >= 3) {
+    if (answer5.value === "eazy e" || answer5.value === "Eazy E" || answer5.value === "Eazy-E" || answer5.value === "Eazy-e" || answer5.value === "Eazy E" || answer5.value === "EazyE" || answer5.value === "Easy-E" || answer5.value === "Easy E" || answer5.value === "Easy e" || answer5.value === "easy e") {
         score += 1000;
         lives += 1;
         document.getElementById("score").innerHTML = score;
@@ -306,7 +353,35 @@ submitQ5.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('neverGiveUp').play();
         document.getElementById('audio2').play();
+        document.querySelector('#round2').style.display = 'block';
+        document.querySelector('.bkgd2').style.display = 'block';
+        document.querySelector('.bkgd1').style.display = 'none';
+        document.querySelector('#spriteRun').style.display = 'none';
+        document.querySelector('#spriteRun2').style.display = 'none';
+        document.querySelector('#spriteRun3').style.display = 'none';
+        document.querySelector('#djk').style.display = 'none';
+        document.querySelector('#questionBox').style.display = 'none';
+        document.querySelector('#q5').style.display = 'none';
+        document.querySelector('#spriteReady5').remove();
 
+
+        round2.addEventListener('click', function () {
+            document.querySelector('#round2').style.display = 'none';
+            document.querySelector('#questionBox').style.display = 'block';
+            document.querySelector('#djk').style.display = 'block';
+            document.querySelector('#q6').style.display = 'block';
+            document.getElementById('keysSong').pause();
+            document.getElementById('anotherOne').play();
+            document.querySelector('#spriteRun6').style.display = 'block';
+
+            setInterval(spriteStop6, 1000)
+            // function to animate character using gifs with css slide animation
+            function spriteStop6() {
+                document.querySelector('#spriteRun6').style.display = 'none';
+                document.querySelector('#spriteReady6').style.display = 'block';
+
+            }
+        })
     }
     if (lives <= -3) {
         document.getElementById('lives').innerHTML = "You Lose!"
@@ -355,6 +430,19 @@ submitQ6.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('dontPlay').play();
         document.getElementById('audio2').play();
+        document.querySelector('#q6').style.display = 'none';
+        document.querySelector('#q7').style.display = 'block';
+        document.querySelector('#spriteRun6').style.display = 'none';
+        document.querySelector('#spriteRun7').style.display = 'block';
+        document.querySelector('#spriteReady6').remove();
+        // animation function
+        function spriteStop7() {
+            document.querySelector('#spriteRun7').style.display = 'none';
+            document.querySelector('#spriteReady7').style.display = 'block';
+
+        }
+
+        setInterval(spriteStop7, 1000)
 
 
 
@@ -404,7 +492,18 @@ submitQ7.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('noExcuses').play();
         document.getElementById('audio2').play();
+        document.querySelector('#q7').style.display = 'none';
+        document.querySelector('#q8').style.display = 'block';
+        document.querySelector('#spriteRun7').style.display = 'none';
+        document.querySelector('#spriteRun8').style.display = 'block';
+        document.querySelector('#spriteReady7').remove();
 
+        function spriteStop8() {
+            document.querySelector('#spriteRun8').style.display = 'none';
+            document.querySelector('#spriteReady8').style.display = 'block';
+
+        }
+        setInterval(spriteStop8, 1000)
 
         if (lives <= -3) {
             document.getElementById('lives').innerHTML = "You Lose!"
@@ -450,6 +549,18 @@ submitQ8.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('neverGiveUp').play();
         document.getElementById('audio2').play();
+        document.querySelector('#q8').style.display = 'none';
+        document.querySelector('#q9').style.display = 'block';
+        document.querySelector('#spriteRun8').style.display = 'none';
+        document.querySelector('#spriteRun9').style.display = 'block';
+        document.querySelector('#spriteReady8').remove();
+
+        function spriteStop9() {
+            document.querySelector('#spriteRun9').style.display = 'none';
+            document.querySelector('#spriteReady9').style.display = 'block';
+
+        }
+        setInterval(spriteStop9, 1000)
 
 
         if (lives <= -3) {
@@ -495,6 +606,18 @@ submitQ9.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('dontPlay').play();
         document.getElementById('audio2').play();
+        document.querySelector('#q9').style.display = 'none';
+        document.querySelector('#q10').style.display = 'block';
+        document.querySelector('#spriteRun9').style.display = 'none';
+        document.querySelector('#spriteRun10').style.display = 'block';
+        document.querySelector('#spriteReady9').remove();
+
+        function spriteStop10() {
+            document.querySelector('#spriteRun10').style.display = 'none';
+            document.querySelector('#spriteReady10').style.display = 'block';
+
+        }
+        setInterval(spriteStop10, 1000)
 
 
         if (lives <= -3) {
@@ -513,28 +636,34 @@ submitQ9.addEventListener('click', function () {
 })
 
 submitQ10.addEventListener('click', function () {
-    if (answer10.value === "Public Enemy" || answer10.value === "public enemy" || answer10.value === "PUBLIC ENEMY" || lives >= 3) {
+    if (answer10.value === "Public Enemy" || answer10.value === "public enemy" || answer10.value === "PUBLIC ENEMY" && lives >= 3) {
         score += 1000;
         lives += 1;
 
         document.getElementById("score").innerHTML = score;
         document.getElementById("lives").innerHTML = lives;
-        document.getElementById('lives').innerHTML = "You Win! " + lives + " 🗝";
-        document.getElementById('allIDoIsWin').play();
-        document.getElementById('youSmart').pause();
-        document.querySelector('#confetti').style.display = 'block';
-        document.querySelector('#spriteWon').style.display = 'block';
-        document.querySelector('#spriteRun').style.display = 'none';
-        document.querySelector('#spriteRun2').style.display = 'none';
-        document.querySelector('#spriteRun3').style.display = 'none';
-        document.querySelector('#djk').style.display = 'none';
-        document.querySelector('#questionBox').style.display = 'none';
-        document.querySelector('#spriteReady10').remove();
+        document.getElementById('lives').innerHTML = lives + " 🗝";
+        document.getElementById('youSmart').play();
 
+       
+        if (lives >= 3) {
+            document.getElementById('lives').innerHTML = "You Win! " + lives + " 🗝";
+            document.getElementById('allIDoIsWin').play();
+            document.getElementById('youSmart').pause();
+            document.querySelector('#confetti').style.display = 'block';
+            document.querySelector('#spriteWon').style.display = 'block';
+            document.querySelector('#spriteRun').style.display = 'none';
+            document.querySelector('#spriteRun2').style.display = 'none';
+            document.querySelector('#spriteRun3').style.display = 'none';
+            document.querySelector('#djk').style.display = 'none';
+            document.querySelector('#questionBox').style.display = 'none';
+            document.querySelector('#spriteReady10').remove();
 
-    }
+        }
+
+  
     
-    else if (lives <= -3) {
+    else if (lives < 3) {
         document.getElementById('lives').innerHTML = "You Lose!"
         document.getElementById('theyDontWant').play();
         document.querySelector('#spriteLose').style.display = 'block';
@@ -543,7 +672,7 @@ submitQ10.addEventListener('click', function () {
         document.querySelector('#questionBox').style.display = 'none';
         document.querySelector('#djk').style.display = 'none';
         document.querySelector('.sprites').style.display = 'none';
-
+    }
     }
 
 })
