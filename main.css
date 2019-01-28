@@ -1,3 +1,5 @@
+
+
 .bkgd1{
     background-image: url(./Images/BKGDS/sesame3.jpg);
     background-size: 100%;
@@ -646,30 +648,6 @@ li{
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);    
 }
 
-/* #round2{
-    position: absolute; 
-    z-index: 100;
-    width: 25%;     
-    margin-top: 20%;
-    margin-left: 40%;
-    display: none;
-    animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
-}
-@keyframes scale-in-hor-center {
-    0% {
-              transform: scaleX(0);
-      opacity: 1;
-    }
-    100% {
-              transform: scaleX(1);
-      opacity: 1;
-    }
-  } */
-  
-  
-
-
 
 
 @media only screen and (max-width: 800px) {
@@ -678,70 +656,56 @@ li{
         margin-left: -5%;
 
     }
-}
-@media only screen and (max-width: 800px) {
    .buttonQ{
-    height: 70px;
+    margin-top: 103%;
+    /* height: 70px;
     width: 160px;
-    font-size: 15px;
-    margin-top: 5%;
-    margin-left: 85%;
+    font-size: 15px; */
+    }
+
+    #start{
+        width: 4rem;
+        height: 4rem;
+        font-size: 15px;
+        padding: 15px 10px 0px 10px;
+    }
+
+    #round2{
+        width: 4rem;
+        height: 4rem;
+        font-size: 15px;
+        padding: 15px 10px 0px 10px;
+    }
+
+    i{
+        font-size: 35px;
 
     }
-}
-
-@media only screen and (max-width: 800px) {
-    #clouds{
-    }
-}
-
-
-
-@media only screen and (max-width: 800px) {
     #djk{
         margin-left: 95%;
         }
-    }
 
-@media only screen and (max-width: 800px) {
-    input, button {
-        width: 110px;
-        height: 20px;
-        margin-top: 0%;
-        margin-left: 0%;
-        font-size: 15px;
-
-    }
-}
-  
-@media only screen and (max-width: 800px) {
     #spriteRun{   
-        margin-left: -12%;
+            margin-left: -12%;
     }
-} 
 
-@media only screen and (max-width: 800px) {
     #spriteRun2{   
         margin-left: 4%;
     }
-} 
-@media only screen and (max-width: 800px) { 
+
     #spriteRun3 {   
         margin-left: 19%;
-    }}
+    }
 
-
-@media only screen and (max-width: 800px) {
     #spriteRun4 {   
         margin-left: 36%;
-    }} 
+    }
 
-@media only screen and (max-width: 800px) {
     #spriteRun5 {   
         margin-left: 51%;
     }
-}
 
+}
 
 cursor-pointer {
     cursor: url(images/arrowsmaller.png), auto;
