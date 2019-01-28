@@ -277,6 +277,8 @@ display: none;
     width: 13%;
     margin-top: 35%;
     margin-left: auto;
+    position: fixed;
+    z-index: 1;
     animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     display: none;
 
@@ -411,8 +413,8 @@ button{
     text-decoration:none; 
     display: block;
     background-color: rgba(209, 180, 100, 0.9);
-     height: 175px;
-     width: 500px;
+     height: 200px;
+     width: 530px;
      /* box-shadow: 1px 1px 1px black; */
      position: absolute;
      z-index: 1;    
@@ -420,15 +422,17 @@ button{
 
 
 
-        #rulesButton{
+#rulesButton{
             margin-top: 22%;
             margin-left: 6.5%;
             width: 8%;
             height: 3%;    
             display: block;     
-            /* animation: bounce 1.5s infinite;  */
- 
-         }
+}
+#rulesButton:hover{
+    text-shadow: 1px 1px 10px rgb(250, 250, 250);
+
+}
 
 #q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10{
     display: none;
@@ -485,7 +489,7 @@ button{
          radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);         
          height: 75px;
          width: 95px;
-         box-shadow: 2px 2px 2px black;
+         box-shadow: 2px 2px 12px black;
          position: fixed;
          animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
          z-index: 1;
@@ -495,24 +499,71 @@ button{
 
 
 
-
+i{
+    color: rgb(63, 205, 63);
+    font-size: 60px;
+    text-shadow: 2px 2px 12px black;
+}
+i:hover{
+    text-shadow: 2px 2px 8px rgb(155, 255, 149);
+/* color: rgb(89, 255, 17); */
+}
         #start{
-            margin-top: 20%;
-            margin-left: 48%;
-            width: 8%;
-            height: 3%;         
-            animation: bounce 5.5s infinite; 
- 
+            margin-top: 18%;
+            margin-left: 43%;
+            width: 8rem;
+            height: 7rem;         
+	        animation: heartbeat 2.5s ease-in-out infinite both;
+            border-radius: 100px;
+            padding: 30px 10px 0px 10px;
+            font-size: 30px;
+            text-shadow: 2px 2px 2px black;
+            position: absolute;
          }
+         #start:hover{
+            animation-play-state: paused;
+        }
 
          #round2{
-            margin-top: 20%;
-            margin-left: 48%;
-            width: 8%;
-            height: 3%;         
-            animation: bounce 5.5s infinite; 
- display: none;
+            margin-top: 13%;
+            margin-left: 43%;
+            width: 8rem;
+            height: 7rem;         
+	        animation: heartbeat 2.5s ease-in-out infinite both;
+            border-radius: 100px;
+            padding: 30px 10px 0px 10px;
+            font-size: 30px;
+            text-shadow: 2px 2px 2px black;
+            display: none;
+            
          }
+         #round2:hover{
+            animation-play-state: paused;
+        }
+         @keyframes heartbeat {
+            from {
+                transform: scale(1);
+                transform-origin: center center;
+                animation-timing-function: ease-out;
+            }
+            10% {
+                transform: scale(0.91);
+                animation-timing-function: ease-in;
+            }
+            17% {
+                transform: scale(0.98);          
+                animation-timing-function: ease-out;
+            }
+            33% {
+                transform: scale(0.87);
+                animation-timing-function: ease-in;
+            }
+            45% {
+                transform: scale(1);
+              
+                animation-timing-function: ease-out;
+            }
+          }
 
          @keyframes bounce{
              0%{
@@ -691,5 +742,9 @@ li{
     }
 }
 
+
+cursor-pointer {
+    cursor: url(images/arrowsmaller.png), auto;
+}
 
 
