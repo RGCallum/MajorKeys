@@ -179,6 +179,51 @@ display: none;
 display: none;
 }
 
+#spriteReady6{
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 10%;
+    position: fixed;
+    z-index: -1;
+display: none;
+}
+
+#spriteReady7{
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 26%;
+    position: fixed;
+    z-index: -1;
+display: none;
+}
+
+#spriteReady8{
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 41%;
+    position: fixed;
+    z-index: -1;
+display: none;
+}
+
+#spriteReady9{
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 57%;
+    position: fixed;
+    z-index: -1;
+display: none;
+}
+
+#spriteReady10{
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 73%;
+    position: fixed;
+    z-index: -1;
+display: none;
+}
+
 #spriteRun{
     width: 13%;
     margin-top: 35%;
@@ -219,6 +264,56 @@ display: none;
 }
 
 #spriteRun5{
+    width: 13%;
+    margin-top: 35%;
+    margin-left: 65%;
+    position: fixed;
+    z-index: 1;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+display: none;
+}
+
+#spriteRun6{
+    width: 13%;
+    margin-top: 35%;
+    margin-left: auto;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: none;
+
+}
+
+
+#spriteRun7{
+    width: 13%;
+    margin-top: 35%;
+    margin-left: 17%;
+    position: fixed;
+    z-index: 1;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+display: none;
+}
+
+#spriteRun8{
+    width: 13%;
+    margin-top: 35%;
+    margin-left: 32%;
+    position: fixed;
+    z-index: 1;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+display: none;
+}
+
+#spriteRun9{
+    width: 13%;
+    margin-top: 35%;
+    margin-left: 48%;
+    position: fixed;
+    z-index: 1;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+display: none;
+}
+
+#spriteRun10{
     width: 13%;
     margin-top: 35%;
     margin-left: 65%;

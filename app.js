@@ -340,27 +340,17 @@ submitQ5.addEventListener('click', function () {
             document.querySelector('#questionBox').style.display = 'block';
             document.querySelector('#djk').style.display = 'block';
             document.querySelector('#q6').style.display = 'block';
-            document.querySelector('#spriteRun').style.display = 'block';
-            document.querySelector('#spriteReady1').style.display = 'block';
+            // document.querySelector('#spriteRun6').style.display = 'block';
 
+            setInterval(spriteStop6, 1000)
+            // function to animate character using gifs with css slide animation
+            function spriteStop6() {
+                document.querySelector('#spriteRun6').style.display = 'none';
+                document.querySelector('#spriteReady6').style.display = 'block';
             
+            }
         })
-
-
-        // document.getElementById("score").innerHTML = score;
-        // document.getElementById("lives").innerHTML = lives;
-        // document.getElementById('lives').innerHTML = "You Win! 🗝";
-        // document.getElementById('allIDoIsWin').play();
-        // document.getElementById('youSmart').pause();
-        // document.querySelector('#confetti').style.display = 'block';
-        // document.querySelector('#spriteWon').style.display = 'block';
-        // document.querySelector('#spriteRun').style.display = 'none';
-        // document.querySelector('#spriteRun2').style.display = 'none';
-        // document.querySelector('#spriteRun3').style.display = 'none';
-        // document.querySelector('#djk').style.display = 'none';
-        // document.querySelector('#questionBox').style.display = 'none';
-        // document.querySelector('#spriteReady5').remove();
-        
+       
 
     }
     if (lives <= -3) {
@@ -393,18 +383,17 @@ submitQ6.addEventListener('click', function () {
             document.getElementById("score").innerHTML = score;
             document.querySelector('#q6').style.display = 'none';
             document.querySelector('#q7').style.display = 'block';
-            document.querySelector('#spriteRun2').style.display = 'block';
-            document.querySelector('#spriteReady1').remove();
-    //.remove was the only thing that actually stopped the Sprites from blinking with the set interval
-    
+            document.querySelector('#spriteRun6').style.display = 'none';
+            document.querySelector('#spriteRun7').style.display = 'block';
+            document.querySelector('#spriteReady6').remove();    
         // animation function
-            function spriteStop2() {
-                document.querySelector('#spriteRun2').style.display = 'none';
-                document.querySelector('#spriteReady2').style.display = 'block';
+            function spriteStop7() {
+                document.querySelector('#spriteRun7').style.display = 'none';
+                document.querySelector('#spriteReady7').style.display = 'block';
     
             }
             
-            setInterval(spriteStop2, 1000)
+            setInterval(spriteStop7, 1000)
     
         } else {
             score -= 1000;
@@ -458,16 +447,16 @@ submitQ6.addEventListener('click', function () {
                 document.getElementById("score").innerHTML = score;
                 document.querySelector('#q7').style.display = 'none';
                 document.querySelector('#q8').style.display = 'block';
-                document.querySelector('#spriteRun2').style.display = 'none';
-                document.querySelector('#spriteRun3').style.display = 'block';
-                document.querySelector('#spriteReady2').remove();
+                document.querySelector('#spriteRun7').style.display = 'none';
+                document.querySelector('#spriteRun8').style.display = 'block';
+                document.querySelector('#spriteReady7').remove();
         
-                function spriteStop3() {
-                    document.querySelector('#spriteRun3').style.display = 'none';
-                    document.querySelector('#spriteReady3').style.display = 'block';
+                function spriteStop8() {
+                    document.querySelector('#spriteRun8').style.display = 'none';
+                    document.querySelector('#spriteReady8').style.display = 'block';
         
                 }
-                setInterval(spriteStop3, 1000)
+                setInterval(spriteStop8, 1000)
             } else {
                 score -= 1000;
                 lives -= 1;
@@ -517,16 +506,16 @@ submitQ6.addEventListener('click', function () {
                 document.getElementById("score").innerHTML = score;
                 document.querySelector('#q8').style.display = 'none';
                 document.querySelector('#q9').style.display = 'block';
-                document.querySelector('#spriteRun3').style.display = 'none';
-                document.querySelector('#spriteRun4').style.display = 'block';
-                document.querySelector('#spriteReady3').remove();
+                document.querySelector('#spriteRun8').style.display = 'none';
+                document.querySelector('#spriteRun9').style.display = 'block';
+                document.querySelector('#spriteReady8').remove();
         
-                function spriteStop4() {
-                    document.querySelector('#spriteRun4').style.display = 'none';
-                    document.querySelector('#spriteReady4').style.display = 'block';
+                function spriteStop9() {
+                    document.querySelector('#spriteRun9').style.display = 'none';
+                    document.querySelector('#spriteReady9').style.display = 'block';
         
                 }
-                setInterval(spriteStop4, 1000)
+                setInterval(spriteStop9, 1000)
         
             } else {
                 score -= 1000;
@@ -576,15 +565,16 @@ submitQ6.addEventListener('click', function () {
                 document.getElementById("score").innerHTML = score;
                 document.querySelector('#q9').style.display = 'none';
                 document.querySelector('#q10').style.display = 'block';
-                document.querySelector('#spriteRun5').style.display = 'block';
-                document.querySelector('#spriteReady4').remove();
+                document.querySelector('#spriteRun9').style.display = 'none';
+                document.querySelector('#spriteRun10').style.display = 'block';
+                document.querySelector('#spriteReady9').remove();
         
-                function spriteStop5() {
-                    document.querySelector('#spriteRun5').style.display = 'none';
-                    document.querySelector('#spriteReady5').style.display = 'block';
+                function spriteStop10() {
+                    document.querySelector('#spriteRun10').style.display = 'none';
+                    document.querySelector('#spriteReady10').style.display = 'block';
         
                 }
-                setInterval(spriteStop5, 1000)
+                setInterval(spriteStop10, 1000)
         
             } else {
                 score -= 1000;
@@ -640,7 +630,7 @@ submitQ6.addEventListener('click', function () {
                 document.querySelector('#spriteRun3').style.display = 'none';
                 document.querySelector('#djk').style.display = 'none';
                 document.querySelector('#questionBox').style.display = 'none';
-                document.querySelector('#spriteReady5').remove();
+                document.querySelector('#spriteReady10').remove();
                 
         
             }
