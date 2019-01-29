@@ -636,7 +636,7 @@ submitQ9.addEventListener('click', function () {
 })
 
 submitQ10.addEventListener('click', function () {
-    if (answer10.value === "Public Enemy" || answer10.value === "public enemy" || answer10.value === "PUBLIC ENEMY" && lives >= 3) {
+    if (answer10.value === "Public Enemy" || answer10.value === "public enemy" || answer10.value === "PUBLIC ENEMY") {
         score += 1000;
         lives += 1;
 
