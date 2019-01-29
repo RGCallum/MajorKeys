@@ -658,7 +658,18 @@ li{
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);    
 }
 
-
+.swal-button--confirm{
+    display: none;
+}
+.swal-button{
+    font-size: 30px;
+    width: 20vw;
+    border-radius: 15px;
+    background-color: #D1B464;
+    border: 5px inset #D1B464;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}
 
 @media only screen and (max-width: 800px) {
     .buttonBox {
@@ -719,7 +730,7 @@ li{
 }
 
 cursor-pointer {
-    cursor: url(./Images/ChracterStill.png), auto;
+    cursor: url(./Images/ChracterStill.png);
 }
 
 
