@@ -19,7 +19,7 @@
     width: 100vw;
     height: 100vh;
     display: none;
-    animation: slide-in-blurred-top 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: bounce-in-top 1.1s both;
 }
 
 @keyframes slide-in-blurred-top {
@@ -370,6 +370,16 @@ z-index: -2;
 
 }
 
+#djk2{
+    width: 60%;
+margin-left: 80%;
+margin-top: 85%;
+animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+position: fixed;
+z-index: -2;
+display: none;
+}
+
 @keyframes slide-left {
     0% {
    
@@ -395,7 +405,11 @@ text-align: center;
 background-color: rgb(221, 195, 122);
 }
 
-
+.answer.correct{
+    display: none;
+    text-align: center;
+    width: 90vw;
+}
 /* submit button */
 button{
     width: 50%;
@@ -429,6 +443,9 @@ button{
     }
 
 
+    .next{
+        display: none;
+    }
 
 #rulesButton{
             margin-top: 22%;
