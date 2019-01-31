@@ -39,9 +39,9 @@ let lives = 0;
 
 function showRules() {
 
-    swal("MAJOR KEYS, \n A combination of the classic hangman game and hip-hop trivia. The object of the game is to get keys from DJ Khaled by answering trivia questions to advance your character toward DJ Khaled. If the word typed in the box is correct the character collects a key, hears one of DJ Khaled's motivational words(keys) of wisdom, and runs closer to him. Each correct word is worth 1000 points and 1 key. If the word is incorrect, the character stays in place and doesn't get any points or motivational keys from DJ Khaled. To win the game, the player has to have at least 3 questions correct by the end of the game. Get 3 questions wrong and you lose!"
+    swal("MAJOR KEYS, \n A DJ Khaled inspired hip-hop trivia game for the "true" Hip Hop Head. The object of Major Keys is to get DJ Khaled's "Keys" of wisdom by answering trivia questions to advance your character closer to his Major Key. If your answer is correct, you collect a key, hear one of DJ Khaled's motivational words (keys) of wisdom, and run closer to him. Each correct word is worth 1000 points and 1 key. Answer incorrectly, and you lose keys, points and DJ Khaled roasts you. To win the game, you need to have at least 3 keys by the end of the game. Score less than 3 keys by the end of the game and you lose! Scoring below -3000 at any point in the game and its GAME OVER!"
         , {
-            buttons: ["Close", true],
+            buttons: ["👍🏾", true],
         });
 }
 
@@ -79,8 +79,7 @@ submitQ1.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
 
-        document.querySelector('#a1Show').style.display = 'block';
-        document.querySelector('#a1').style.display = 'none';
+        document.querySelector('#a1').value = "✅ Diddy";
         document.querySelector('.submitQ1').style.display = 'none';
         document.querySelector('#next1').style.display = 'block';
 
@@ -98,7 +97,6 @@ submitQ1.addEventListener('click', function () {
 
 
         next1.addEventListener('click', function () {
-            document.querySelector('#a1Show').style.display = 'none';
             document.querySelector('#q1').style.display = 'none';
             document.querySelector('#q2').style.display = 'block';
         })
@@ -114,8 +112,8 @@ submitQ1.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('playUrself').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a1Show').style.display = 'block';
-        document.querySelector('#a1').style.display = 'none';
+        document.querySelector('#a1').value = "❌ Diddy";
+
         document.querySelector('.submitQ1').style.display = 'none';
         document.querySelector('#next1').style.display = 'block';
         document.querySelector('#spriteRun2').style.display = 'block';
@@ -132,7 +130,6 @@ submitQ1.addEventListener('click', function () {
         setInterval(spriteStop2, 1000)
 
         next1.addEventListener('click', function () {
-            document.querySelector('#a1Show').style.display = 'none';
             document.querySelector('#q1').style.display = 'none';
             document.querySelector('#q2').style.display = 'block';
 
@@ -153,6 +150,7 @@ submitQ1.addEventListener('click', function () {
 
         }
     }
+   
 })
 
 
@@ -165,8 +163,7 @@ submitQ2.addEventListener('click', function () {
         document.getElementById('youVerySmart').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a2Show').style.display = 'block';
-        document.querySelector('#a2').style.display = 'none';
+        document.querySelector('#a2').value = "✅  Lil' Wayne";
         document.querySelector('.submitQ2').style.display = 'none';
         document.querySelector('#next2').style.display = 'block';
         document.querySelector('#spriteRun2').style.display = 'none';
@@ -181,7 +178,6 @@ submitQ2.addEventListener('click', function () {
         setInterval(spriteStop3, 1000)
 
         next2.addEventListener('click', function () {
-            document.querySelector('#a2Show').style.display = 'none';
             document.querySelector('#q2').style.display = 'none';
             document.querySelector('#q3').style.display = 'block';
         })
@@ -193,8 +189,7 @@ submitQ2.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('noExcuses').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a2Show').style.display = 'block';
-        document.querySelector('#a2').style.display = 'none';
+        document.querySelector('#a2').value = "❌ Lil' Wayne";
         document.querySelector('.submitQ2').style.display = 'none';
         document.querySelector('#next2').style.display = 'block';
         document.querySelector('#spriteRun2').style.display = 'none';
@@ -210,7 +205,6 @@ submitQ2.addEventListener('click', function () {
 
 
         next2.addEventListener('click', function () {
-            document.querySelector('#a2Show').style.display = 'none';
             document.querySelector('#q2').style.display = 'none';
             document.querySelector('#q3').style.display = 'block';
         })
@@ -240,8 +234,7 @@ submitQ3.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
 
-        document.querySelector('#a3Show').style.display = 'block';
-        document.querySelector('#a3').style.display = 'none';
+        document.querySelector('#a3').value = "✅ Nas";
         document.querySelector('.submitQ3').style.display = 'none';
         document.querySelector('#next3').style.display = 'block';
 
@@ -257,7 +250,6 @@ submitQ3.addEventListener('click', function () {
         setInterval(spriteStop4, 1000)
 
         next3.addEventListener('click', function () {
-            document.querySelector('#a3Show').style.display = 'none';
             document.querySelector('#q3').style.display = 'none';
             document.querySelector('#q4').style.display = 'block';
         })
@@ -270,8 +262,7 @@ submitQ3.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('neverGiveUp').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a3Show').style.display = 'block';
-        document.querySelector('#a3').style.display = 'none';
+        document.querySelector('#a3').value = "❌ Nas";
         document.querySelector('.submitQ3').style.display = 'none';
         document.querySelector('#next3').style.display = 'block';
         document.querySelector('#spriteRun3').style.display = 'none';
@@ -286,7 +277,6 @@ submitQ3.addEventListener('click', function () {
         setInterval(spriteStop4, 1000)
 
         next3.addEventListener('click', function () {
-            document.querySelector('#a3Show').style.display = 'none';
             document.querySelector('#q3').style.display = 'none';
             document.querySelector('#q4').style.display = 'block';
         })
@@ -315,8 +305,7 @@ submitQ4.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
 
-        document.querySelector('#a4Show').style.display = 'block';
-        document.querySelector('#a4').style.display = 'none';
+        document.querySelector('#a4').value = "✅ Ice-T";
         document.querySelector('.submitQ4').style.display = 'none';
         document.querySelector('#next4').style.display = 'block';
 
@@ -331,7 +320,6 @@ submitQ4.addEventListener('click', function () {
         setInterval(spriteStop5, 1000)
 
         next4.addEventListener('click', function () {
-            document.querySelector('#a4Show').style.display = 'none';
             document.querySelector('#q4').style.display = 'none';
             document.querySelector('#q5').style.display = 'block';
         })
@@ -344,8 +332,7 @@ submitQ4.addEventListener('click', function () {
         document.getElementById('gameHuh').play();
         document.getElementById('audio2').play();
 
-        document.querySelector('#a4Show').style.display = 'block';
-        document.querySelector('#a4').style.display = 'none';
+        document.querySelector('#a4').value = "❌ Ice-T";
         document.querySelector('.submitQ4').style.display = 'none';
         document.querySelector('#next4').style.display = 'block';
 
@@ -360,7 +347,6 @@ submitQ4.addEventListener('click', function () {
         setInterval(spriteStop5, 1000)
 
         next4.addEventListener('click', function () {
-            document.querySelector('#a4Show').style.display = 'none';
             document.querySelector('#q4').style.display = 'none';
             document.querySelector('#q5').style.display = 'block';
         })
@@ -391,13 +377,11 @@ submitQ5.addEventListener('click', function () {
         document.getElementById('weDaBest').play();
 
 
-        document.querySelector('#a5Show').style.display = 'block';
-        document.querySelector('#a5').style.display = 'none';
+        document.querySelector('#a5').value = "✅ Eazy-E";
         document.querySelector('.submitQ5').style.display = 'none';
         document.querySelector('#next5').style.display = 'block';
 
         next5.addEventListener('click', function () {
-            document.querySelector('#a5Show').style.display = 'none';
             document.getElementById('keysSong').play();
 
             document.querySelector('#round2').style.display = 'block';
@@ -442,13 +426,11 @@ submitQ5.addEventListener('click', function () {
         document.getElementById('audio2').play();
 
 
-        document.querySelector('#a5Show').style.display = 'block';
-        document.querySelector('#a5').style.display = 'none';
+        document.querySelector('#a5').value = "❌ Eazy E";
         document.querySelector('.submitQ5').style.display = 'none';
         document.querySelector('#next5').style.display = 'block';
 
         next5.addEventListener('click', function () {
-            document.querySelector('#a5Show').style.display = 'none';
             document.getElementById('keysSong').play();
 
             document.querySelector('#round2').style.display = 'block';
@@ -510,8 +492,7 @@ submitQ6.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
 
-        document.querySelector('#a6Show').style.display = 'block';
-        document.querySelector('#a6').style.display = 'none';
+        document.querySelector('#a6').value = "✅ Tupac";
         document.querySelector('.submitQ6').style.display = 'none';
         document.querySelector('#next6').style.display = 'block';
 
@@ -528,7 +509,6 @@ submitQ6.addEventListener('click', function () {
         setInterval(spriteStop7, 1000)
 
         next6.addEventListener('click', function () {
-            document.querySelector('#a6Show').style.display = 'none';
             document.querySelector('#q6').style.display = 'none';
             document.querySelector('#q7').style.display = 'block';
         })
@@ -541,8 +521,7 @@ submitQ6.addEventListener('click', function () {
         document.getElementById('playUrself').play();
         document.getElementById('audio2').play();
 
-        document.querySelector('#a6Show').style.display = 'block';
-        document.querySelector('#a6').style.display = 'none';
+        document.querySelector('#a6').value = "❌ Tupac";
         document.querySelector('.submitQ6').style.display = 'none';
         document.querySelector('#next6').style.display = 'block';
 
@@ -559,7 +538,6 @@ submitQ6.addEventListener('click', function () {
         setInterval(spriteStop7, 1000)
 
         next6.addEventListener('click', function () {
-            document.querySelector('#a6Show').style.display = 'none';
             document.querySelector('#q6').style.display = 'none';
             document.querySelector('#q7').style.display = 'block';
         })
@@ -592,8 +570,7 @@ submitQ7.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
 
-        document.querySelector('#a7Show').style.display = 'block';
-        document.querySelector('#a7').style.display = 'none';
+        document.querySelector('#a7').value = "✅ popped";
         document.querySelector('.submitQ7').style.display = 'none';
         document.querySelector('#next7').style.display = 'block';
 
@@ -609,7 +586,6 @@ submitQ7.addEventListener('click', function () {
         setInterval(spriteStop8, 1000)
 
         next7.addEventListener('click', function () {
-            document.querySelector('#a7Show').style.display = 'none';
             document.querySelector('#q7').style.display = 'none';
             document.querySelector('#q8').style.display = 'block';
         })
@@ -622,8 +598,7 @@ submitQ7.addEventListener('click', function () {
         document.getElementById('noExcuses').play();
         document.getElementById('audio2').play();
 
-        document.querySelector('#a7Show').style.display = 'block';
-        document.querySelector('#a7').style.display = 'none';
+        document.querySelector('#a7').value = "❌ popped";
         document.querySelector('.submitQ7').style.display = 'none';
         document.querySelector('#next7').style.display = 'block';
 
@@ -640,7 +615,6 @@ submitQ7.addEventListener('click', function () {
 
 
         next7.addEventListener('click', function () {
-            document.querySelector('#a7Show').style.display = 'none';
             document.querySelector('#q7').style.display = 'none';
             document.querySelector('#q8').style.display = 'block';
         })
@@ -670,8 +644,7 @@ submitQ8.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
 
-        document.querySelector('#a8Show').style.display = 'block';
-        document.querySelector('#a8').style.display = 'none';
+        document.querySelector('#a8').value = "✅ LONS";
         document.querySelector('.submitQ8').style.display = 'none';
         document.querySelector('#next8').style.display = 'block';
 
@@ -688,7 +661,6 @@ submitQ8.addEventListener('click', function () {
 
 
         next8.addEventListener('click', function () {
-            document.querySelector('#a8Show').style.display = 'none';
             document.querySelector('#q8').style.display = 'none';
             document.querySelector('#q9').style.display = 'block';
         })
@@ -701,8 +673,7 @@ submitQ8.addEventListener('click', function () {
         document.getElementById('neverGiveUp').play();
         document.getElementById('audio2').play();
 
-        document.querySelector('#a8Show').style.display = 'block';
-        document.querySelector('#a8').style.display = 'none';
+        document.querySelector('#a8').value = "❌ LONS";
         document.querySelector('.submitQ8').style.display = 'none';
         document.querySelector('#next8').style.display = 'block';
 
@@ -718,7 +689,6 @@ submitQ8.addEventListener('click', function () {
         setInterval(spriteStop9, 1000)
 
         next8.addEventListener('click', function () {
-            document.querySelector('#a8Show').style.display = 'none';
             document.querySelector('#q8').style.display = 'none';
             document.querySelector('#q9').style.display = 'block';
         })
@@ -743,12 +713,11 @@ submitQ9.addEventListener('click', function () {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
-        document.getElementById('somePeople').play();
+        document.getElementById('youGenius').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
 
-        document.querySelector('#a9Show').style.display = 'block';
-        document.querySelector('#a9').style.display = 'none';
+        document.querySelector('#a9').value = "✅ Rakim";
         document.querySelector('.submitQ9').style.display = 'none';
         document.querySelector('#next9').style.display = 'block';
 
@@ -765,7 +734,6 @@ submitQ9.addEventListener('click', function () {
 
 
         next9.addEventListener('click', function () {
-            document.querySelector('#a9Show').style.display = 'none';
             document.querySelector('#q9').style.display = 'none';
             document.querySelector('#q10').style.display = 'block';
         })
@@ -778,8 +746,7 @@ submitQ9.addEventListener('click', function () {
         document.getElementById('gameHuh').play();
         document.getElementById('audio2').play();
 
-        document.querySelector('#a9Show').style.display = 'block';
-        document.querySelector('#a9').style.display = 'none';
+        document.querySelector('#a9').value = "❌ Rakim";
         document.querySelector('.submitQ9').style.display = 'none';
         document.querySelector('#next9').style.display = 'block';
 
@@ -795,7 +762,6 @@ submitQ9.addEventListener('click', function () {
         setInterval(spriteStop10, 1000)
 
         next9.addEventListener('click', function () {
-            document.querySelector('#a9Show').style.display = 'none';
             document.querySelector('#q9').style.display = 'none';
             document.querySelector('#q10').style.display = 'block';
         })
@@ -826,17 +792,40 @@ submitQ10.addEventListener('click', function () {
         document.getElementById('weDaBest').play();
         document.getElementById('audio1').play();
 
-        document.querySelector('#a10Show').style.display = 'block';
-        document.querySelector('#a10').style.display = 'none';
+        document.querySelector('#a10').value = "✅ Public Enemy";
         document.querySelector('.submitQ10').style.display = 'none';
         document.querySelector('#next10').style.display = 'block';
 
 
 
         next10.addEventListener('click', function () {
-            document.querySelector('#a10Show').style.display = 'none';
             document.querySelector('#q10').style.display = 'none';
-
+            if (lives >= 3) {
+                document.getElementById('lives').innerHTML = "You Win! " + lives + " 🗝";
+                document.getElementById('allIDoIsWin').play();
+                document.getElementById('weDaBest').pause();
+                document.querySelector('#confetti').style.display = 'block';
+                document.querySelector('#spriteWon').style.display = 'block';
+                document.querySelector('#spriteRun').style.display = 'none';
+                document.querySelector('#spriteRun2').style.display = 'none';
+                document.querySelector('#spriteRun3').style.display = 'none';
+                document.querySelector('#djk2').style.display = 'none';
+                document.querySelector('#questionBox').style.display = 'none';
+                document.querySelector('#spriteReady10').remove();
+    
+            }
+    
+            else if (lives < 3) {
+                document.getElementById('lives').innerHTML = "You Lose!"
+                document.getElementById('theyDontWant').play();
+                document.getElementById('playUrself').pause();
+                document.querySelector('#spriteLose').style.display = 'block';
+                document.querySelector('#gameOver').style.display = 'block';
+                document.querySelector('#spriteRun').style.display = 'none';
+                document.querySelector('#questionBox').style.display = 'none';
+                document.querySelector('#djk2').style.display = 'none';
+                document.querySelector('.sprites').style.display = 'none';
+            }
 
 
         })
@@ -849,15 +838,13 @@ submitQ10.addEventListener('click', function () {
         document.getElementById('playUrself').play();
         document.getElementById('audio2').play();
 
-        document.querySelector('#a10Show').style.display = 'block';
-        document.querySelector('#a10').style.display = 'none';
+        document.querySelector('#a10').value = "❌ Public Enemy";
         document.querySelector('.submitQ10').style.display = 'none';
         document.querySelector('#next10').style.display = 'block';
 
         next10.addEventListener('click', function () {
-            document.querySelector('#a10Show').style.display = 'none';
             document.querySelector('#q10').style.display = 'none';
-        })
+        
 
         if (lives >= 3) {
             document.getElementById('lives').innerHTML = "You Win! " + lives + " 🗝";
@@ -885,8 +872,11 @@ submitQ10.addEventListener('click', function () {
             document.querySelector('#djk2').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
         }
-
+    })
     }
+
+
+
 
 }
 
