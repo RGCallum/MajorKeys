@@ -34,12 +34,14 @@ let next7 = document.querySelector('#next7')
 let next8 = document.querySelector('#next8')
 let next9 = document.querySelector('#next9')
 let next10 = document.querySelector('#next10')
+let restart = document.querySelector('#restart')
+
 let score = 0;
 let lives = 0;
 
 function showRules() {
 
-    swal("MAJOR KEYS, \n A DJ Khaled inspired hip-hop trivia game for the "true" Hip Hop Head. The object of Major Keys is to get DJ Khaled's "Keys" of wisdom by answering trivia questions to advance your character closer to his Major Key. If your answer is correct, you collect a key, hear one of DJ Khaled's motivational words (keys) of wisdom, and run closer to him. Each correct word is worth 1000 points and 1 key. Answer incorrectly, and you lose keys, points and DJ Khaled roasts you. To win the game, you need to have at least 3 keys by the end of the game. Score less than 3 keys by the end of the game and you lose! Scoring below -3000 at any point in the game and its GAME OVER!"
+    swal("MAJOR KEYS, \n A DJ Khaled inspired hip-hop trivia game for the 'true' Hip Hop Head. The object of Major Keys is to get DJ Khaled's 'Keys' of wisdom by answering trivia questions to advance your character closer to his Major Key. If your answer is correct, you collect a key, hear one of DJ Khaled's motivational words (keys) of wisdom, and run closer to him. Each correct word is worth 1000 points and 1 key. Answer incorrectly, and you lose keys, points and DJ Khaled roasts you. To win the game, you need to have at least 3 keys by the end of the game. Score less than 3 keys by the end of the game and you lose! Scoring below -3000 at any point in the game and its GAME OVER!"
         , {
             buttons: ["👍🏾", true],
         });
@@ -98,9 +100,9 @@ submitQ1.addEventListener('click', function () {
 
         next1.addEventListener('click', function () {
             document.querySelector('#q1').style.display = 'none';
-            document.querySelector('#q2').style.display = 'block';
-        })
+            document.querySelector('#q2').style.display = 'block';  
 
+        })
 
 
 
@@ -146,10 +148,15 @@ submitQ1.addEventListener('click', function () {
             document.querySelector('#djk').style.display = 'none';
             document.querySelector('#questionBox').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
+            document.querySelector('#restart').style.display = 'block';
 
 
         }
     }
+
+    restart.addEventListener('click', function () {
+        location.reload();
+      } )
    
 })
 
@@ -219,10 +226,16 @@ submitQ2.addEventListener('click', function () {
             document.querySelector('#questionBox').style.display = 'none';
             document.querySelector('#djk').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
+            document.querySelector('#restart').style.display = 'block';
 
 
         }
     }
+
+    restart.addEventListener('click', function () {
+        location.reload();
+      } )
+    
 })
 
 submitQ3.addEventListener('click', function () {
@@ -290,10 +303,12 @@ submitQ3.addEventListener('click', function () {
             document.querySelector('#questionBox').style.display = 'none';
             document.querySelector('#djk').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
-
-
+            document.querySelector('#restart').style.display = 'block';
         }
     }
+    restart.addEventListener('click', function () {
+        location.reload();
+      })
 })
 
 submitQ4.addEventListener('click', function () {
@@ -360,10 +375,12 @@ submitQ4.addEventListener('click', function () {
             document.querySelector('#questionBox').style.display = 'none';
             document.querySelector('#djk').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
-
-
+            document.querySelector('#restart').style.display = 'block';
         }
     }
+    restart.addEventListener('click', function () {
+        location.reload();
+      })
 })
 
 
@@ -473,10 +490,14 @@ submitQ5.addEventListener('click', function () {
         document.querySelector('#spriteRun').style.display = 'none';
         document.querySelector('#questionBox').style.display = 'none';
         document.querySelector('#djk').style.display = 'none';
-        document.querySelector('#djk2').style.display = 'block';
+        document.querySelector('#djk2').style.display = 'none';
         document.querySelector('.sprites').style.display = 'none';
-
+        document.querySelector('#restart').style.display = 'block';
     }
+
+restart.addEventListener('click', function () {
+    location.reload();
+  })
 
 })
 
@@ -552,10 +573,12 @@ submitQ6.addEventListener('click', function () {
             document.querySelector('#djk2').style.display = 'none';
             document.querySelector('#questionBox').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
-
-
+            document.querySelector('#restart').style.display = 'block';
         }
     }
+    restart.addEventListener('click', function () {
+        location.reload();
+      })
 })
 
 submitQ7.addEventListener('click', function () {
@@ -629,14 +652,16 @@ submitQ7.addEventListener('click', function () {
             document.querySelector('#djk2').style.display = 'none';
             document.querySelector('#questionBox').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
-
-
+            document.querySelector('#restart').style.display = 'block';
         }
     }
+    restart.addEventListener('click', function () {
+        location.reload();
+      })
 })
 
 submitQ8.addEventListener('click', function () {
-    if (answer8.value === "Leaders Of The New School" || answer8.value === "leaders of the new school" || answer8.value === "LONS" || answer8.value === "lons" || answer8.value === "Lons") {
+    if (answer8.value === "Leaders Of The New School" || answer8.value === "Leaders of the new school" || answer8.value === "LONS" || answer8.value === "lons" || answer8.value === "Lons") {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -702,10 +727,12 @@ submitQ8.addEventListener('click', function () {
             document.querySelector('#questionBox').style.display = 'none';
             document.querySelector('#djk2').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
-
-
+            document.querySelector('#restart').style.display = 'block';
         }
     }
+    restart.addEventListener('click', function () {
+        location.reload();
+      })
 })
 
 submitQ9.addEventListener('click', function () {
@@ -775,14 +802,16 @@ submitQ9.addEventListener('click', function () {
             document.querySelector('#questionBox').style.display = 'none';
             document.querySelector('#djk2').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
-
-
+            document.querySelector('#restart').style.display = 'block';
         }
     }
+    restart.addEventListener('click', function () {
+        location.reload();
+      })
 })
 
 submitQ10.addEventListener('click', function () {
-    if (answer10.value === "Public Enemy" || answer10.value === "public enemy" || answer10.value === "PUBLIC ENEMY") {
+    if (answer10.value === "Public Enemy" || answer10.value === "public enemy" || answer10.value === "PUBLIC ENEMY" || answer10.value === "Public enemy") {
         score += 1000;
         lives += 1;
 
@@ -813,7 +842,12 @@ submitQ10.addEventListener('click', function () {
                 document.querySelector('#questionBox').style.display = 'none';
                 document.querySelector('#spriteReady10').remove();
     
-            }
+            
+            document.querySelector('#restart').style.display = 'block';
+        
+    restart.addEventListener('click', function () {
+        location.reload();
+      })}
     
             else if (lives < 3) {
                 document.getElementById('lives').innerHTML = "You Lose!"
@@ -825,8 +859,12 @@ submitQ10.addEventListener('click', function () {
                 document.querySelector('#questionBox').style.display = 'none';
                 document.querySelector('#djk2').style.display = 'none';
                 document.querySelector('.sprites').style.display = 'none';
+                document.querySelector('#restart').style.display = 'block';
             }
-
+        
+        restart.addEventListener('click', function () {
+            location.reload();
+          })
 
         })
 
@@ -881,4 +919,3 @@ submitQ10.addEventListener('click', function () {
 }
 
 )
-
