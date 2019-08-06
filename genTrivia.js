@@ -74,8 +74,8 @@ submitQ1.addEventListener('click', function () {
     // start loop
 
     if 
-    ( document.querySelector("input[value=diddy]:checked")
-        // answer1.value === "diddy" || answer1.value === "Diddy" || answer1.value === "Puffy" || answer1.value === "P. Diddy"
+    ( document.querySelector("input[value=toronto]:checked")
+        // answer1.value === "Toronto" || answer1.value === "Diddy" || answer1.value === "Puffy" || answer1.value === "P. Diddy"
     
         ) {
         score += 1000;
@@ -84,10 +84,9 @@ submitQ1.addEventListener('click', function () {
         document.getElementById('youSmart').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a1').innerHTML = "✅ Diddy";
+        document.querySelector('#a1').innerHTML = "✅ Toronto";
         document.querySelector('#a1').style.color = "green";
 
-        // document.querySelector('#a1').innerHTML = "✅ Diddy";
         document.querySelector('.submitQ1').style.display = 'none';
         document.querySelector('#next1').style.display = 'block';
 
@@ -120,7 +119,7 @@ submitQ1.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('playUrself').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a1').innerHTML = "❌ Diddy";
+        document.querySelector('#a1').innerHTML = "❌ Toronto";
         document.querySelector('#a1').style.color = "red";
 
         document.querySelector('.submitQ1').style.display = 'none';
@@ -171,7 +170,7 @@ submitQ1.addEventListener('click', function () {
 //2nd question onclick answer and if/else
 submitQ2.addEventListener('click', function () {
     if (
-        document.querySelector("input[value=lilwayne]:checked")
+        document.querySelector("input[value=wutang]:checked")
         // answer2.value === "lil wayne" || answer2.value === "Lil Wayne" || answer2.value === "Lil' Wayne" || answer2.value === "Lil wayne"
         ) {
         score += 1000;
@@ -180,7 +179,7 @@ submitQ2.addEventListener('click', function () {
         document.getElementById('youVerySmart').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a2').innerHTML = "✅ Lil' Wayne";
+        document.querySelector('#a2').innerHTML = "✅ WuTang Generator";
         document.querySelector('#a2').style.color = "green";
 
         document.querySelector('.submitQ2').style.display = 'none';
@@ -208,7 +207,7 @@ submitQ2.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('noExcuses').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a2').innerHTML = "❌ Lil Wayne";
+        document.querySelector('#a2').innerHTML = "❌ WuTang Generator";
         document.querySelector('#a2').style.color = "red";
 
         document.querySelector('.submitQ2').style.display = 'none';
@@ -254,7 +253,7 @@ submitQ2.addEventListener('click', function () {
 
 submitQ3.addEventListener('click', function () {
     if (
-        document.querySelector("input[value=nas]:checked")
+        document.querySelector("input[value=ny]:checked")
 
         // answer3.value === "nas" || answer3.value === "Nas"
         ) {
@@ -264,9 +263,8 @@ submitQ3.addEventListener('click', function () {
         document.getElementById('youGenius').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a3').innerHTML = "✅ Nas";
+        document.querySelector('#a3').innerHTML = "✅ NY Knicks";
         document.querySelector('#a3').style.color = "green";
-        // document.querySelector('#a3').value = "✅ Nas";
         document.querySelector('.submitQ3').style.display = 'none';
         document.querySelector('#next3').style.display = 'block';
 
@@ -294,9 +292,8 @@ submitQ3.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('neverGiveUp').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a3').innerHTML = "❌ Nas";
+        document.querySelector('#a3').innerHTML = "❌ NY Knicks";
         document.querySelector('#a3').style.color = "red";
-        // document.querySelector('#a3').value = "❌ Nas";
         document.querySelector('.submitQ3').style.display = 'none';
         document.querySelector('#next3').style.display = 'block';
         document.querySelector('#spriteRun3').style.display = 'none';
@@ -334,7 +331,7 @@ submitQ3.addEventListener('click', function () {
 
 submitQ4.addEventListener('click', function () {
     if (
-        document.querySelector("input[value=icet]:checked")
+        document.querySelector("input[value=rihanna]:checked")
 
         // answer4.value === "ice t" || answer4.value === "Ice T" || answer4.value === "Ice-T" || answer4.value === "Ice-t" || answer4.value === "Ice t" || answer4.value === "Icet"
         ) {
@@ -344,9 +341,8 @@ submitQ4.addEventListener('click', function () {
         document.getElementById('lion').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a4').innerHTML = "✅ Ice-T";
+        document.querySelector('#a4').innerHTML = "✅ Rihanna";
         document.querySelector('#a4').style.color = "green";
-        // document.querySelector('#a4').value = "✅ Ice-T";
         document.querySelector('.submitQ4').style.display = 'none';
         document.querySelector('#next4').style.display = 'block';
 
@@ -372,9 +368,8 @@ submitQ4.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('gameHuh').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a4').innerHTML = "❌ Ice-T";
+        document.querySelector('#a4').innerHTML = "❌ Rihanna";
         document.querySelector('#a4').style.color = "red";
-        // document.querySelector('#a4').value = "❌ Ice-T";
         document.querySelector('.submitQ4').style.display = 'none';
         document.querySelector('#next4').style.display = 'block';
 
@@ -413,7 +408,7 @@ submitQ4.addEventListener('click', function () {
 
 submitQ5.addEventListener('click', function () {
     if (
-        document.querySelector("input[value=eazye]:checked")
+        document.querySelector("input[value=wilt]:checked")
 
         // answer5.value === "eazy e" || answer5.value === "Eazy E" || answer5.value === "Eazy-E" || answer5.value === "Eazy e" || answer5.value === "Eazy E" || answer5.value === "EazyE" || answer5.value === "Easy-E" || answer5.value === "Easy E" || answer5.value === "Easy e" || answer5.value === "easy e"
         ) {
@@ -423,10 +418,9 @@ submitQ5.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById('audio1').play();
         document.getElementById('weDaBest').play();
-        document.querySelector('#a5').innerHTML = "✅ Eazy E";
+        document.querySelector('#a5').innerHTML = "✅ Wilt Chamberlain";
         document.querySelector('#a5').style.color = "green";
 
-        // document.querySelector('#a5').value = "✅ Eazy-E";
         document.querySelector('.submitQ5').style.display = 'none';
         document.querySelector('#next5').style.display = 'block';
 
@@ -473,10 +467,9 @@ submitQ5.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('playUrself').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a5').innerHTML = "❌ Eazy E";
+        document.querySelector('#a5').innerHTML = "❌ Wilt Chamberlain";
         document.querySelector('#a5').style.color = "red";
 
-        // document.querySelector('#a5').value = "❌ Eazy E";
         document.querySelector('.submitQ5').style.display = 'none';
         document.querySelector('#next5').style.display = 'block';
 
@@ -539,7 +532,7 @@ submitQ6.addEventListener('click', function () {
     // start loop
 
     if (
-        document.querySelector("input[value=tupac]:checked")
+        document.querySelector("input[value=laugh]:checked")
         // answer6.value === "tupac" || answer6.value === "Tupac" || answer6.value === "2Pac" || answer6.value === "2pac"
         ) {
         score += 1000;
@@ -548,9 +541,8 @@ submitQ6.addEventListener('click', function () {
         document.getElementById('youLoyal').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a6').innerHTML = "✅ Tupac";
+        document.querySelector('#a6').innerHTML = "✅ Laugh";
         document.querySelector('#a6').style.color = "green";
-        // document.querySelector('#a6').value = "✅ Tupac";
         document.querySelector('.submitQ6').style.display = 'none';
         document.querySelector('#next6').style.display = 'block';
 
@@ -578,9 +570,8 @@ submitQ6.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('playUrself').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a6').innerHTML = "❌ Tupac";
+        document.querySelector('#a6').innerHTML = "❌ Laugh";
         document.querySelector('#a6').style.color = "red";
-        // document.querySelector('#a6').value = "❌ Tupac";
         document.querySelector('.submitQ6').style.display = 'none';
         document.querySelector('#next6').style.display = 'block';
 
@@ -624,7 +615,7 @@ submitQ7.addEventListener('click', function () {
     // start loop
 
     if (
-        document.querySelector("input[value=popped]:checked")
+        document.querySelector("input[value=chicken]:checked")
         // answer7.value === "popped" || answer7.value === "Popped" || answer7.value === "pop" || answer7.value === "Pop"
         ) {
         score += 1000;
@@ -633,9 +624,8 @@ submitQ7.addEventListener('click', function () {
         document.getElementById('appreciate').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a7').innerHTML = "✅ popped";
+        document.querySelector('#a7').innerHTML = "✅  Fried Chicken";
         document.querySelector('#a7').style.color = "green";
-        // document.querySelector('#a7').value = "✅ popped";
         document.querySelector('.submitQ7').style.display = 'none';
         document.querySelector('#next7').style.display = 'block';
 
@@ -662,9 +652,8 @@ submitQ7.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('noExcuses').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a7').innerHTML = "❌ popped";
+        document.querySelector('#a7').innerHTML = "❌ Fried Chicken";
         document.querySelector('#a7').style.color = "red";
-        // document.querySelector('#a7').value = "❌ popped";
         document.querySelector('.submitQ7').style.display = 'none';
         document.querySelector('#next7').style.display = 'block';
 
@@ -705,7 +694,7 @@ submitQ7.addEventListener('click', function () {
 
 submitQ8.addEventListener('click', function () {
     if (
-        document.querySelector("input[value=lons]:checked")
+        document.querySelector("input[value=bless]:checked")
         // answer8.value === "Leaders Of The New School" || answer8.value === "Leaders of the new school" || answer8.value === "LONS" || answer8.value === "lons" || answer8.value === "Lons"
         ) {
         score += 1000;
@@ -714,9 +703,8 @@ submitQ8.addEventListener('click', function () {
         document.getElementById('lion').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a8').innerHTML = "✅ Leaders of the New School";
+        document.querySelector('#a8').innerHTML = "✅ a Blessing";
         document.querySelector('#a8').style.color = "green";
-        // document.querySelector('#a8').value = "✅ LONS";
         document.querySelector('.submitQ8').style.display = 'none';
         document.querySelector('#next8').style.display = 'block';
 
@@ -744,9 +732,8 @@ submitQ8.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('neverGiveUp').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a8').innerHTML = "❌ Leaders of the New School";
+        document.querySelector('#a8').innerHTML = "❌ a Blessing";
         document.querySelector('#a8').style.color = "red";
-        // document.querySelector('#a8').value = "❌ LONS";
         document.querySelector('.submitQ8').style.display = 'none';
         document.querySelector('#next8').style.display = 'block';
 
@@ -785,7 +772,7 @@ submitQ8.addEventListener('click', function () {
 
 submitQ9.addEventListener('click', function () {
     if (
-        document.querySelector("input[value=rakim2]:checked")
+        document.querySelector("input[value=brandy]:checked")
         // answer9.value === "Rakim" || answer9.value === "rakim" || answer9.value === "RAKIM"
         ) {
         score += 1000;
@@ -794,9 +781,8 @@ submitQ9.addEventListener('click', function () {
         document.getElementById('youGenius').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a9').innerHTML = "✅ Rakim";
+        document.querySelector('#a9').innerHTML = "✅ Brandy";
         document.querySelector('#a9').style.color = "green";
-        // document.querySelector('#a9').value = "✅ Rakim";
         document.querySelector('.submitQ9').style.display = 'none';
         document.querySelector('#next9').style.display = 'block';
 
@@ -824,9 +810,8 @@ submitQ9.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('gameHuh').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a9').innerHTML = "❌ Rakim";
+        document.querySelector('#a9').innerHTML = "❌ Brandy";
         document.querySelector('#a9').style.color = "red";
-        // document.querySelector('#a9').value = "❌ Rakim";
         document.querySelector('.submitQ9').style.display = 'none';
         document.querySelector('#next9').style.display = 'block';
 
@@ -865,7 +850,7 @@ submitQ9.addEventListener('click', function () {
 
 submitQ10.addEventListener('click', function () {
     if (
-        document.querySelector("input[value=public]:checked")
+        document.querySelector("input[value=orange]:checked")
         // answer10.value === "Public Enemy" || answer10.value === "public enemy" || answer10.value === "PUBLIC ENEMY" || answer10.value === "Public enemy"
         ) {
         score += 1000;
@@ -876,9 +861,8 @@ submitQ10.addEventListener('click', function () {
         document.getElementById('lives').innerHTML = lives + " 🗝";
         document.getElementById('weDaBest').play();
         document.getElementById('audio1').play();
-        document.querySelector('#a10').innerHTML = "✅ Public Enemy";
+        document.querySelector('#a10').innerHTML = "✅ Orange";
         document.querySelector('#a10').style.color = "green";
-        // document.querySelector('#a10').value = "✅ Public Enemy";
         document.querySelector('.submitQ10').style.display = 'none';
         document.querySelector('#next10').style.display = 'block';
 
@@ -932,9 +916,8 @@ submitQ10.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('playUrself').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a10').innerHTML = "❌ Public Enemy";
+        document.querySelector('#a10').innerHTML = "❌ Orange";
         document.querySelector('#a10').style.color = "red";
-        // document.querySelector('#a10').value = "❌ Public Enemy";
         document.querySelector('.submitQ10').style.display = 'none';
         document.querySelector('#next10').style.display = 'block';
 
