@@ -133,7 +133,7 @@ function soundsWrong() {
             sound.src = "audio/You Think Its A Game Huh.mp3";
             break;
         case 5:
-            sound.src = "audio/AnotherOnePause.mp3";
+            sound.src = "audio/noExcuseslow2.mp3";
             break;
         case 6:
             sound.src = "audio/Some People Cant Handle Success.mp3";
