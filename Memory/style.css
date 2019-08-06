@@ -1,7 +1,31 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
-
+.links2{
+    display: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    z-index: 1000;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 10%;
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);     
+    border: 2px inset #D1B464;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    }
+    a:hover, .links2:hover {
+        color: green;
+    }
+ 
+    a{
+        text-shadow: 1px 1px 1px black;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
 .bkgd {
     /* margin-left: 20px 0; */
     background-image: url('img/wallpaper2you_451343.png');

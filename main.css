@@ -44,7 +44,7 @@ a:hover, .links:hover {
 
 .links {
     background-color: rgba(0, 0, 0, 0.741);
-    width: 100vw;
+    width: 110vw;
     height: 100vh;
     position: fixed;
     margin-left: -5%;

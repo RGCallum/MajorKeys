@@ -252,6 +252,7 @@ grid.addEventListener('click', function (event) {
                 document.getElementById('video1').style.display = 'block';
                 document.querySelector('#confetti').style.display = 'block';
                 document.getElementById('video1').play();
+                document.querySelector('.links2').style.display = 'block';
                 document.querySelector('#restart').style.display = 'block';
                 // document.querySelector('#nextRound').style.display = 'block';
 

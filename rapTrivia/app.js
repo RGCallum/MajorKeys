@@ -73,11 +73,11 @@ submitQ1.addEventListener('click', function () {
 
     // start loop
 
-    if 
-    ( document.querySelector("input[value=diddy]:checked")
+    if
+        (document.querySelector("input[value=diddy]:checked")
         // answer1.value === "diddy" || answer1.value === "Diddy" || answer1.value === "Puffy" || answer1.value === "P. Diddy"
-    
-        ) {
+
+    ) {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -106,7 +106,7 @@ submitQ1.addEventListener('click', function () {
 
         next1.addEventListener('click', function () {
             document.querySelector('#q1').style.display = 'none';
-            document.querySelector('#q2').style.display = 'block';  
+            document.querySelector('#q2').style.display = 'block';
 
         })
 
@@ -155,6 +155,8 @@ submitQ1.addEventListener('click', function () {
             document.querySelector('#djk').style.display = 'none';
             document.querySelector('#questionBox').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
+            document.querySelector('.links2').style.display = 'block';
+
             document.querySelector('#restart').style.display = 'block';
 
 
@@ -163,8 +165,8 @@ submitQ1.addEventListener('click', function () {
 
     restart.addEventListener('click', function () {
         location.reload();
-      } )
-   
+    })
+
 })
 
 
@@ -173,7 +175,7 @@ submitQ2.addEventListener('click', function () {
     if (
         document.querySelector("input[value=lilwayne]:checked")
         // answer2.value === "lil wayne" || answer2.value === "Lil Wayne" || answer2.value === "Lil' Wayne" || answer2.value === "Lil wayne"
-        ) {
+    ) {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -240,6 +242,8 @@ submitQ2.addEventListener('click', function () {
             document.querySelector('#questionBox').style.display = 'none';
             document.querySelector('#djk').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
+            document.querySelector('.links2').style.display = 'block';
+
             document.querySelector('#restart').style.display = 'block';
 
 
@@ -248,8 +252,8 @@ submitQ2.addEventListener('click', function () {
 
     restart.addEventListener('click', function () {
         location.reload();
-      } )
-    
+    })
+
 })
 
 submitQ3.addEventListener('click', function () {
@@ -257,7 +261,7 @@ submitQ3.addEventListener('click', function () {
         document.querySelector("input[value=nas]:checked")
 
         // answer3.value === "nas" || answer3.value === "Nas"
-        ) {
+    ) {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -324,12 +328,14 @@ submitQ3.addEventListener('click', function () {
             document.querySelector('#questionBox').style.display = 'none';
             document.querySelector('#djk').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
+            document.querySelector('.links2').style.display = 'block';
+
             document.querySelector('#restart').style.display = 'block';
         }
     }
     restart.addEventListener('click', function () {
         location.reload();
-      })
+    })
 })
 
 submitQ4.addEventListener('click', function () {
@@ -337,7 +343,7 @@ submitQ4.addEventListener('click', function () {
         document.querySelector("input[value=icet]:checked")
 
         // answer4.value === "ice t" || answer4.value === "Ice T" || answer4.value === "Ice-T" || answer4.value === "Ice-t" || answer4.value === "Ice t" || answer4.value === "Icet"
-        ) {
+    ) {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -402,12 +408,14 @@ submitQ4.addEventListener('click', function () {
             document.querySelector('#questionBox').style.display = 'none';
             document.querySelector('#djk').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
+            document.querySelector('.links2').style.display = 'block';
+
             document.querySelector('#restart').style.display = 'block';
         }
     }
     restart.addEventListener('click', function () {
         location.reload();
-      })
+    })
 })
 
 
@@ -416,7 +424,7 @@ submitQ5.addEventListener('click', function () {
         document.querySelector("input[value=eazye]:checked")
 
         // answer5.value === "eazy e" || answer5.value === "Eazy E" || answer5.value === "Eazy-E" || answer5.value === "Eazy e" || answer5.value === "Eazy E" || answer5.value === "EazyE" || answer5.value === "Easy-E" || answer5.value === "Easy E" || answer5.value === "Easy e" || answer5.value === "easy e"
-        ) {
+    ) {
         score += 1000;
         lives += 1;
         document.getElementById("score").innerHTML = score;
@@ -525,12 +533,14 @@ submitQ5.addEventListener('click', function () {
         document.querySelector('#djk').style.display = 'none';
         document.querySelector('#djk2').style.display = 'none';
         document.querySelector('.sprites').style.display = 'none';
+        document.querySelector('.links2').style.display = 'block';
+
         document.querySelector('#restart').style.display = 'block';
     }
 
-restart.addEventListener('click', function () {
-    location.reload();
-  })
+    restart.addEventListener('click', function () {
+        location.reload();
+    })
 
 })
 
@@ -541,7 +551,7 @@ submitQ6.addEventListener('click', function () {
     if (
         document.querySelector("input[value=tupac]:checked")
         // answer6.value === "tupac" || answer6.value === "Tupac" || answer6.value === "2Pac" || answer6.value === "2pac"
-        ) {
+    ) {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -611,12 +621,14 @@ submitQ6.addEventListener('click', function () {
             document.querySelector('#djk2').style.display = 'none';
             document.querySelector('#questionBox').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
+            document.querySelector('.links2').style.display = 'block';
+
             document.querySelector('#restart').style.display = 'block';
         }
     }
     restart.addEventListener('click', function () {
         location.reload();
-      })
+    })
 })
 
 submitQ7.addEventListener('click', function () {
@@ -626,7 +638,7 @@ submitQ7.addEventListener('click', function () {
     if (
         document.querySelector("input[value=popped]:checked")
         // answer7.value === "popped" || answer7.value === "Popped" || answer7.value === "pop" || answer7.value === "Pop"
-        ) {
+    ) {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -695,19 +707,21 @@ submitQ7.addEventListener('click', function () {
             document.querySelector('#djk2').style.display = 'none';
             document.querySelector('#questionBox').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
+            document.querySelector('.links2').style.display = 'block';
+
             document.querySelector('#restart').style.display = 'block';
         }
     }
     restart.addEventListener('click', function () {
         location.reload();
-      })
+    })
 })
 
 submitQ8.addEventListener('click', function () {
     if (
         document.querySelector("input[value=lons]:checked")
         // answer8.value === "Leaders Of The New School" || answer8.value === "Leaders of the new school" || answer8.value === "LONS" || answer8.value === "lons" || answer8.value === "Lons"
-        ) {
+    ) {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -775,19 +789,21 @@ submitQ8.addEventListener('click', function () {
             document.querySelector('#questionBox').style.display = 'none';
             document.querySelector('#djk2').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
+            document.querySelector('.links2').style.display = 'block';
+
             document.querySelector('#restart').style.display = 'block';
         }
     }
     restart.addEventListener('click', function () {
         location.reload();
-      })
+    })
 })
 
 submitQ9.addEventListener('click', function () {
     if (
         document.querySelector("input[value=rakim2]:checked")
         // answer9.value === "Rakim" || answer9.value === "rakim" || answer9.value === "RAKIM"
-        ) {
+    ) {
         score += 1000;
         lives += 1;
         document.getElementById('audio1').play();
@@ -855,19 +871,21 @@ submitQ9.addEventListener('click', function () {
             document.querySelector('#questionBox').style.display = 'none';
             document.querySelector('#djk2').style.display = 'none';
             document.querySelector('.sprites').style.display = 'none';
+            document.querySelector('.links2').style.display = 'block';
+
             document.querySelector('#restart').style.display = 'block';
         }
     }
     restart.addEventListener('click', function () {
         location.reload();
-      })
+    })
 })
 
 submitQ10.addEventListener('click', function () {
     if (
         document.querySelector("input[value=public]:checked")
         // answer10.value === "Public Enemy" || answer10.value === "public enemy" || answer10.value === "PUBLIC ENEMY" || answer10.value === "Public enemy"
-        ) {
+    ) {
         score += 1000;
         lives += 1;
 
@@ -898,14 +916,17 @@ submitQ10.addEventListener('click', function () {
                 document.querySelector('#djk2').style.display = 'none';
                 document.querySelector('#questionBox').style.display = 'none';
                 document.querySelector('#spriteReady10').remove();
-    
-            
-            document.querySelector('#restart').style.display = 'block';
-        
-    restart.addEventListener('click', function () {
-        location.reload();
-      })}
-    
+
+
+                document.querySelector('.links2').style.display = 'block';
+
+                document.querySelector('#restart').style.display = 'block';
+
+                restart.addEventListener('click', function () {
+                    location.reload();
+                })
+            }
+
             else if (lives < 3) {
                 document.getElementById('lives').innerHTML = "You Lose!"
                 document.getElementById('theyDontWant').play();
@@ -916,12 +937,14 @@ submitQ10.addEventListener('click', function () {
                 document.querySelector('#questionBox').style.display = 'none';
                 document.querySelector('#djk2').style.display = 'none';
                 document.querySelector('.sprites').style.display = 'none';
+                document.querySelector('.links2').style.display = 'block';
+
                 document.querySelector('#restart').style.display = 'block';
             }
-        
-        restart.addEventListener('click', function () {
-            location.reload();
-          })
+
+            restart.addEventListener('click', function () {
+                location.reload();
+            })
 
         })
 
@@ -940,40 +963,42 @@ submitQ10.addEventListener('click', function () {
 
         next10.addEventListener('click', function () {
             document.querySelector('#q10').style.display = 'none';
-        
 
-        if (lives >= 3) {
-            document.getElementById('lives').innerHTML = "You Win! " + lives + " 🗝";
-            document.getElementById('allIDoIsWin').play();
-            document.getElementById('weDaBest').pause();
-            document.querySelector('#confetti').style.display = 'block';
-            document.querySelector('#spriteWon').style.display = 'block';
-            document.querySelector('#spriteRun').style.display = 'none';
-            document.querySelector('#spriteRun2').style.display = 'none';
-            document.querySelector('#spriteRun3').style.display = 'none';
-            document.querySelector('#djk2').style.display = 'none';
-            document.querySelector('#questionBox').style.display = 'none';
-            document.querySelector('#spriteReady10').remove();
 
-        }
+            if (lives >= 3) {
+                document.getElementById('lives').innerHTML = "You Win! " + lives + " 🗝";
+                document.getElementById('allIDoIsWin').play();
+                document.getElementById('weDaBest').pause();
+                document.querySelector('#confetti').style.display = 'block';
+                document.querySelector('#spriteWon').style.display = 'block';
+                document.querySelector('#spriteRun').style.display = 'none';
+                document.querySelector('#spriteRun2').style.display = 'none';
+                document.querySelector('#spriteRun3').style.display = 'none';
+                document.querySelector('#djk2').style.display = 'none';
+                document.querySelector('#questionBox').style.display = 'none';
+                document.querySelector('#spriteReady10').remove();
 
-        else if (lives < 3) {
-            document.getElementById('lives').innerHTML = "You Lose!"
-            document.getElementById('theyDontWant').play();
-            document.getElementById('playUrself').pause();
-            document.querySelector('#spriteLose').style.display = 'block';
-            document.querySelector('#gameOver').style.display = 'block';
-            document.querySelector('#spriteRun').style.display = 'none';
-            document.querySelector('#questionBox').style.display = 'none';
-            document.querySelector('#djk2').style.display = 'none';
-            document.querySelector('.sprites').style.display = 'none';
-            document.querySelector('#restart').style.display = 'block';
+            }
 
-        }
-        restart.addEventListener('click', function () {
-            location.reload();
-          })
-    })
+            else if (lives < 3) {
+                document.getElementById('lives').innerHTML = "You Lose!"
+                document.getElementById('theyDontWant').play();
+                document.getElementById('playUrself').pause();
+                document.querySelector('#spriteLose').style.display = 'block';
+                document.querySelector('#gameOver').style.display = 'block';
+                document.querySelector('#spriteRun').style.display = 'none';
+                document.querySelector('#questionBox').style.display = 'none';
+                document.querySelector('#djk2').style.display = 'none';
+                document.querySelector('.sprites').style.display = 'none';
+                document.querySelector('.links2').style.display = 'block';
+
+                document.querySelector('#restart').style.display = 'block';
+
+            }
+            restart.addEventListener('click', function () {
+                location.reload();
+            })
+        })
     }
 
 
