@@ -5,11 +5,10 @@
     display: none;
     color: white;
     font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     z-index: 1000;
     position: absolute;
-    margin-left: 50%;
-    margin-top: 10%;
+    margin-left: 15%;
+    margin-top: -2%;
     background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);     
     border: 2px inset #D1B464;
@@ -18,13 +17,25 @@
     text-align: center;
     }
     a:hover, .links2:hover {
-        color: green;
+        color: rgb(226, 186, 73);
     }
  
     a{
-        text-shadow: 1px 1px 1px black;
+        text-shadow: 2px 2px 3px black;
         text-decoration: none;
         color: rgb(255, 255, 255);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+    }
+    i {
+        color: rgb(63, 205, 63);
+        font-size: 60px !important;
+        text-shadow: 2px 2px 12px black;
+    }
+    
+    i:hover {
+        text-shadow: 2px 2px 8px rgb(155, 255, 149);
+        /* color: rgb(89, 255, 17); */
     }
 .bkgd {
     /* margin-left: 20px 0; */
@@ -122,6 +133,7 @@ margin-top: 40%;
     box-shadow: 2px 2px 12px black;
     z-index: 1;
     position: absolute;
+    
 }
 
 #lifeCountID {
@@ -216,17 +228,17 @@ i:hover {
 }
 
 #start {
-    margin-top: 35%;
+    margin-top: 25%;
     margin-left: 45%;
-    display: block;
-    width: 6rem;
-    height: 4rem;
+    width: 8rem;
+    height: 8rem;
     animation: heartbeat 2.5s ease-in-out infinite both;
     border-radius: 100px;
-    padding: 10px 10px 0px 10px;
-    font-size: 15px;
+    padding: 20px 10px 0px 10px;
+    font-size: 20px;
     text-shadow: 2px 2px 2px black;
     position: absolute;
+    
 }
 
 #start:hover {
@@ -235,17 +247,16 @@ i:hover {
 }
 
 #nextRound {
-    z-index: 100;
-    margin-top: 35%;
+    margin-top: 15%;
     margin-left: 45%;
-    position: absolute;
-    width: 6rem;
-    height: 4rem;
-    /* animation: delaybtn 11s; */
+    width: 8rem;
+    height: 8rem;
+    animation: heartbeat 2.5s ease-in-out infinite both;
     border-radius: 100px;
-    padding: 10px 10px 0px 10px;
-    font-size: 15px;
+    padding: 15px 10px 0px 10px;
+    font-size: 20px;
     text-shadow: 2px 2px 2px black;
+    position: absolute;
     display: none;
 }
 
@@ -267,15 +278,14 @@ i:hover {
 }
 
 #restart {
-    margin-top: 5%;
-    margin-left: 25%;
-    animation: delaybtn 11s;
-    width: 6rem;
-    height: 5rem;
+    /* margin-top: -2%; */
+    margin-left: 42%;
+    width: 9rem;
+    height: 9rem;
     animation: heartbeat 2.5s ease-in-out infinite both;
     border-radius: 100px;
-    padding: 10px 3px 0px 3px;
-    font-size: 15px;
+    padding: 15px 10px 0px 10px;
+    font-size: 20px;
     text-shadow: 2px 2px 2px black;
     position: absolute;
     z-index: 1000;

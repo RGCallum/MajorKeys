@@ -4,13 +4,10 @@ html {
 }
 .links2{
     display: none;
-    color: white;
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     z-index: 1000;
     position: absolute;
-    margin-left: 10%;
-    margin-top: 35%;
+    margin-left: 5%;
+    margin-top: 5%;
     background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);     
     border: 2px inset #D1B464;
@@ -18,15 +15,8 @@ html {
     padding: 10px;
     text-align: center;
     }
-    a:hover, .links2:hover {
-        color: green;
-    }
 
-    a{
-        text-shadow: 1px 1px 1px black;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-    }
+
 
 .bkgd1a {
     background-image: url(../Images/BKGDS/sesame3.jpg);
@@ -58,7 +48,7 @@ a {
     color: white;
     text-shadow: 2px 2px 3px black;
     padding: 30px;
-    font-size: 3vw;
+    /* font-size: 3vw; */
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
@@ -152,6 +142,7 @@ audio {
     margin-top: 3%;
     width: 50%;
     animation: bounce-in-top 1.5s both;
+    z-index: 100;
 }
 
 @keyframes bounce-in-top {
@@ -421,16 +412,16 @@ audio {
 
 #djk {
     width: 20%;
-    margin-left: 80%;
+    margin-left: 80.5%;
     margin-top: 25%;
     animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     position: fixed;
-    z-index: -2;
+    z-index: -1;
 }
 
 #djk2 {
     width: 20%;
-    margin-left: 80%;
+    margin-left: 80.5%;
     margin-top: 25%;
     animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     position: fixed;
@@ -495,9 +486,11 @@ button {
     background-color: rgba(208, 193, 152, 0.9);
     height: 300px;
     width: 50vw;
-    /* box-shadow: 1px 1px 1px black; */
+    box-shadow: 1px 1px 1px black;
     position: absolute;
     z-index: 1;
+    margin-left: -32%;
+    margin-top: -15%;
 }
 
 .straight{
@@ -631,8 +624,8 @@ i:hover {
 #restart {
     margin-top: 30%;
     margin-left: 35%;
-    width: 5rem;
-    height: 4rem;
+    width: 8rem;
+    height: 7rem;
     animation: heartbeat 2.5s ease-in-out infinite both;
     border-radius: 100px;
     padding: 20px 3px 0px 3px;
