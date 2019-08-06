@@ -254,7 +254,7 @@ i:hover {
     font-size: 15px;
     text-shadow: 2px 2px 2px black;
     position: absolute;
-    z-index: 100;
+    z-index: 1000;
     display: none;
 }
 
