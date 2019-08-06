@@ -8,13 +8,14 @@
     <title>Major Keys</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="shortcut icon" href="./favicon-16x16.png" type="image/x-icon">
 
 
     <script defer src="app.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+        integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
@@ -27,12 +28,12 @@
 
     <img class="" id="title" src="./Images/MAJOR-KEYS2.png" alt="Major Keys title">
     <!-- <img id="clouds" src="url(/Images/BKGDS/clouds.png)"alt=""> -->
-   
-          <div class="optButton" id="start">Round 1<br/> <i class="far fa-play-circle"></i></div>
-    
-    <div class="optButton" id="round2">Round 2<br/> <i class="far fa-play-circle"></i> </div>
 
-    <div class="optButton" id="restart">Play Again<br/> <i class="far fa-play-circle"></i> </div>
+    <div class="optButton" id="start">Round 1<br /> <i class="far fa-play-circle"></i></div>
+
+    <div class="optButton" id="round2">Round 2<br /> <i class="far fa-play-circle"></i> </div>
+
+    <div class="optButton" id="restart">Play Again<br /> <i class="far fa-play-circle"></i> </div>
 
     <div class="optButton" id="lifeCountID">Keys:
         <div class="lifeCount" id="lives"></div>
@@ -47,154 +48,234 @@
     <!-- created big div for all questions in box, then ids for each question answer and submit button -->
     <div class="buttonBox" id="questionBox">
 
-        
+
         <form onsubmit="submitQ1();" action="javascript:void(0);">
-            <div class="buttonQ" id="q1">Which music mogul was formally a back-up dancer for Big Daddy Kane?<br/>
-                <input class="answer" id="a1" type="text" placeholder="hint: _ _ _ _ _">
+            <div class="buttonQ" id="q1">Which music mogul was formally a back-up dancer for Big Daddy Kane?<br />
+                <div class="straight">
+                    <div id="a1"> <input type="radio" name="answers" value="diddy"> Diddy<br></div>
+                    <input type="radio" name="answers" value="suge"> Suge Knight<br>
+                    <input type="radio" name="answers" value="dre"> Dr. Dre <br>
+                </div>
+                <!-- <div id="a1"></div> -->
+                <br/>
                 <button class="submitQ1">Submit</button>
-                <button class="next submitQ1" id="next1" >Next</button>
-                
+                <button class="next submitQ1" id="next1">Next</button>
+
             </div>
         </form>
-    
+
         <form onsubmit="submitQ2();" action="javascript:void(0);">
-            <div class="buttonQ" id="q2"> Which rapper once went by the name Shrimp Daddy?<br/>
-                <input class="answer" id="a2" type="text" placeholder="hint: _ _ _'  _ _ _ _ _">
+            <div class="buttonQ" id="q2"> Which rapper once went by the name Shrimp Daddy?<br />
+                <div class="straight">
+                    <input type="radio" name="answers" value="blueface"> Blueface<br>
+                    <div id="a2"><input type="radio" name="answers" value="lilwayne"> Lil Wayne<br></div>
+                    <input type="radio" name="answers" value="tekashi69"> Tekashi69 <br>
+                    <!-- <input class="answer" id="a2" type="text" placeholder="hint: _ _ _'  _ _ _ _ _"> -->
+                </div>
+
+                <br/>
                 <button class="submitQ2">Submit</button>
                 <button class="next submitQ2" id="next2">Next</button>
             </div>
         </form>
-    
+
         <form onsubmit="submitQ3();" action="javascript:void(0);">
-            <div class="buttonQ" id="q3">Which rapper co-wrote Will Smith's 1998 single 'Gettin' Jiggy Wit It'?<br/>
-                <input class="answer" id="a3" type="text" placeholder="hint: _ _ _ ">
+            <div class="buttonQ" id="q3">Which rapper co-wrote Will Smith's 1998 single 'Gettin' Jiggy Wit It'?<br />
+                <div class="straight">
+                    <input type="radio" name="answers" value="biggie"> Biggie<br>
+                    <input type="radio" name="answers" value="jayz"> Jay-Z<br>
+                    <div id="a3"> <input type="radio" name="answers" value="nas"> Nas <br> </div>
+                </div>
+
+
+                <!-- <input class="answer" id="a3" type="text" placeholder="hint: _ _ _ "> -->
+                <br/>
+                               
+
                 <button class="submitQ3">Submit</button>
                 <button class="next submitQ3" id="next3">Next</button>
             </div>
         </form>
-    
+
         <form onsubmit="submitQ4();" action="javascript:void(0);">
-            <div class="buttonQ" id="q4">Which rapper’s 1993 song is sampled in Jay Z’s “99 Problems”<br/>
-                <input class="answer" id="a4" type="text" placeholder="hint: _ _ _ - _ ">
+            <div class="buttonQ" id="q4">Which rapper’s 1993 song is sampled in Jay Z’s “99 Problems”<br />
+                <div class="straight">
+                    <input type="radio" name="answers" value="kidrock"> Kid Rock<br>
+                    <div id="a4"><input type="radio" name="answers" value="icet"> Ice-T<br></div>
+                    <input type="radio" name="answers" value="Rakim"> Rakim <br>
+                    <!-- <input class="answer" id="a4" type="text" placeholder="hint: _ _ _ - _ "> -->
+                </div>
+                <br/>
+
                 <button class="submitQ4">Submit</button>
                 <button class="next submitQ4" id="next4">Next</button>
             </div>
         </form>
-    
+
         <form onsubmit="submitQ5();" action="javascript:void(0);">
-            <div class="buttonQ" id="q5">Which rapper originally signed the Black Eyed Peas?<br/>
-                <input class="answer" id="a5" type="text" placeholder="hint: _ _ _ _ - _">
+            <div class="buttonQ" id="q5">Which rapper originally signed the Black Eyed Peas?<br />
+                <div class="straight">
+                    <input type="radio" name="answers" value="eminem"> Eminem<br>
+                    <input type="radio" name="answers" value="andre"> Andre 3000<br>
+                    <div id="a5">  <input type="radio" name="answers" value="eazye"> Eazy E <br></div>
+                    <!-- <input class="answer" id="a5" type="text" placeholder="hint: _ _ _ _ - _"> -->
+                </div>
+                <br/>
+                               
+
                 <button class="submitQ5">Submit</button>
                 <button class="next submitQ5" id="next5">Round 2</button>
             </div>
         </form>
-    
+
         <form onsubmit="submitQ6();" action="javascript:void(0);">
-            <div class="buttonQ" id="q6">Which famous rapper said “even the genius asks his questions”?<br/>
-                <input class="answer" id="a6" type="text" placeholder="hint: _ _ _ _ _">
+            <div class="buttonQ" id="q6">Which famous rapper said “even the genius asks his questions”?<br />
+                <div class="straight">
+                    <div id="a6"><input type="radio" name="answers" value="tupac"> Tupac<br></div> 
+                    <input type="radio" name="answers" value="snoop"> Snoop Dogg<br>
+                    <input type="radio" name="answers" value="drake"> Drake <br>
+                    <!-- <input class="answer" id="a6" type="text" placeholder="hint: _ _ _ _ _"> -->
+                </div>
+                <br/>
+
                 <button class="submitQ6">Submit</button>
                 <button class="next submitQ6" id="next6">Next</button>
             </div>
         </form>
-    
+
         <form onsubmit="submitQ7();" action="javascript:void(0);">
-            <div class="buttonQ" id="q7">Complete this Biggie Smalls line from the song "Juicy". "I let my tape rock 'til
-                my tape ______"<br/>
-                <input class="answer" id="a7" type="text" placeholder="hint: _ _ _ _ _ _">
+            <div class="buttonQ" id="q7">Complete this Biggie Smalls line from the song "Juicy". "I let my tape rock
+                'til my tape ______"<br />
+                <div class="straight">
+                    <input type="radio" name="answers" value="stopped"> stopped<br>
+                    <div id="a7"><input type="radio" name="answers" value="popped"> popped<br></div>
+                    <input type="radio" name="answers" value="shot"> shot <br>
+                </div>
+                <!-- <input class="answer" id="a7" type="text" placeholder="hint: _ _ _ _ _ _"> -->
+                <br/>
+                                
+
                 <button class="submitQ7">Submit</button>
                 <button class="next submitQ7" id="next7">Next</button>
             </div>
         </form>
-    
+
         <form onsubmit="submitQ8();" action="javascript:void(0);">
-            <div class="buttonQ" id="q8">What group was Busta Rhymes a member of before going solo? Abbreviate the group's name.<br/>
-                <input class="answer" id="a8" type="text" placeholder="hint: _ _ _ _">
+            <div class="buttonQ" id="q8">What group was Busta Rhymes a member of before going solo?<br />
+                <div class="straight2">   
+                    <input type="radio" name="answers" value="fu"> Fu-Schnickens<br>
+                    <input type="radio" name="answers" value="tribe"> A Tribe Called Quest<br>
+                    <div id="a8">  <input type="radio" name="answers" value="lons"> Leaders of the New School<br></div>
+                </div>
+                <!-- <input class="answer" id="a8" type="text" placeholder="hint: _ _ _ _"> -->
+                <br/>
+                                
+
                 <button class="submitQ8">Submit</button>
                 <button class="next submitQ8" id="next8">Next</button>
             </div>
         </form>
-    
+
         <form onsubmit="submitQ9();" action="javascript:void(0);">
-            <div class="buttonQ" id="q9">Which legendary rapper said "Taking off my coat, clearing my throat / My rhyme will be kicking until I hit my last note."<br/>
-                <input class="answer" id="a9" type="text" placeholder="hint: _ _ _ _ _">
+            <div class="buttonQ" id="q9">Which legendary rapper said "Taking off my coat, clearing my throat / My rhyme
+                will be kicking until I hit my last note."<br />
+                <div class="straight">
+                    <input type="radio" name="answers" value="slick"> Slick Rick<br>
+                    <div id="a9"> <input type="radio" name="answers" value="rakim2"> Rakim<br>  </div>
+                    <input type="radio" name="answers" value="ericb"> Eric B <br>
+                </div>
+                
+                <!-- <input class="answer" id="a9" type="text" placeholder="hint: _ _ _ _ _"> -->
+                <br/>
+                               
+
                 <button class="submitQ9">Submit</button>
                 <button class="next submitQ9" id="next9">Next</button>
             </div>
         </form>
-    
+
         <form onsubmit="submitQ10();" action="javascript:void(0);">
-                <div class="buttonQ" id="q10">What classic rap group said the line "Most of my heroes don't appear on no stamps"? <br/>
-                        <input class="answer" id="a10" type="text" placeholder="hint: _ _ _ _ _ _  _ _ _ _ _">
-                        <button class="submitQ10">Submit</button>
-                        <button class="next submitQ10" id="next10">Next</button>
-                    </div>
-                </form>
+            <div class="buttonQ" id="q10">What classic rap group said the line "Most of my heroes don't appear on no
+                stamps"? <br />
+                <div class="straight">
+               <input type="radio" name="answers" value="nwa"> NWA<br>
+               <div id="a10">  <input type="radio" name="answers" value="public"> Public Enemy<br>  </div>
+                    <input type="radio" name="answers" value="kid"> Kid N Play <br>
+                </div>
+                <!-- <input class="answer" id="a10" type="text" placeholder="hint: _ _ _ _ _ _  _ _ _ _ _"> -->
+                <br/>
+                              
 
-</div>
+                <button class="submitQ10">Submit</button>
+                <button class="next submitQ10" id="next10">Next</button>
+            </div>
+        </form>
 
-<!-- <iframe id = "IGotKeys" src="/audio/IGotKeys.mp3" allow="autoplay" id="audio" style = "display:none" frameborder="0"></iframe> -->
-<!-- <audio id="IGotKeys" controls autoplay>
+    </div>
+
+    <!-- <iframe id = "IGotKeys" src="/audio/IGotKeys.mp3" allow="autoplay" id="audio" style = "display:none" frameborder="0"></iframe> -->
+    <!-- <audio id="IGotKeys" controls autoplay>
     <source src="./audio/IGotKeys.mp3" type="audio/mp3">
 </audio> -->
 
-<!-- audio reactions to answers -->
-<audio id="audio1" src="./audio/success.wav"></audio>
-<audio id="youSmart" src="./audio/YouSmart.mp3"></audio>
-<audio id="youGenius" src="./audio/YouAGenius.mp3"></audio>
-<audio id="anotherOne" src="./audio/AnotherOne.mp3"></audio>
-<audio id="youLoyal" src="./audio/YouLoyal.mp3"></audio>
-<audio id="weDaBest" src="./audio/WeDaBest1.mp3"></audio>
-<audio id="audio2" src="./audio/buzzer.mp3"></audio>
-<audio id="theyDontWant" src="./audio/TheyDontWant.mp3"></audio>
-<audio id="allIDoIsWin" src="./audio/AllIDoIsWin.mp3"></audio>
-<audio id="playUrself" src="./audio/Congratulations You Played Yourself.mp3"></audio>
-<audio id="noExcuses" src="./audio/They Never Said Winning Was Easy.mp3"></audio>
-<audio id="keysSong" src="./audio/IGotKeys3.mp3"></audio>
-<audio id="neverGiveUp" src="./audio/NeverGiveUp.mp3"></audio>
-<audio id="gameHuh" src="./audio/You Think Its A Game Huh.mp3"></audio>
-<audio id="appreciate" src="./audio/I Appreciate You.mp3"></audio>
-<audio id="somePeople" src="./audio/Some People Cant Handle Success.mp3"></audio>
-<audio id="majorKeyAlert" src="./audio/majorKeyAlert2.mp3"></audio>
-<audio id="youVerySmart" src="./audio/You Very Smart.mp3"></audio>
-<audio id="lion" src="./audio/lion.mp3"></audio>
+    <!-- audio reactions to answers -->
+    <audio id="audio1" src="./audio/success.wav"></audio>
+    <audio id="youSmart" src="./audio/YouSmart.mp3"></audio>
+    <audio id="youGenius" src="./audio/YouAGenius.mp3"></audio>
+    <audio id="anotherOne" src="./audio/AnotherOne.mp3"></audio>
+    <audio id="youLoyal" src="./audio/YouLoyal.mp3"></audio>
+    <audio id="weDaBest" src="./audio/WeDaBest1.mp3"></audio>
+    <audio id="audio2" src="./audio/buzzer.mp3"></audio>
+    <audio id="theyDontWant" src="./audio/TheyDontWant.mp3"></audio>
+    <audio id="allIDoIsWin" src="./audio/AllIDoIsWin.mp3"></audio>
+    <audio id="playUrself" src="./audio/Congratulations You Played Yourself.mp3"></audio>
+    <audio id="noExcuses" src="./audio/They Never Said Winning Was Easy.mp3"></audio>
+    <audio id="keysSong" src="./audio/IGotKeys3.mp3"></audio>
+    <audio id="neverGiveUp" src="./audio/NeverGiveUp.mp3"></audio>
+    <audio id="gameHuh" src="./audio/You Think Its A Game Huh.mp3"></audio>
+    <audio id="appreciate" src="./audio/I Appreciate You.mp3"></audio>
+    <audio id="somePeople" src="./audio/Some People Cant Handle Success.mp3"></audio>
+    <audio id="majorKeyAlert" src="./audio/majorKeyAlert2.mp3"></audio>
+    <audio id="youVerySmart" src="./audio/You Very Smart.mp3"></audio>
+    <audio id="lion" src="./audio/lion.mp3"></audio>
 
 
-<!-- <img id= "youSmartGif" src="/Images/you smart.gif" alt=""> -->
+    <!-- <img id= "youSmartGif" src="/Images/you smart.gif" alt=""> -->
 
 
 
 
-<img id="confetti" src="./Images/Gifs/confetti.gif" alt="confetti">
-<img id="gameOver" src="./Images/GAME-OVER.png" alt="">
-<img id="djk" src="./Images/Gifs/DJKhaledKey.gif" alt="DJKhaled">
-<img id="djk2" src="./Images/Gifs/DJKhaledKey.gif" alt="DJKhaled">
-<img id="spriteWon" src="./Images/Gifs/Win.gif" alt="Winner">
-<img id="spriteLose" src="./Images/Gifs/Lose.gif" alt="Game Over">
-<!-- <img id="round2" src="./Images/Round-2.png" alt=""> -->
-<div class="sprites">
-    <img id="spriteReady1" src="./Images/ChracterStill.png" alt="player character">
-    <img id="spriteReady2" src="./Images/ChracterStill.png" alt="player character">
-    <img id="spriteReady3" src="./Images/ChracterStill.png" alt="player character">
-    <img id="spriteReady4" src="./Images/ChracterStill.png" alt="player character">
-    <img id="spriteReady5" src="./Images/ChracterStill.png" alt="player character">
-    <img id="spriteReady6" src="./Images/ChracterStill.png" alt="player character">
-    <img id="spriteReady7" src="./Images/ChracterStill.png" alt="player character">
-    <img id="spriteReady8" src="./Images/ChracterStill.png" alt="player character">
-    <img id="spriteReady9" src="./Images/ChracterStill.png" alt="player character">
-    <img id="spriteReady10" src="./Images/ChracterStill.png" alt="player character">
+    <img id="confetti" src="./Images/Gifs/confetti.gif" alt="confetti">
+    <img id="gameOver" src="./Images/GAME-OVER.png" alt="">
+    <img id="djk" src="./Images/Gifs/DJKhaledKey.gif" alt="DJKhaled">
+    <img id="djk2" src="./Images/Gifs/DJKhaledKey.gif" alt="DJKhaled">
+    <img id="spriteWon" src="./Images/Gifs/Win.gif" alt="Winner">
+    <img id="spriteLose" src="./Images/Gifs/Lose.gif" alt="Game Over">
+    <!-- <img id="round2" src="./Images/Round-2.png" alt=""> -->
+    <div class="sprites">
+        <img id="spriteReady1" src="./Images/ChracterStill.png" alt="player character">
+        <img id="spriteReady2" src="./Images/ChracterStill.png" alt="player character">
+        <img id="spriteReady3" src="./Images/ChracterStill.png" alt="player character">
+        <img id="spriteReady4" src="./Images/ChracterStill.png" alt="player character">
+        <img id="spriteReady5" src="./Images/ChracterStill.png" alt="player character">
+        <img id="spriteReady6" src="./Images/ChracterStill.png" alt="player character">
+        <img id="spriteReady7" src="./Images/ChracterStill.png" alt="player character">
+        <img id="spriteReady8" src="./Images/ChracterStill.png" alt="player character">
+        <img id="spriteReady9" src="./Images/ChracterStill.png" alt="player character">
+        <img id="spriteReady10" src="./Images/ChracterStill.png" alt="player character">
 
-    <img id="spriteRun" src="./Images/Gifs/Run.gif" alt="player character run">
-    <img id="spriteRun2" src="./Images/Gifs/Run.gif" alt="player character run">
-    <img id="spriteRun3" src="./Images/Gifs/Run.gif" alt="player character run">
-    <img id="spriteRun4" src="./Images/Gifs/Run.gif" alt="player character run">
-    <img id="spriteRun5" src="./Images/Gifs/Run.gif" alt="player character run">
-    <img id="spriteRun6" src="./Images/Gifs/Run.gif" alt="player character run">
-    <img id="spriteRun7" src="./Images/Gifs/Run.gif" alt="player character run">
-    <img id="spriteRun8" src="./Images/Gifs/Run.gif" alt="player character run">
-    <img id="spriteRun9" src="./Images/Gifs/Run.gif" alt="player character run">
-    <img id="spriteRun10" src="./Images/Gifs/Run.gif" alt="player character run">
+        <img id="spriteRun" src="./Images/Gifs/Run.gif" alt="player character run">
+        <img id="spriteRun2" src="./Images/Gifs/Run.gif" alt="player character run">
+        <img id="spriteRun3" src="./Images/Gifs/Run.gif" alt="player character run">
+        <img id="spriteRun4" src="./Images/Gifs/Run.gif" alt="player character run">
+        <img id="spriteRun5" src="./Images/Gifs/Run.gif" alt="player character run">
+        <img id="spriteRun6" src="./Images/Gifs/Run.gif" alt="player character run">
+        <img id="spriteRun7" src="./Images/Gifs/Run.gif" alt="player character run">
+        <img id="spriteRun8" src="./Images/Gifs/Run.gif" alt="player character run">
+        <img id="spriteRun9" src="./Images/Gifs/Run.gif" alt="player character run">
+        <img id="spriteRun10" src="./Images/Gifs/Run.gif" alt="player character run">
 
-</div>
+    </div>
 
 </body>
 
