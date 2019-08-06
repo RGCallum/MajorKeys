@@ -1,0 +1,288 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.bkgd {
+    /* margin-left: 20px 0; */
+    background-image: url('img/wallpaper2you_451343.png');
+    background-size: cover;
+    background-repeat-y: no-repeat;
+    animation: slide2 190s linear infinite;
+    height: 900px;
+    
+}
+@keyframes slide2 {
+    from { background-position: 0 0; }
+    to { background-position: -8000px 0; }
+}
+
+.indexbkgd {
+    /* margin-left: 20px 0; */
+    background-image: url('img/sesame3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+.index{
+    background-color: rgba(75, 69, 52, 0.9);
+    border: 2px inset rgb(209, 180, 100);
+    border-radius: 10px;
+}
+nav {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* text-decoration: none; */
+}
+li{
+    list-style: none;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px black;
+    text-decoration: underline;
+}
+#game {
+    z-index: 100;
+    /* background-image: url('djkVids/MotivationalspeechDjKhaled.mp4'); */
+    margin-left: 10%;
+}
+
+video {
+    z-index: -10;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    background-color: black;
+    display: none;
+}
+
+#confetti {
+    position: absolute;
+    z-index: 100;
+    width: 100vh;
+    height: 100vh;
+    display: none;
+}
+
+.level1 {
+    display: none;
+}
+
+.level2 {
+    display: none;
+}
+
+#logo {
+    position: absolute;
+    margin-left: 25%;
+    /* margin-top: -7%; */
+    width: 50%;
+}
+.indexlogo{
+margin-top: 40%;
+}
+.optButton {
+    margin-left: 20px;
+    border: 5px inset #D1B464;
+    border-radius: 10px;
+    font-size: calc(.3em + 1vw);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-family: arial, helvetica, sans-serif;
+    text-decoration: none;
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    height: 50px;
+    width: 95px;
+    box-shadow: 2px 2px 12px black;
+    z-index: 1;
+    position: absolute;
+}
+
+#lifeCountID {
+    margin-top: 2%;
+    margin-left: 5%;
+    z-index: 1;
+    width: calc(6em + 1vw);
+    height: calc(2.7em + 1vh);
+}
+
+#scoreBox {
+    margin-top: 2%;
+    margin-left: 82%;
+    position: relative;
+    z-index: 1;
+    width: calc(6em + 1vw);
+    height: calc(2.7em + 1vh);
+}
+
+.grid {
+    max-width: 960px;
+    /* margin: 0 auto; */
+    margin-top: -35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+.card {
+    position: relative;
+    transition: all 0.4s linear;
+    transform-style: preserve-3d;
+    margin: 5px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+
+
+.front {
+    background: url('img/MKCard.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: rgb(255, 255, 255);
+    border: double 10px;
+    border-radius: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.card, .back, .front {
+    height: 150px;
+    width: 130px;
+    /* flex-basis: 110px; */
+}
+
+.back, .front {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.selected {
+    transform: rotateY(180deg);
+}
+
+.match {
+    background-image: none !important;
+}
+
+.match .front {
+    background: transparent !important;
+}
+
+i:hover {
+    text-shadow: 2px 2px 8px rgb(155, 255, 149);
+    /* color: rgb(89, 255, 17); */
+}
+
+#start {
+    margin-top: 35%;
+    margin-left: 45%;
+    display: block;
+    width: 6rem;
+    height: 4rem;
+    animation: heartbeat 2.5s ease-in-out infinite both;
+    border-radius: 100px;
+    padding: 10px 10px 0px 10px;
+    font-size: 15px;
+    text-shadow: 2px 2px 2px black;
+    position: absolute;
+}
+
+#start:hover {
+    animation-play-state: paused;
+    text-shadow: 1px 1px 10px rgb(250, 250, 250);
+}
+
+#nextRound {
+    z-index: 100;
+    margin-top: 35%;
+    margin-left: 45%;
+    position: absolute;
+    width: 6rem;
+    height: 4rem;
+    /* animation: delaybtn 11s; */
+    border-radius: 100px;
+    padding: 10px 10px 0px 10px;
+    font-size: 15px;
+    text-shadow: 2px 2px 2px black;
+    display: none;
+}
+
+@keyframes delaybtn {
+    0% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#nextRound:hover {
+    animation-play-state: paused;
+    text-shadow: 1px 1px 10px rgb(250, 250, 250);
+}
+
+#restart {
+    margin-top: 5%;
+    margin-left: 25%;
+    animation: delaybtn 11s;
+    width: 6rem;
+    height: 5rem;
+    animation: heartbeat 2.5s ease-in-out infinite both;
+    border-radius: 100px;
+    padding: 10px 3px 0px 3px;
+    font-size: 15px;
+    text-shadow: 2px 2px 2px black;
+    position: absolute;
+    z-index: 100;
+    display: none;
+}
+
+#restart:hover {
+    animation-play-state: paused;
+    text-shadow: 1px 1px 10px rgb(250, 250, 250);
+}
+
+@media only screen and (max-width: 1068px) {
+    .card, .back, .front {
+        height: 95px;
+        width: 75px;
+        justify-content: center;
+        /* flex-basis: 55px; */
+    }
+    body {
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+        height: 120vh;
+    }
+    #start {
+        margin-left: 40%;
+    }
+    #game{
+        margin-left: 0%;
+    }
+    .bkgd{
+        /* height: 120vh; */
+
+    }
+}

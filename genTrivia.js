@@ -958,10 +958,5 @@ submitQ10.addEventListener('click', function () {
           })
     })
     }
-
-
-
-
 }
-
 )

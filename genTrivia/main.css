@@ -1,0 +1,787 @@
+html {
+    background-color: rgb(111, 89, 79);
+    /* background-color: rgb(67, 80, 19); */
+}
+
+.bkgd1a {
+    background-image: url(../Images/BKGDS/sesame3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -100;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bkgd1 {
+    background-image: url(../Images/BKGDS/sesame3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -100;
+    width: 100vw;
+    height: 100vh;
+}
+
+.vers {
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    padding: 30px;
+    font-size: 3vw;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+a:hover, .links:hover {
+    color: rgb(226, 186, 73);
+}
+
+.links {
+    background-color: rgba(0, 0, 0, 0.741);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    margin-left: -5%;
+    margin-top: -10%;
+    text-align: center;
+    padding-top: 160px;
+}
+
+.bkgd2 {
+    background-image: url(../Images/BKGDS/DJKhaledHouse.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -100;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    animation: bounce-in-top 1.1s both;
+}
+
+@keyframes slide-in-blurred-top {
+    0% {
+        transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        transform-origin: 50% 0%;
+        filter: blur(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scaleY(1) scaleX(1);
+        transform-origin: 50% 50%;
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+body {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* #clouds{
+    position: absolute;
+    margin-top: -10%;
+    margin-left: -1%;
+    z-index: -2;
+    width: 102vw; 
+	height: 100vh; 
+	background-image: url(./Images/BKGDS/clouds2.png    );
+	background-position: fixed;
+	background-repeat: repeat-x;
+    animation: slide 70s linear infinite;
+    
+} */
+
+@keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.daKeysDiv {}
+
+audio {
+    width: 25%;
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 38%;
+    ;
+    animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+#title {
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 3%;
+    width: 50%;
+    animation: bounce-in-top 1.5s both;
+}
+
+@keyframes bounce-in-top {
+    0% {
+        transform: translateY(-500px);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    55% {
+        transform: translateY(-65px);
+        animation-timing-function: ease-in;
+    }
+    72% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    81% {
+        transform: translateY(-28px);
+    }
+    90% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    95% {
+        transform: translateY(-8px);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+}
+
+#gameOver {
+    width: 100%;
+    margin-top: 20%;
+    position: absolute;
+    z-index: 100;
+    animation: blink 1s infinite;
+    display: none;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#spriteReady1 {
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 10%;
+    position: fixed;
+    z-index: -1;
+    display: none;
+}
+
+#spriteReady2 {
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 26%;
+    position: fixed;
+    z-index: -1;
+    display: none;
+}
+
+#spriteReady3 {
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 41%;
+    position: fixed;
+    z-index: -1;
+    display: none;
+}
+
+#spriteReady4 {
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 57%;
+    position: fixed;
+    z-index: -1;
+    display: none;
+}
+
+#spriteReady5 {
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 73%;
+    position: fixed;
+    z-index: -1;
+    display: none;
+}
+
+#spriteReady6 {
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 10%;
+    position: fixed;
+    z-index: -1;
+    display: none;
+}
+
+#spriteReady7 {
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 26%;
+    position: fixed;
+    z-index: -1;
+    display: none;
+}
+
+#spriteReady8 {
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 41%;
+    position: fixed;
+    z-index: -1;
+    display: none;
+}
+
+#spriteReady9 {
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 57%;
+    position: fixed;
+    z-index: -1;
+    display: none;
+}
+
+#spriteReady10 {
+    width: 60%;
+    margin-top: 17%;
+    margin-left: 73%;
+    position: fixed;
+    z-index: -1;
+    display: none;
+}
+
+#spriteRun {
+    width: 13%;
+    margin-top: 35%;
+    margin-left: auto;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#spriteRun2 {
+    width: 13%;
+    margin-top: 35%;
+    margin-left: 17%;
+    position: fixed;
+    z-index: 1;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: none;
+}
+
+#spriteRun3 {
+    width: 13%;
+    margin-top: 35%;
+    margin-left: 32%;
+    position: fixed;
+    z-index: 1;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: none;
+}
+
+#spriteRun4 {
+    width: 13%;
+    margin-top: 35%;
+    margin-left: 48%;
+    position: fixed;
+    z-index: 1;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: none;
+}
+
+#spriteRun5 {
+    width: 13%;
+    margin-top: 35%;
+    margin-left: 65%;
+    position: fixed;
+    z-index: 1;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: none;
+}
+
+#spriteRun6 {
+    width: 13%;
+    margin-top: 35%;
+    margin-left: auto;
+    position: fixed;
+    z-index: 1;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: none;
+}
+
+#spriteRun7 {
+    width: 13%;
+    margin-top: 35%;
+    margin-left: 17%;
+    position: fixed;
+    z-index: 1;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: none;
+}
+
+#spriteRun8 {
+    width: 13%;
+    margin-top: 35%;
+    margin-left: 32%;
+    position: fixed;
+    z-index: 1;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: none;
+}
+
+#spriteRun9 {
+    width: 13%;
+    margin-top: 35%;
+    margin-left: 48%;
+    position: fixed;
+    z-index: 1;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: none;
+}
+
+#spriteRun10 {
+    width: 13%;
+    margin-top: 35%;
+    margin-left: 65%;
+    position: fixed;
+    z-index: 1;
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: none;
+}
+
+#spriteWon {
+    width: 32%;
+    margin-top: 5%;
+    margin-left: 35%;
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+
+#spriteLose {
+    width: 35%;
+    margin-top: 8%;
+    margin-left: 30%;
+    position: fixed;
+    z-index: 10;
+    display: none;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+#djk {
+    width: 20%;
+    margin-left: 80%;
+    margin-top: 25%;
+    animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    position: fixed;
+    z-index: -2;
+}
+
+#djk2 {
+    width: 20%;
+    margin-left: 80%;
+    margin-top: 25%;
+    animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    position: fixed;
+    z-index: -2;
+    display: none;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100px);
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    position: relative;
+    margin-top: 5%;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: left;
+    background-color: rgb(221, 195, 122);
+}
+
+.answer.correct {
+    display: none;
+    text-align: center;
+    width: 90vw;
+}
+
+/* submit button */
+
+button {
+    width: 50%;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 2px inset rgb(209, 180, 100);
+    background-color: rgba(209, 180, 100, 0.521);
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    box-shadow: 1px 1px 1px black;
+    margin: auto;
+}
+
+/* button questions */
+
+.buttonQ {
+    border-radius: 10px;
+    border: 5px inset rgb(209, 180, 100);
+    font-size: 30px;
+    text-align: center;
+    font-family: arial, helvetica, sans-serif;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    display: block;
+    background-color: rgba(208, 193, 152, 0.9);
+    height: 300px;
+    width: 50vw;
+    /* box-shadow: 1px 1px 1px black; */
+    position: absolute;
+    z-index: 1;
+}
+
+.straight{
+    text-align: left ;
+    margin-left: 35%;
+    
+}
+.straight2{
+    text-align: left ;
+    margin-left: 20%;
+}
+.next {
+    display: none;
+}
+
+#rulesButton {
+    margin-top: 22%;
+    margin-left: 6.5%;
+    width: 8%;
+    height: 3%;
+    display: block;
+}
+
+#rulesButton:hover {
+    text-shadow: 1px 1px 10px rgb(250, 250, 250);
+}
+
+#q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10 {
+    display: none;
+}
+
+/* one of those buttons that cant be deleted all will throw everything off even tho it doesnt exist in my html */
+
+.button {
+    border: 10px inset #D1B464;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-size: 30px;
+    text-align: center;
+    font-family: arial, helvetica, sans-serif;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    /* text-shadow: -1px -1px 0 rgba(0,0,0,0.3); */
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    height: 35px;
+    width: 35px;
+    box-shadow: 1px 1px 1px black;
+}
+
+.buttonBox {
+    display: block;
+    justify-content: center;
+    padding: 10px;
+    width: 38%;
+    margin-top: 15%;
+    margin-left: 35%;
+    position: fixed;
+    z-index: 1;
+    /* animation: fade-in 10s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; */
+}
+
+.optButton {
+    border: 5px inset #D1B464;
+    border-radius: 10px;
+    font-size: calc(.3em + 1vw);
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-family: arial, helvetica, sans-serif;
+    text-decoration: none;
+    /* text-shadow: -1px -1px 0 rgba(0,0,0,0.3); */
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    height: 75px;
+    width: 95px;
+    box-shadow: 2px 2px 12px black;
+    position: fixed;
+    animation: fade-in 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    z-index: 1;
+}
+
+i {
+    color: rgb(63, 205, 63);
+    font-size: 60px;
+    text-shadow: 2px 2px 12px black;
+}
+
+i:hover {
+    text-shadow: 2px 2px 8px rgb(155, 255, 149);
+    /* color: rgb(89, 255, 17); */
+}
+
+#start {
+    margin-top: 18%;
+    margin-left: 43%;
+    width: 8rem;
+    height: 7rem;
+    animation: heartbeat 2.5s ease-in-out infinite both;
+    border-radius: 100px;
+    padding: 30px 10px 0px 10px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+    position: absolute;
+}
+
+#start:hover {
+    animation-play-state: paused;
+    text-shadow: 1px 1px 10px rgb(250, 250, 250);
+}
+
+#round2 {
+    margin-top: 13%;
+    margin-left: 43%;
+    width: 8rem;
+    height: 7rem;
+    animation: heartbeat 2.5s ease-in-out infinite both;
+    border-radius: 100px;
+    padding: 30px 10px 0px 10px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+    display: none;
+}
+
+#round2:hover {
+    animation-play-state: paused;
+    text-shadow: 1px 1px 10px rgb(250, 250, 250);
+}
+
+#restart {
+    margin-top: 30%;
+    margin-left: 35%;
+    width: 5rem;
+    height: 4rem;
+    animation: heartbeat 2.5s ease-in-out infinite both;
+    border-radius: 100px;
+    padding: 20px 3px 0px 3px;
+    font-size: 15px;
+    text-shadow: 2px 2px 2px black;
+    position: absolute;
+    z-index: 100;
+    display: none;
+}
+
+#restart:hover {
+    animation-play-state: paused;
+    text-shadow: 1px 1px 10px rgb(250, 250, 250);
+}
+
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+    }
+    17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+    }
+    33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+    }
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes bounce {
+    0% {}
+    50% {
+        transform: translate(0, 8px);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#lifeCountID {
+    margin-top: 12%;
+    margin-left: 5%;
+    width: calc(6em + 1vw);
+    height: calc(2.5em + 1vh);
+}
+
+#scoreBox {
+    margin-top: 12%;
+    margin-left: 82%;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 1;
+    width: calc(3em + 1vw);
+    height: calc(2em + 1vh);
+}
+
+#hint {
+    margin-top: 20%;
+    margin-left: 15%;
+    z-index: 1;
+    width: 5%;
+    height: 3%;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 70px;
+}
+
+.keyImg {
+    background-image: url("../Images/ScoreKey.png");
+}
+
+#confetti {
+    position: absolute;
+    z-index: 10;
+    width: 105%;
+    display: none;
+}
+
+.swal-text {
+    font-size: 20px;
+    text-align: center;
+    /* text-shadow: 1px 1px 1px black; */
+}
+
+.swal-modal {
+    width: 500px;
+    margin-top: 1%;
+    ;
+    border: 5px inset #D1B464;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+
+.swal-button--confirm {
+    display: none;
+}
+
+.swal-button {
+    font-size: 30px;
+    width: 20vw;
+    border-radius: 15px;
+    background-color: #D1B464;
+    border: 5px inset #D1B464;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}
+
+@media only screen and (width: 800px) {
+    .buttonBox {
+        margin-top: 5%;
+        margin-left: -5%;
+    }
+    .buttonQ {
+        margin-top: 103%;
+        /* height: 70px;
+    width: 160px;
+    font-size: 15px; */
+    }
+    #start {
+        width: 4rem;
+        height: 4rem;
+        font-size: 15px;
+        padding: 15px 10px 0px 10px;
+        margin-left: 8.5em;
+    }
+    #round2 {
+        width: 4rem;
+        height: 4rem;
+        font-size: 15px;
+        padding: 15px 10px 0px 10px;
+    }
+    i {
+        font-size: 35px;
+    }
+    #djk {
+        margin-left: 95%;
+    }
+    #djk2 {
+        margin-top: 95%;
+    }
+    #spriteRun {
+        margin-left: -12%;
+    }
+    #spriteRun2 {
+        margin-left: 4%;
+    }
+    #spriteRun3 {
+        margin-left: 19%;
+    }
+    #spriteRun4 {
+        margin-left: 36%;
+    }
+    #spriteRun5 {
+        margin-left: 51%;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="urf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>DJ Khaled Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="level1.html">
+    <link rel="shortcut icon" href="../favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bkgd">
+        <button onclick="enableMute()" id="mute" type="button">🔕</button>
+        <button onclick="disableMute()" id="unmute" type="button">🔔</button>
+    <!-- <button onclick="khaledOff()" id="djkoff" type="button">DJ Khaled Off</button>
+        <button onclick="khaledOn()" id="djkon" type="button">DJ Khaled On</button> -->
+    <a href="level1.html">Start Over</a>
+
+    <audio id="audio1" src="audio/success.wav"></audio>
+    <audio id="audio2" src="audio/buzzer.mp3"></audio>
+    <audio id="iGotKeys" src="audio/majorKeyAlert2.mp3"></audio>
+
+    <div class="optButton" id="start">Play Rd 3<br /> ► </div>
+    <!-- <div class="optButton" id="nextRound"> Round 4<br /> ► </div> -->
+    <div class="optButton" id="restart">Play Rd 3 Again<br /> ► </div>
+
+
+    <div class="optButton" id="lifeCountID">Keys:
+        <div class="lifeCount" id="lives"></div>
+    </div>
+    <div class="optButton" id="scoreBox">Score:
+        <div class="scoreCount" id="score"></div>
+    </div>
+    <img id="logo" src="img/MAJOR-KEYS2.png" alt="logo">
+
+    <div class="level1">
+        <img id="confetti" src="Gifs/confetti.gif" alt="confetti">
+
+        <video source src="djkVids/AllIDoIsWin.mp4" id='video1'>
+        </video>
+        <div id="game">
+            <section class="grid">
+                <div class="card">
+                    <!-- <div class="front"></div> -->
+                    <div class="back"></div>
+                </div>
+
+
+</body>
+
+
+<script src="level3.js"></script>
+
+</body>
+
+</html>
