@@ -84,8 +84,8 @@ submitQ1.addEventListener('click', function () {
         document.getElementById('youSmart').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a1').innerHTML = "✅ Toronto";
-        document.querySelector('#a1').style.color = "green";
+        // document.querySelector('#a1').innerHTML = "✅ Toronto";
+        document.querySelector('#a1').style.color = "rgb(5, 148, 5)";
 
         document.querySelector('.submitQ1').style.display = 'none';
         document.querySelector('#next1').style.display = 'block';
@@ -119,8 +119,8 @@ submitQ1.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('playUrself').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a1').innerHTML = "❌ Toronto";
-        document.querySelector('#a1').style.color = "red";
+        // document.querySelector('#a1').innerHTML = "❌ Toronto";
+        document.querySelector('#a1').style.color = "rgb(5, 148, 5)";
 
         document.querySelector('.submitQ1').style.display = 'none';
         document.querySelector('#next1').style.display = 'block';
@@ -181,8 +181,8 @@ submitQ2.addEventListener('click', function () {
         document.getElementById('youVerySmart').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a2').innerHTML = "✅ WuTang Generator";
-        document.querySelector('#a2').style.color = "green";
+        // document.querySelector('#a2').innerHTML = "✅ WuTang Generator";
+        document.querySelector('#a2').style.color = "rgb(5, 148, 5)";
 
         document.querySelector('.submitQ2').style.display = 'none';
         document.querySelector('#next2').style.display = 'block';
@@ -209,8 +209,8 @@ submitQ2.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('noExcuses').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a2').innerHTML = "❌ WuTang Generator";
-        document.querySelector('#a2').style.color = "red";
+        // document.querySelector('#a2').innerHTML = "❌ WuTang Generator";
+        document.querySelector('#a2').style.color = "rgb(5, 148, 5)";
 
         document.querySelector('.submitQ2').style.display = 'none';
         document.querySelector('#next2').style.display = 'block';
@@ -267,8 +267,8 @@ submitQ3.addEventListener('click', function () {
         document.getElementById('youGenius').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a3').innerHTML = "✅ NY Knicks";
-        document.querySelector('#a3').style.color = "green";
+        // document.querySelector('#a3').innerHTML = "✅ NY Knicks";
+        document.querySelector('#a3').style.color = "rgb(5, 148, 5)";
         document.querySelector('.submitQ3').style.display = 'none';
         document.querySelector('#next3').style.display = 'block';
 
@@ -296,8 +296,8 @@ submitQ3.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('neverGiveUp').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a3').innerHTML = "❌ NY Knicks";
-        document.querySelector('#a3').style.color = "red";
+        // document.querySelector('#a3').innerHTML = "❌ NY Knicks";
+        document.querySelector('#a3').style.color = "rgb(5, 148, 5)";
         document.querySelector('.submitQ3').style.display = 'none';
         document.querySelector('#next3').style.display = 'block';
         document.querySelector('#spriteRun3').style.display = 'none';
@@ -347,8 +347,8 @@ submitQ4.addEventListener('click', function () {
         document.getElementById('lion').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a4').innerHTML = "✅ Rihanna";
-        document.querySelector('#a4').style.color = "green";
+        // document.querySelector('#a4').innerHTML = "✅ Rihanna";
+        document.querySelector('#a4').style.color = "rgb(5, 148, 5)";
         document.querySelector('.submitQ4').style.display = 'none';
         document.querySelector('#next4').style.display = 'block';
 
@@ -374,8 +374,8 @@ submitQ4.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('gameHuh').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a4').innerHTML = "❌ Rihanna";
-        document.querySelector('#a4').style.color = "red";
+        // document.querySelector('#a4').innerHTML = "❌ Rihanna";
+        document.querySelector('#a4').style.color = "rgb(5, 148, 5)";
         document.querySelector('.submitQ4').style.display = 'none';
         document.querySelector('#next4').style.display = 'block';
 
@@ -426,8 +426,8 @@ submitQ5.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById('audio1').play();
         document.getElementById('weDaBest').play();
-        document.querySelector('#a5').innerHTML = "✅ Wilt Chamberlain";
-        document.querySelector('#a5').style.color = "green";
+        // document.querySelector('#a5').innerHTML = "✅ Wilt Chamberlain";
+        document.querySelector('#a5').style.color = "rgb(5, 148, 5)";
 
         document.querySelector('.submitQ5').style.display = 'none';
         document.querySelector('#next5').style.display = 'block';
@@ -475,8 +475,8 @@ submitQ5.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('playUrself').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a5').innerHTML = "❌ Wilt Chamberlain";
-        document.querySelector('#a5').style.color = "red";
+        // document.querySelector('#a5').innerHTML = "❌ Wilt Chamberlain";
+        document.querySelector('#a5').style.color = "rgb(5, 148, 5)";
 
         document.querySelector('.submitQ5').style.display = 'none';
         document.querySelector('#next5').style.display = 'block';
@@ -551,8 +551,8 @@ submitQ6.addEventListener('click', function () {
         document.getElementById('youLoyal').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a6').innerHTML = "✅ Laugh";
-        document.querySelector('#a6').style.color = "green";
+        // document.querySelector('#a6').innerHTML = "✅ Laugh";
+        document.querySelector('#a6').style.color = "rgb(5, 148, 5)";
         document.querySelector('.submitQ6').style.display = 'none';
         document.querySelector('#next6').style.display = 'block';
 
@@ -580,8 +580,8 @@ submitQ6.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('playUrself').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a6').innerHTML = "❌ Laugh";
-        document.querySelector('#a6').style.color = "red";
+        // document.querySelector('#a6').innerHTML = "❌ Laugh";
+        document.querySelector('#a6').style.color = "rgb(5, 148, 5)";
         document.querySelector('.submitQ6').style.display = 'none';
         document.querySelector('#next6').style.display = 'block';
 
@@ -636,8 +636,8 @@ submitQ7.addEventListener('click', function () {
         document.getElementById('appreciate').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a7').innerHTML = "✅  Fried Chicken";
-        document.querySelector('#a7').style.color = "green";
+        // document.querySelector('#a7').innerHTML = "✅  Fried Chicken";
+        document.querySelector('#a7').style.color = "rgb(5, 148, 5)";
         document.querySelector('.submitQ7').style.display = 'none';
         document.querySelector('#next7').style.display = 'block';
 
@@ -664,8 +664,8 @@ submitQ7.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('noExcuses').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a7').innerHTML = "❌ Fried Chicken";
-        document.querySelector('#a7').style.color = "red";
+        // document.querySelector('#a7').innerHTML = "❌ Fried Chicken";
+        document.querySelector('#a7').style.color = "rgb(5, 148, 5)";
         document.querySelector('.submitQ7').style.display = 'none';
         document.querySelector('#next7').style.display = 'block';
 
@@ -717,8 +717,8 @@ submitQ8.addEventListener('click', function () {
         document.getElementById('lion').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a8').innerHTML = "✅ a Blessing";
-        document.querySelector('#a8').style.color = "green";
+        // document.querySelector('#a8').innerHTML = "✅ a Blessing";
+        document.querySelector('#a8').style.color = "rgb(5, 148, 5)";
         document.querySelector('.submitQ8').style.display = 'none';
         document.querySelector('#next8').style.display = 'block';
 
@@ -746,8 +746,8 @@ submitQ8.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('neverGiveUp').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a8').innerHTML = "❌ a Blessing";
-        document.querySelector('#a8').style.color = "red";
+        // document.querySelector('#a8').innerHTML = "❌ a Blessing";
+        document.querySelector('#a8').style.color = "rgb(5, 148, 5)";
         document.querySelector('.submitQ8').style.display = 'none';
         document.querySelector('#next8').style.display = 'block';
 
@@ -797,8 +797,8 @@ submitQ9.addEventListener('click', function () {
         document.getElementById('youGenius').play();
         document.getElementById("lives").innerHTML = lives + " 🗝";
         document.getElementById("score").innerHTML = score;
-        document.querySelector('#a9').innerHTML = "✅ Brandy";
-        document.querySelector('#a9').style.color = "green";
+        // document.querySelector('#a9').innerHTML = "✅ Brandy";
+        document.querySelector('#a9').style.color = "rgb(5, 148, 5)";
         document.querySelector('.submitQ9').style.display = 'none';
         document.querySelector('#next9').style.display = 'block';
 
@@ -826,8 +826,8 @@ submitQ9.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('gameHuh').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a9').innerHTML = "❌ Brandy";
-        document.querySelector('#a9').style.color = "red";
+        // document.querySelector('#a9').innerHTML = "❌ Brandy";
+        document.querySelector('#a9').style.color = "rgb(5, 148, 5)";
         document.querySelector('.submitQ9').style.display = 'none';
         document.querySelector('#next9').style.display = 'block';
 
@@ -879,8 +879,8 @@ submitQ10.addEventListener('click', function () {
         document.getElementById('lives').innerHTML = lives + " 🗝";
         document.getElementById('weDaBest').play();
         document.getElementById('audio1').play();
-        document.querySelector('#a10').innerHTML = "✅ Orange";
-        document.querySelector('#a10').style.color = "green";
+        // document.querySelector('#a10').innerHTML = "✅ Orange";
+        document.querySelector('#a10').style.color = "rgb(5, 148, 5)";
         document.querySelector('.submitQ10').style.display = 'none';
         document.querySelector('#next10').style.display = 'block';
 
@@ -939,8 +939,8 @@ submitQ10.addEventListener('click', function () {
         document.getElementById("lives").innerHTML = lives;
         document.getElementById('playUrself').play();
         document.getElementById('audio2').play();
-        document.querySelector('#a10').innerHTML = "❌ Orange";
-        document.querySelector('#a10').style.color = "red";
+        // document.querySelector('#a10').innerHTML = "❌ Orange";
+        document.querySelector('#a10').style.color = "rgb(5, 148, 5)";
         document.querySelector('.submitQ10').style.display = 'none';
         document.querySelector('#next10').style.display = 'block';
 
