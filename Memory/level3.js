@@ -57,20 +57,20 @@ const cardsArray = [
 const gameGrid = cardsArray.concat(cardsArray);
 gameGrid.sort(() => 0.5 - Math.random());
 
-
-function enableMute() {
-    document.getElementById('mute').style.backgroundColor = 'rgba(169, 255, 186, 0.563)';
-    document.getElementById('unmute').style.backgroundColor = 'rgb(255, 255, 255, 0.8)';
+function Mute() {
+    document.getElementById('mute').style.display = 'none';
+    document.getElementById('unmute').style.display = 'block';
+    document.getElementById('unmute').style.backgroundColor = 'rgba(255, 000, 000, 0.3)';
     audio1.volume = 0;
     audio2.volume = 0;
     document.getElementById('iGotKeys').pause();
-
 }
 
-function disableMute() {
+function unMute() {
     // aud.muted = false;
-    document.getElementById('unmute').style.backgroundColor = 'rgba(169, 255, 186, 0.563)';
-    document.getElementById('mute').style.backgroundColor = 'rgb(255, 255, 255, 0.8)';
+    document.getElementById('unmute').style.display = 'none';
+    document.getElementById('mute').style.backgroundColor = 'rgba(169, 255, 186, 0.563)';
+    document.getElementById('mute').style.display = 'block';
     audio1.volume = 1;
     audio2.volume = 1;
     document.getElementById('iGotKeys').play();
