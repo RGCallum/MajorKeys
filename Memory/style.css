@@ -52,7 +52,7 @@
     }
 .bkgd {
     /* margin-left: 20px 0; */
-    background-image: url('img/wallpaper2you_451343.png');
+    background-image: url('../Images/BKGDS/mario2.jpg');
     background-size: cover;
     background-repeat-y: no-repeat;
     animation: slide2 190s linear infinite;
