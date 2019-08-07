@@ -94,20 +94,7 @@ body {
 
 
 
-@media only screen and (max-width: 767px) {
-    
-    i {
-        font-size: 35px;
-    }
-    a {
-        font-size: 20px;
-    }
-    ul{
-        margin-left: -55%;
 
-    }
-    
-}
 @media only screen and (max-width: 1024px) {
     #title{
         margin-left: 10%;
@@ -121,6 +108,23 @@ body {
     }
     ul{
         margin-left: -35%;
+
+    }
+    
+}
+@media only screen and (max-width: 767px) {
+    #title{
+        margin-left: 25%;
+
+    }
+    i {
+        font-size: 35px;
+    }
+    a {
+        font-size: 20px;
+    }
+    ul{
+        margin-left: -55%;
 
     }
     
