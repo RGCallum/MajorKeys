@@ -2,6 +2,14 @@ html {
     background-color: rgb(111, 89, 79);
     /* background-color: rgb(67, 80, 19); */
 }
+
+#unmute{
+    display: none;
+}
+.muteBtn{
+    width: 100px;
+    /* position: absolute; */
+}
 .links2{
     display: none;
     z-index: 1000;

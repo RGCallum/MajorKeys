@@ -19,7 +19,19 @@
     a:hover, .links2:hover {
         color: rgb(226, 186, 73);
     }
- 
+ #unmute{
+     display: none;
+     border-radius: 10px;
+    border: 2px inset rgb(209, 180, 100);
+    background-color: rgba(209, 180, 100, 0.521);
+   
+ }
+ #mute{
+    border-radius: 10px;
+    border: 2px inset rgb(209, 180, 100);
+    background-color: rgba(209, 180, 100, 0.521);
+   
+}
     a{
         text-shadow: 2px 2px 3px black;
         text-decoration: none;

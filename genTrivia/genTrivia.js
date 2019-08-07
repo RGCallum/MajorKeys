@@ -1,3 +1,58 @@
+function Mute() {
+    document.getElementById('mute').style.display = 'none';
+    document.getElementById('unmute').style.display = 'block';
+    document.getElementById('unmute').style.backgroundColor = 'rgba(255, 000, 000, 0.3)';
+    audio1.volume = 0;
+    audio2.volume = 0;
+    youSmart.volume = 0;
+    youGenius.volume = 0;
+    anotherOne.volume = 0;
+    youLoyal.volume = 0;
+    weDaBest.volume = 0;
+    theyDontWant.volume = 0;
+    allIDoIsWin.volume = 0;
+    playUrself.volume = 0;
+    noExcuses.volume = 0;
+    keysSong.volume = 0;
+    neverGiveUp.volume = 0;
+    gameHuh.volume = 0;
+    appreciate.volume = 0;
+    somePeople.volume = 0;
+    majorKeyAlert.volume = 0;
+    youVerySmart.volume = 0;
+    lion.volume = 0;
+    document.querySelectorAll('audio').pause();
+}
+
+function unMute() {
+    document.getElementById('unmute').style.display = 'none';
+    document.getElementById('mute').style.backgroundColor = 'rgba(169, 255, 186, 0.563)';
+    document.getElementById('mute').style.display = 'block';
+    audio1.volume = 1;
+    audio2.volume = 1;
+    youSmart.volume = 1;
+    youGenius.volume = 1;
+    anotherOne.volume = 1;
+    youLoyal.volume = 1;
+    weDaBest.volume = 1;
+    theyDontWant.volume = 1;
+    allIDoIsWin.volume = 1;
+    playUrself.volume = 1;
+    noExcuses.volume = 1;
+    keysSong.volume = 1;
+    neverGiveUp.volume = 1;
+    gameHuh.volume = 1;
+    appreciate.volume = 1;
+    somePeople.volume = 1;
+    majorKeyAlert.volume = 1;
+    youVerySmart.volume = 1;
+    lion.volume = 1;
+    document.querySelectorAll('audio').play();
+}
+
+
+
+
 //declared vars
 //add addeventlist classlist.add then to if/else
 let answer1 = document.querySelector('#a1')
