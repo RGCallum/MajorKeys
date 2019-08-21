@@ -10,7 +10,7 @@ html {
     /* position: absolute; */
 }
 .links2{
-    display: none;
+    /* display: none; */
     z-index: 1000;
     position: absolute;
     margin-left: 5%;
