@@ -21,7 +21,7 @@ a {
     font-size: 40px;
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-weight: 700;
+/* font-weight: 700; */
 }
 
 i, a:hover, .links:hover {
